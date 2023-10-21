@@ -1,0 +1,474 @@
+{
+    "Header": {
+        "Logo": "Wilton Pelicari",
+        "Menu": [
+            {
+                "Text": "Inicio",
+                "Link": "#"
+            },
+            {
+                "Text": "Valores",
+                "Link": "#values"
+            },
+            {
+                "Text": "Competências",
+                "Link": "#toolbox"
+            },
+            {
+                "Text": "Experiências",
+                "Link": "#experiences"
+            },
+            {
+                "Text": "Meu Hobby",
+                "Link": "https://www.strava.com/athletes/25213111",
+                "Target": "_blank"
+            }
+        ],
+        "ButtonCv": {
+            "Text": "Baixe meu Curriculo!",
+            "Link": "./cv/wilton-pelicari-cv.pdf"
+        }
+    },
+    "Greeting": {
+        "Picture": "./main-photo.jpg",
+        "Message": "Aprender é minha paixão. Compartilhar é minha missão."
+    },
+    "Values": {
+        "Title": "Desenvolvedor Full Stack",
+        "Description": "Comecei quando ainda era criança (sério) mas desenvolvo profissionalmente desde 2014",
+        "Cards": [
+            {
+                "Icon": "./icons/dotnet.svg",
+                "Title": "Orientado à Windows",
+                "Description": "Comecei o desenvolvimento em orientação à objetos com .NET e continuo desenvolvendo para essa plataforma desde então. (E tenho orgulho disso :) )"
+            },
+            {
+                "Icon": "./icons/react.svg",
+                "Title": "Para toda ação, uma REACT-ção",
+                "Description": "Ja trabalhei com diferentes frameworks client-side mas gosto mesmo é de desenvolvimento com REACT. Esse site foi desenvolvido inteiramente com ele."
+            },
+            {
+                "Icon": "./icons/solid.svg",
+                "Title": "Baixo acoplamento, alta coesão",
+                "Description": "Apaixonado pelos princípios SOLID, pragmaticamente desenvolvendo, falando e ainda aprendendo todos os dias sobre o que faz um bom código."
+            }
+        ]
+    },
+    "Toolbox": {
+        "Title": "Na minha caixa de ferramentas...",
+        "Description": "Clique em uma palavra-chave abaixo para filtrar as experiências listadas 😉"
+    },
+    "Experiences": {
+        "Title": "Onde tenho trabalhado...",
+        "Entries": [
+            {
+                "Company": {
+                    "Logo": "./icons/sherweb.svg",
+                    "Name": "Sherweb",
+                    "Link": "http://www.sherweb.com/"
+                },
+                "Job": {
+                    "Title": "Desenvolvedor Full Stack",
+                    "Duration": "Desde Outubro 2021",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "C#",
+                                "JavaScript",
+                                "SQL Server"
+                            ]
+                        },
+                        {
+                            "Category": "Frameworks & Bibliotecas",
+                            "Stack": [
+                                ".NET",
+                                "AngularJs",
+                                "jQuery"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "Mend",
+                                "Azure DevOps",
+                                "GIT"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/revenu-quebec.svg",
+                    "Name": "Revenu Québec",
+                    "Link": "http://www.revenuquebec.ca/"
+                },
+                "ThirdParty": {
+                    "Name": "SERTI",
+                    "Link": "http://www.serti.com",
+                    "RibbonBgColor": "bg-green-400",
+                    "RibbonFontColor": "text-black",
+                    "RibbonDescription": "consulting for"
+                },
+                "Job": {
+                    "Title": "Full Stack Developer",
+                    "Duration": "February to September 2021",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "C#",
+                                "JavaScript",
+                                "SQL Server",
+                                "SQL Design"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                ".NET",
+                                "Vue.js",
+                                "jQuery"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "Azure DevOps",
+                                "TFS"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/industrielle-alliance.svg",
+                    "Name": "Industrielle Alliance",
+                    "Link": "https://ia.ca/"
+                },
+                "ThirdParty": {
+                    "Name": "COFOMO",
+                    "Link": "https://www.cofomo.com/",
+                    "RibbonBgColor": "bg-green-400",
+                    "RibbonFontColor": "text-black",
+                    "RibbonDescription": "consulting for"
+                },
+                "Job": {
+                    "Title": "Full Stack Developer",
+                    "Duration": "March 2020 to February 2021",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "C#",
+                                "TypeScript",
+                                "SQL Server"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                ".NET",
+                                "React"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "BrowserStack",
+                                "Azure DevOps",
+                                "GIT"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/industrielle-alliance.svg",
+                    "Name": "Industrielle Alliance",
+                    "Link": "https://ia.ca/"
+                },
+                "ThirdParty": {
+                    "Name": "COFOMO",
+                    "Link": "https://www.cofomo.com/",
+                    "RibbonBgColor": "bg-green-400",
+                    "RibbonFontColor": "text-black",
+                    "RibbonDescription": "consulting for"
+                },
+                "Job": {
+                    "Title": "Software Developer",
+                    "Duration": "July 2019 to February 2020",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "C#",
+                                "SQL Server"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                ".NET",
+                                "WPF"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Scrum",
+                                "SAFe"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "Azure DevOps",
+                                "GIT"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/db1-global-software.svg",
+                    "Name": "DB1 Global Software",
+                    "Link": "https://db1global.com/"
+                },
+                "Job": {
+                    "Title": "Full Stack Developer",
+                    "Duration": "September 2018 to March 2019",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "C#",
+                                "TypeScript",
+                                "SQL Server"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                ".NET",
+                                "AngularJs",
+                                "jQuery"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "Mend",
+                                "Azure DevOps",
+                                "GIT"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/paschoalotto.svg",
+                    "Name": "Paschoalotto",
+                    "Link": "https://paschoalotto.com.br/"
+                },
+                "Job": {
+                    "Title": ".NET Developer",
+                    "Duration": "September 2018 to March 2019",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "C#",
+                                "PostgreSQL"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                ".NET",
+                                "PL/pgSQL"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "Azure DevOps",
+                                "GIT",
+                                "TFS"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/lecom.svg",
+                    "Name": "Lecom",
+                    "Link": "http://www.lecom.com.br/"
+                },
+                "Job": {
+                    "Title": "PHP Developer",
+                    "Duration": "February 2015 to August 2016",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "PHP",
+                                "JavaScript",
+                                "MySQL"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                "WordPress",
+                                "jQuery"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Kanban"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "SVN"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/big-data-university.webp",
+                    "Name": "Cognitive Class (formerly Big Data University)",
+                    "Link": "https://cognitiveclass.ai/"
+                },
+                "ThirdParty": {
+                    "Name": "IBM",
+                    "Link": "http://www.serti.com",
+                    "RibbonBgColor": "bg-red-600",
+                    "RibbonFontColor": "text-white",
+                    "RibbonDescription": "powered by"
+                },
+                "Job": {
+                    "Title": "Software Engineer Intern",
+                    "Duration": "May 2014 to August 2014",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "Node.js",
+                                "Cloudant"
+                            ]
+                        },
+                        {
+                            "Category": "Framework & Libraries",
+                            "Stack": [
+                                "Express"
+                            ]
+                        },
+                        {
+                            "Category": "Methodologies",
+                            "Stack": [
+                                "Waterfall"
+                            ]
+                        },
+                        {
+                            "Category": "Tools",
+                            "Stack": [
+                                "GIT"
+                            ]
+                        }
+                    ],
+                    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "./icons/blaziken-domain.svg",
+                    "Name": "Blaziken Domain",
+                    "Link": "https://web.archive.org/web/20040714173604/http://blazikendomain.clubedohost.com/"
+                },
+                "ThirdParty": {
+                    "RibbonBgColor": "bg-yellow-300",
+                    "RibbonFontColor": "text-black",
+                    "RibbonDescription": "just a fun fact"
+                },
+                "Job": {
+                    "Title": "Web Master & Web Designer",
+                    "Duration": "2003 to 2005",
+                    "TechStack": [
+                        {
+                            "Category": "Tecnologias",
+                            "Stack": [
+                                "PHP",
+                                "HTML",
+                                "CSS"
+                            ]
+                        }
+                    ],
+                    "Description": "I meant it! The first time I ever coded in my life was when I was 13 years old and I spent days and days learning how to (primitively) code to create my first site of Pokemon! Of course time went by and site no longer exists but you can still take a look at it's Wayback Machine and my name should be there! 😂. Since then I knew programming was exactly what I wanted to do for the rest of my life :)"
+                }
+            }
+        ]
+    },
+    "Footer": {
+        "Message": "Code source available in my GitHub! Take a look :)",
+        "Link": "#",
+        "SocialMedia": [
+            {
+                "Icon": "./icons/github-mark.svg",
+                "Link": "https://github.com/willpelicari"
+            },
+            {
+                "Icon": "./icons/linkedin.svg",
+                "Link": "https://www.linkedin.com/in/wiltonpelicari/"
+            }
+        ]
+    }
+}
