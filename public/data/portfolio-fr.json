@@ -8,15 +8,15 @@
             },
             {
                 "Text": "Valeurs",
-                "Link": "#valeurs"
+                "Link": "#values"
             },
             {
                 "Text": "Compétences",
-                "Link": "#boîte-à-outils"
+                "Link": "#toolbox"
             },
             {
                 "Text": "Expériences",
-                "Link": "#expériences"
+                "Link": "#experiences"
             },
             {
                 "Text": "Mon passe-temps",
@@ -128,7 +128,7 @@
                                 "C#",
                                 "JavaScript",
                                 "SQL Server",
-                                "Conception SQL"
+                                "SQL Design"
                             ]
                         },
                         {
@@ -153,7 +153,7 @@
                             ]
                         }
                     ],
-                    "Description": "J'ai développé un système interne en tant que consultant pour la société SERTI lors de mon passage chez Revenu Québec. Mes principales responsabilités ont inclus le développement d'API internes en utilisant .NET Framework 4.5, la création de pages web et de composants avec Vue.JS, jQuery et CSS, ainsi que la rédaction de tests unitaires à la fois côté front-end et back-end en utilisant Moq, AutoFixture et FluentAssertions. J'ai activement participé aux cérémonies SCRUM, y compris les réunions quotidiennes, les sessions de raffinage, les rétrospectives et les revues de sprint. De plus, j'ai exécuté des cas de test pour des tâches de contrôle qualité et j'ai travaillé sur la lecture et l'interprétation de code hérité en Conception SQL, similaire à VB6."
+                    "Description": "J'ai développé un système interne en tant que consultant pour la société SERTI lors de mon passage chez Revenu Québec. Mes principales responsabilités ont inclus le développement d'API internes en utilisant .NET Framework 4.5, la création de pages web et de composants avec Vue.JS, jQuery et CSS, ainsi que la rédaction de tests unitaires à la fois côté front-end et back-end en utilisant Moq, AutoFixture et FluentAssertions. J'ai activement participé aux cérémonies SCRUM, y compris les réunions quotidiennes, les sessions de raffinage, les rétrospectives et les revues de sprint. De plus, j'ai exécuté des cas de test pour des tâches de contrôle qualité et j'ai travaillé sur la lecture et l'interprétation de code hérité en SQL Design, similaire à VB6."
                 }
             },
             {
@@ -393,7 +393,7 @@
                     "Link": "http://www.serti.com",
                     "RibbonBgColor": "bg-red-600",
                     "RibbonFontColor": "text-white",
-                    "RibbonDescription": "animé par"
+                    "RibbonDescription": "impulsioné par"
                 },
                 "Job": {
                     "Title": "Stagiaire en génie logiciel",
