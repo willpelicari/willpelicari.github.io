@@ -30,8 +30,8 @@ export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
   return (
     <li
       className={`${
-        !showExperience && "hidden"
-      } md:flex items-center space-x-3 mb-10 bg-white shadow-sm px-4 py-8 rounded`}
+        !showExperience ? "hidden" : 'block md:flex'
+      } items-center space-x-3 mb-10 bg-white shadow-sm px-4 py-8 rounded`}
     >
       <div key={props.key} className="text-center w-fit mx-auto">
         <a
@@ -83,7 +83,7 @@ export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
             ))}
         </div>
         <div>
-          <p>{entry.Job.Description}</p>
+          <p className="whitespace-pre-line align-bottom">{entry.Job.Description}</p>
         </div>
       </div>
     </li>

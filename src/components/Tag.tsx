@@ -16,7 +16,7 @@ export function Tag({bgColor, hoverColor, value, ...props}: TagProps)
 
     useEffect(() => {
         setTagAsSelected(filterContext.filteredTags.includes(value));
-    }, [filterContext.filteredTags]);
+    }, [filterContext.filteredTags, value]);
     
     function switchTag(value: string): void {
         let filteredTags = [...filterContext.filteredTags];
