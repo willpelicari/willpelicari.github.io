@@ -9,12 +9,14 @@ interface ExperienceEntryProps {
 }
 
 export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
-  const consultingText = entry.ThirdParty?.RibbonDescription
-    ? entry.ThirdParty?.RibbonDescription + " "
-    : "consulting for ";
-  const [showExperience, setShowExperience] = useState(true);
 
+  const consultingText = entry?.ThirdParty?.RibbonDescription ?? "consulting for ";
+  const bgColor = entry?.ThirdParty?.RibbonBgColor ?? 'bg-green-400';
+  const fontColor = entry?.ThirdParty?.RibbonFontColor ?? 'text-black';
+
+  const [showExperience, setShowExperience] = useState(true);
   const filterContext = useContext(FilterContext);
+  
   useEffect(() => {
     if (filterContext.filteredTags.length === 0) {
       setShowExperience(true);
@@ -27,7 +29,7 @@ export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
     }
   }, [filterContext.filteredTags]);
 
-  return (
+  return entry && (
     <li
       className={`${
         !showExperience ? "hidden" : 'block md:flex'
@@ -52,15 +54,15 @@ export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
           }
         </a>
         {entry.ThirdParty && (
-          <sup className={`px-1 text-xs block font-semibold ${entry.ThirdParty?.RibbonBgColor} ${entry.ThirdParty?.RibbonFontColor}`}>
-            {consultingText}
+          <div className={`px-1 text-xs block font-semibold ${fontColor} ${bgColor}`}>
+            {consultingText + " "}
             {
                 entry.ThirdParty.Name &&
                 <a href={entry.ThirdParty.Link} target="_blank">
                     {entry.ThirdParty.Name}
                 </a>
             }
-          </sup>
+          </div>
         )}
       </div>
       <div className="space-y-2">
@@ -70,7 +72,7 @@ export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
             {entry.Job.Duration}
           </span>
         </div>
-        <div className="mb-5 ">
+        <div className="mb-5">
           {entry.Job.TechStack.map((x) => x.Stack)
             .flat()
             .map((element, key) => (

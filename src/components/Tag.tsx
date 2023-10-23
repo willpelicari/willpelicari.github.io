@@ -11,7 +11,6 @@ interface TagProps {
 export function Tag({bgColor, hoverColor, value, ...props}: TagProps)
 {
     const filterContext = useContext(FilterContext);
-    hoverColor = hoverColor ? "hover:" + hoverColor : 'bg-blue-300';
     const [isSelected, setTagAsSelected] = useState(false);
 
     useEffect(() => {
@@ -33,7 +32,7 @@ export function Tag({bgColor, hoverColor, value, ...props}: TagProps)
 
     return (
         <button onClick={() => switchTag(value)} 
-            key={props.key} className={`m-1 inline-block ${isSelected ? 'bg-green-300' : bgColor} hover:bg-blue-300 text-gray-800 text-md font-medium mr-2 px-2.5 py-0.5 rounded border border-gray-500`}>
+            key={props.key} className={`m-1 inline-block ${isSelected ? 'bg-green-300' : bgColor}  hover:bg-blue-300 text-gray-800 text-md font-medium mr-2 px-2.5 py-0.5 rounded border border-gray-500`}>
             {value}
         </button>
     );
