@@ -435,7 +435,7 @@
                     "Link": "https://web.archive.org/web/20040714173604/http://blazikendomain.clubedohost.com/"
                 },
                 "ThirdParty": {
-                    "RibbonBgColor": "bg-yellow-300",
+                    "RibbonBgColor": "bg-yellow-400",
                     "RibbonFontColor": "text-black",
                     "RibbonDescription": "not to be taken seriously"
                 },
