@@ -1,474 +1,371 @@
 {
-    "Header": {
-        "Logo": "Wilton Pelicari",
-        "Menu": [
-            {
-                "Text": "Home",
-                "Link": "#"
-            },
-            {
-                "Text": "Values",
-                "Link": "#values"
-            },
-            {
-                "Text": "Skills",
-                "Link": "#toolbox"
-            },
-            {
-                "Text": "Experiences",
-                "Link": "#experiences"
-            },
-            {
-                "Text": "My Hobby",
-                "Link": "https://www.strava.com/athletes/25213111",
-                "Target": "_blank"
-            }
-        ],
-        "ButtonCv": {
-            "Text": "Download my Resume!",
-            "Link": "./cv/wilton-pelicari-cv.pdf"
-        }
-    },
-    "Greeting": {
-        "Picture": "./main-photo.jpg",
-        "Message": "Learning is my passion. Sharing is my mission."
-    },
-    "Values": {
-        "Title": "Full Stack Developer",
-        "Description": "I started coding as a child (seriously!) but have been working professionally in the field since 2014. 😅",
-        "Cards": [
-            {
-                "Icon": "./icons/dotnet.svg",
-                "Title": "Windows Oriented",
-                "Description": "I began object-oriented development with .NET and have continued working on this platform since then. (And I'm proud of it :) )"
-            },
-            {
-                "Icon": "./icons/react.svg",
-                "Title": "For every action, a REACT-ion",
-                "Description": "I've worked with different client-side frameworks, but I really enjoy developing with REACT. This entire website was developed using it."
-            },
-            {
-                "Icon": "./icons/solid.svg",
-                "Title": "Low coupling, high cohesion",
-                "Description": "Passionate about SOLID principles, I pragmatically develop, talk, and endlessly learn what makes good code."
-            }
-        ]
-    },
-    "Toolbox": {
-        "Title": "In my toolbox...",
-        "Description": "Click on a keyword below to filter the listed experiences 😉"
-    },
-    "Experiences": {
-        "Title": "Where I've been working...",
-        "Entries": [
-            {
-                "Company": {
-                    "Logo": "./icons/sherweb.svg",
-                    "Name": "Sherweb",
-                    "Link": "http://www.sherweb.com/"
-                },
-                "Job": {
-                    "Title": "Full Stack Developer",
-                    "Duration": "Since October 2021",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "C#",
-                                "JavaScript",
-                                "SQL Server"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                ".NET",
-                                "AngularJs",
-                                "jQuery"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Scrum"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "Mend",
-                                "Azure DevOps",
-                                "GIT"
-                            ]
-                        }
-                    ],
-                    "Description": "Since I joined Sherweb, I've had the opportunity to play a key role in the development and support of the C2-ITSM solution. My main responsibilities have included developing and maintaining internal APIs using technologies like .NET 6, Entity Framework 6, and SQL Server. Additionally, I've created and maintained web pages and components using AngularJS and CSS to enhance the user experience. I've written unit, integration, and interface tests with tools like NUnit, Moq, FluentAssertions, and Selenium to ensure software quality. I've also facilitated developer meetings, promoting continuous development process improvement and technical debt reduction. In addition, I've investigated and supervised vulnerabilities identified by the Mend (WhiteSource) tool to maintain system security. I've actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/revenu-quebec.svg",
-                    "Name": "Revenu Québec",
-                    "Link": "http://www.revenuquebec.ca/"
-                },
-                "ThirdParty": {
-                    "Name": "SERTI",
-                    "Link": "http://www.serti.com",
-                    "RibbonBgColor": "bg-green-400",
-                    "RibbonFontColor": "text-black",
-                    "RibbonDescription": "outsourced"
-                },
-                "Job": {
-                    "Title": "Full Stack Developer",
-                    "Duration": "February to September 2021",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "C#",
-                                "JavaScript",
-                                "SQL Server",
-                                "SQL Design"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                ".NET",
-                                "Vue.js",
-                                "jQuery"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Scrum"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "Azure DevOps",
-                                "TFS"
-                            ]
-                        }
-                    ],
-                    "Description": "I developed an internal system as a consultant for the company SERTI during my time at Revenu Québec. My main responsibilities included developing internal APIs using .NET Framework 4.5, creating web pages and components with Vue.JS, jQuery, and CSS, and writing unit tests on both the front-end and back-end using Moq, AutoFixture, and FluentAssertions. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews. Additionally, I executed test cases for quality control tasks and dealt with reading and interpreting legacy code in SQL Design, similar to VB6."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/industrielle-alliance.svg",
-                    "Name": "Industrielle Alliance",
-                    "Link": "https://ia.ca/"
-                },
-                "ThirdParty": {
-                    "Name": "COFOMO",
-                    "Link": "https://www.cofomo.com/",
-                    "RibbonBgColor": "bg-green-400",
-                    "RibbonFontColor": "text-black",
-                    "RibbonDescription": "outsourced"
-                },
-                "Job": {
-                    "Title": "Full Stack Developer",
-                    "Duration": "March 2020 to February 2021",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "C#",
-                                "TypeScript",
-                                "SQL Server"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                ".NET",
-                                "React"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Scrum"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "BrowserStack",
-                                "Azure DevOps",
-                                "GIT"
-                            ]
-                        }
-                    ],
-                    "Description": "I developed pages and a REST API 'backend for frontend' for the Modernia distributed system as a consultant for COFOMO Québec. During this period, I developed and maintained APIs in .NET Core 3.1, Entity Framework 6, and SQL Server, as well as created web pages and components in React. I also wrote unit, end-to-end, and Behavior-Driven Development (BDD) tests using Moq, FluentAssertions, PlayWright, and SpecFlow. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/industrielle-alliance.svg",
-                    "Name": "Industrielle Alliance",
-                    "Link": "https://ia.ca/"
-                },
-                "ThirdParty": {
-                    "Name": "COFOMO",
-                    "Link": "https://www.cofomo.com/",
-                    "RibbonBgColor": "bg-green-400",
-                    "RibbonFontColor": "text-black",
-                    "RibbonDescription": "outsourced"
-                },
-                "Job": {
-                    "Title": "Software Developer",
-                    "Duration": "July 2019 to February 2020",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "C#",
-                                "SQL Server"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                ".NET",
-                                "WPF"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Scrum",
-                                "SAFe"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "Azure DevOps",
-                                "GIT"
-                            ]
-                        }
-                    ],
-                    "Description": "I developed the iA-Evo solution, a calculator/simulator for insurance, as a consultant for COFOMO Québec. During this time, my responsibilities included developing in WPF following the MVVM pattern, maintaining and supporting the previous version, executing and writing test cases for quality control activities, and creating unit tests using Moq and FluentAssertions. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews, as well as SAFe ceremonies, including Program Increment (PI) Planning and PI Review."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/db1-global-software.svg",
-                    "Name": "DB1 Global Software",
-                    "Link": "https://db1global.com/"
-                },
-                "Job": {
-                    "Title": "Full Stack Developer",
-                    "Duration": "September 2018 to March 2019",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "C#",
-                                "TypeScript",
-                                "SQL Server"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                ".NET",
-                                "AngularJs",
-                                "jQuery"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Scrum"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "Mend",
-                                "Azure DevOps",
-                                "GIT"
-                            ]
-                        }
-                    ],
-                    "Description": "I developed an integrated management system (SIG) for a large Brazilian professional school (SENAC). During this project, my responsibilities included developing internal APIs in .NET Core 2.0, creating web pages and components using Angular and CSS, and writing unit tests for both the front-end and back-end using Moq, AutoFixture, and FluentAssertions. I was also responsible for executing and writing test cases for quality control activities. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/paschoalotto.svg",
-                    "Name": "Paschoalotto",
-                    "Link": "https://paschoalotto.com.br/"
-                },
-                "Job": {
-                    "Title": ".NET Developer",
-                    "Duration": "September 2018 to March 2019",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "C#",
-                                "PostgreSQL"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                ".NET",
-                                "PL/pgSQL"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Scrum"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "Azure DevOps",
-                                "GIT",
-                                "TFS"
-                            ]
-                        }
-                    ],
-                    "Description": "I developed and maintained a friendly debt recovery system \"Pagou Fácil\" at the credit recovery company Paschoalotto. During my time there, I was responsible for developing internal APIs using the .NET Framework 4.7. I also played a key role in executing and writing test cases for quality control activities. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews. In addition to these tasks, I dealt with reading and interpreting legacy code in VB6."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/lecom.svg",
-                    "Name": "Lecom",
-                    "Link": "http://www.lecom.com.br/"
-                },
-                "Job": {
-                    "Title": "PHP Developer",
-                    "Duration": "February 2015 to August 2016",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "PHP",
-                                "JavaScript",
-                                "MySQL"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                "WordPress",
-                                "jQuery"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Kanban"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "SVN"
-                            ]
-                        }
-                    ],
-                    "Description": "I developed and maintained websites for small and medium-sized businesses. During this period, I was responsible for developing pages using PHP, CSS, and jQuery, as well as creating pages in WordPress. I also played a key role in gathering requirements, proposing solutions, and implementing them for specific project needs."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/big-data-university.webp",
-                    "Name": "Cognitive Class (formerly Big Data University)",
-                    "Link": "https://cognitiveclass.ai/"
-                },
-                "ThirdParty": {
-                    "Name": "IBM",
-                    "Link": "http://www.serti.com",
-                    "RibbonBgColor": "bg-red-600",
-                    "RibbonFontColor": "text-white",
-                    "RibbonDescription": "driven by"
-                },
-                "Job": {
-                    "Title": "Software Engineering Intern",
-                    "Duration": "May 2014 to August 2014",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "Node.js",
-                                "Cloudant"
-                            ]
-                        },
-                        {
-                            "Category": "Frameworks & Libraries",
-                            "Stack": [
-                                "Express"
-                            ]
-                        },
-                        {
-                            "Category": "Methodologies",
-                            "Stack": [
-                                "Waterfall"
-                            ]
-                        },
-                        {
-                            "Category": "Tools",
-                            "Stack": [
-                                "GIT"
-                            ]
-                        }
-                    ],
-                    "Description": "Summer internship through the \"Science Without Borders\" exchange program at the University of Toronto. During my internship at Cognitive Class (formerly known as Big Data University), I learned various IBM cloud technologies and wrote introductory articles for their SaaS platform, Bluemix. Among the technologies I learned were Node.js and Cloudant, which resulted in the publication of an article on the IBM portal and translations into multiple languages. The internship format included mentoring by IBM employees who introduced us to the tools, provided access, and a workspace throughout the work period."
-                }
-            },
-            {
-                "Company": {
-                    "Logo": "./icons/blaziken-domain.svg",
-                    "Name": "Blaziken Domain",
-                    "Link": "https://web.archive.org/web/20040714173604/http://blazikendomain.clubedohost.com/"
-                },
-                "ThirdParty": {
-                    "RibbonBgColor": "bg-yellow-400",
-                    "RibbonFontColor": "text-black",
-                    "RibbonDescription": "not to be taken seriously"
-                },
-                "Job": {
-                    "Title": "Web Master & Web Designer",
-                    "Duration": "2003 to 2005",
-                    "TechStack": [
-                        {
-                            "Category": "Technologies",
-                            "Stack": [
-                                "PHP",
-                                "HTML",
-                                "CSS"
-                            ]
-                        }
-                    ],
-                    "Description": "Did I mention? My first web development experience was as a child at the age of 13 when I was looking for something to do in a time when internet access was limited, but the desire to learn how to create websites already existed. I learned to use Microsoft Frontpage and Dreamweaver and started developing my first Pokémon website called Blaziken Domain. Despite all the amateurism, this project allowed me to take my first steps in PHP, understand important concepts like 'Don't repeat yourself,' and gave me the certainty that this was what I wanted to do for the rest of my life: develop. The site ended up having a small success during the time it was online, reaching 500 daily visits, according to the visitor counters of the time. By clicking on the Blaziken icon, you can be redirected to the Wayback Machine to see my 2004 page (or what's left of it). The site is in Portuguese, but in the 'Team' section, you can still read my name! :)"
-                }
-            }
-        ]
-    },
-    "Footer": {
-        "Message": "Code source available on my GitHub! Take a look :)",
-        "Link": "https://github.com/willpelicari/JsonBasedPortfolio",
-        "SocialMedia": [
-            {
-                "Icon": "./icons/github-mark.svg",
-                "Link": "https://github.com/willpelicari"
-            },
-            {
-                "Icon": "./icons/linkedin.svg",
-                "Link": "https://www.linkedin.com/in/wiltonpelicari/"
-            }
-        ]
+  "header": {
+    "logo": "Wilton Pelicari",
+    "menu": [
+      {
+        "text": "Home",
+        "link": "#"
+      },
+      {
+        "text": "Values",
+        "link": "#values"
+      },
+      {
+        "text": "Skills",
+        "link": "#toolbox"
+      },
+      {
+        "text": "Experiences",
+        "link": "#experiences"
+      },
+      {
+        "text": "My Hobby",
+        "link": "https://www.strava.com/athletes/25213111",
+        "target": "_blank"
+      }
+    ],
+    "buttonCv": {
+      "text": "Download my Resume!",
+      "link": "./cv/wilton-pelicari-cv.pdf"
     }
+  },
+  "greeting": {
+    "picture": "./main-photo.jpg",
+    "message": "Learning is my passion. Sharing is my mission."
+  },
+  "values": {
+    "title": "Full Stack Developer",
+    "description": "I started coding as a child (seriously!) but have been working professionally in the field since 2014. 😅",
+    "cards": [
+      {
+        "icon": "./icons/dotnet.svg",
+        "title": "Windows Oriented",
+        "description": "I began object-oriented development with .NET and have continued working on this platform since then. (And I'm proud of it :) )"
+      },
+      {
+        "icon": "./icons/react.svg",
+        "title": "For every action, a REACT-ion",
+        "description": "I've worked with different client-side frameworks, but I really enjoy developing with REACT. This entire website was developed using it."
+      },
+      {
+        "icon": "./icons/solid.svg",
+        "title": "Low coupling, high cohesion",
+        "description": "Passionate about SOLID principles, I pragmatically develop, talk, and endlessly learn what makes good code."
+      }
+    ]
+  },
+  "toolbox": {
+    "title": "In my toolbox...",
+    "description": "Click on a keyword below to filter the listed experiences 😉"
+  },
+  "experiences": {
+    "title": "Where I've been working...",
+    "entries": [
+      {
+        "company": {
+          "logo": "./icons/sherweb.svg",
+          "name": "Sherweb",
+          "link": "http://www.sherweb.com/"
+        },
+        "job": {
+          "title": "Full Stack Developer",
+          "duration": "Since October 2021",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "JavaScript", "SQL Server"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "AngularJs", "jQuery"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["Mend", "Azure DevOps", "GIT"]
+            }
+          ],
+          "description": "Since I joined Sherweb, I've had the opportunity to play a key role in the development and support of the C2-ITSM solution. My main responsibilities have included developing and maintaining internal APIs using technologies like .NET 6, Entity Framework 6, and SQL Server. Additionally, I've created and maintained web pages and components using AngularJS and CSS to enhance the user experience. I've written unit, integration, and interface tests with tools like NUnit, Moq, FluentAssertions, and Selenium to ensure software quality. I've also facilitated developer meetings, promoting continuous development process improvement and technical debt reduction. In addition, I've investigated and supervised vulnerabilities identified by the Mend (WhiteSource) tool to maintain system security. I've actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/revenu-quebec.svg",
+          "name": "Revenu Québec",
+          "link": "http://www.revenuquebec.ca/"
+        },
+        "thirdParty": {
+          "name": "SERTI",
+          "link": "http://www.serti.com",
+          "ribbonBgColor": "bg-green-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "outsourced"
+        },
+        "job": {
+          "title": "Full Stack Developer",
+          "duration": "February to September 2021",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "JavaScript", "SQL Server", "SQL Design"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "Vue.js", "jQuery"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["Azure DevOps", "TFS"]
+            }
+          ],
+          "description": "I developed an internal system as a consultant for the company SERTI during my time at Revenu Québec. My main responsibilities included developing internal APIs using .NET Framework 4.5, creating web pages and components with Vue.JS, jQuery, and CSS, and writing unit tests on both the front-end and back-end using Moq, AutoFixture, and FluentAssertions. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews. Additionally, I executed test cases for quality control tasks and dealt with reading and interpreting legacy code in SQL Design, similar to VB6."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/industrielle-alliance.svg",
+          "name": "Industrielle Alliance",
+          "link": "https://ia.ca/"
+        },
+        "thirdParty": {
+          "name": "COFOMO",
+          "link": "https://www.cofomo.com/",
+          "ribbonBgColor": "bg-green-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "outsourced"
+        },
+        "job": {
+          "title": "Full Stack Developer",
+          "duration": "March 2020 to February 2021",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "TypeScript", "SQL Server"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "React"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["BrowserStack", "Azure DevOps", "GIT"]
+            }
+          ],
+          "description": "I developed pages and a REST API 'backend for frontend' for the Modernia distributed system as a consultant for COFOMO Québec. During this period, I developed and maintained APIs in .NET Core 3.1, Entity Framework 6, and SQL Server, as well as created web pages and components in React. I also wrote unit, end-to-end, and Behavior-Driven Development (BDD) tests using Moq, FluentAssertions, PlayWright, and SpecFlow. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/industrielle-alliance.svg",
+          "name": "Industrielle Alliance",
+          "link": "https://ia.ca/"
+        },
+        "thirdParty": {
+          "name": "COFOMO",
+          "link": "https://www.cofomo.com/",
+          "ribbonBgColor": "bg-green-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "outsourced"
+        },
+        "job": {
+          "title": "Software Developer",
+          "duration": "July 2019 to February 2020",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "SQL Server"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "WPF"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum", "SAFe"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["Azure DevOps", "GIT"]
+            }
+          ],
+          "description": "I developed the iA-Evo solution, a calculator/simulator for insurance, as a consultant for COFOMO Québec. During this time, my responsibilities included developing in WPF following the MVVM pattern, maintaining and supporting the previous version, executing and writing test cases for quality control activities, and creating unit tests using Moq and FluentAssertions. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews, as well as SAFe ceremonies, including Program Increment (PI) Planning and PI Review."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/db1-global-software.svg",
+          "name": "DB1 Global Software",
+          "link": "https://db1global.com/"
+        },
+        "job": {
+          "title": "Full Stack Developer",
+          "duration": "September 2018 to March 2019",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "TypeScript", "SQL Server"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "AngularJs", "jQuery"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["Mend", "Azure DevOps", "GIT"]
+            }
+          ],
+          "description": "I developed an integrated management system (SIG) for a large Brazilian professional school (SENAC). During this project, my responsibilities included developing internal APIs in .NET Core 2.0, creating web pages and components using Angular and CSS, and writing unit tests for both the front-end and back-end using Moq, AutoFixture, and FluentAssertions. I was also responsible for executing and writing test cases for quality control activities. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/paschoalotto.svg",
+          "name": "Paschoalotto",
+          "link": "https://paschoalotto.com.br/"
+        },
+        "job": {
+          "title": ".NET Developer",
+          "duration": "September 2018 to March 2019",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "PostgreSQL"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "PL/pgSQL"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["Azure DevOps", "GIT", "TFS"]
+            }
+          ],
+          "description": "I developed and maintained a friendly debt recovery system \"Pagou Fácil\" at the credit recovery company Paschoalotto. During my time there, I was responsible for developing internal APIs using the .NET Framework 4.7. I also played a key role in executing and writing test cases for quality control activities. I actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews. In addition to these tasks, I dealt with reading and interpreting legacy code in VB6."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/lecom.svg",
+          "name": "Lecom",
+          "link": "http://www.lecom.com.br/"
+        },
+        "job": {
+          "title": "PHP Developer",
+          "duration": "February 2015 to August 2016",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["PHP", "JavaScript", "MySQL"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": ["WordPress", "jQuery"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Kanban"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["SVN"]
+            }
+          ],
+          "description": "I developed and maintained websites for small and medium-sized businesses. During this period, I was responsible for developing pages using PHP, CSS, and jQuery, as well as creating pages in WordPress. I also played a key role in gathering requirements, proposing solutions, and implementing them for specific project needs."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/big-data-university.webp",
+          "name": "Cognitive Class (formerly Big Data University)",
+          "link": "https://cognitiveclass.ai/"
+        },
+        "thirdParty": {
+          "name": "IBM",
+          "link": "http://www.serti.com",
+          "ribbonBgColor": "bg-red-600",
+          "ribbonFontColor": "text-white",
+          "ribbonDescription": "driven by"
+        },
+        "job": {
+          "title": "Software Engineering Intern",
+          "duration": "May 2014 to August 2014",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["Node.js", "Cloudant"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": ["Express"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Waterfall"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["GIT"]
+            }
+          ],
+          "description": "Summer internship through the \"Science Without Borders\" exchange program at the University of Toronto. During my internship at Cognitive Class (formerly known as Big Data University), I learned various IBM cloud technologies and wrote introductory articles for their SaaS platform, Bluemix. Among the technologies I learned were Node.js and Cloudant, which resulted in the publication of an article on the IBM portal and translations into multiple languages. The internship format included mentoring by IBM employees who introduced us to the tools, provided access, and a workspace throughout the work period."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/blaziken-domain.svg",
+          "name": "Blaziken Domain",
+          "link": "https://web.archive.org/web/20040714173604/http://blazikendomain.clubedohost.com/"
+        },
+        "thirdParty": {
+          "ribbonBgColor": "bg-yellow-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "not to be taken seriously"
+        },
+        "job": {
+          "title": "Web Master & Web Designer",
+          "duration": "2003 to 2005",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["PHP", "HTML", "CSS"]
+            }
+          ],
+          "description": "Did I mention? My first web development experience was as a child at the age of 13 when I was looking for something to do in a time when internet access was limited, but the desire to learn how to create websites already existed. I learned to use Microsoft Frontpage and Dreamweaver and started developing my first Pokémon website called Blaziken Domain. Despite all the amateurism, this project allowed me to take my first steps in PHP, understand important concepts like 'Don't repeat yourself,' and gave me the certainty that this was what I wanted to do for the rest of my life: develop. The site ended up having a small success during the time it was online, reaching 500 daily visits, according to the visitor counters of the time. By clicking on the Blaziken icon, you can be redirected to the Wayback Machine to see my 2004 page (or what's left of it). The site is in Portuguese, but in the 'Team' section, you can still read my name! :)"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "message": "Code source available on my GitHub! Take a look :)",
+    "link": "https://github.com/willpelicari/JsonBasedPortfolio",
+    "socialMedia": [
+      {
+        "icon": "./icons/github-mark.svg",
+        "link": "https://github.com/willpelicari"
+      },
+      {
+        "icon": "./icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/wiltonpelicari/"
+      }
+    ]
+  }
 }
