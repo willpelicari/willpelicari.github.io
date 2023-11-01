@@ -218,7 +218,7 @@
             },
             {
               "category": "Frameworks & Libraries",
-              "stack": [".NET", "AngularJs", "jQuery"]
+              "stack": [".NET", "Angular", "jQuery"]
             },
             {
               "category": "Methodologies",
@@ -226,7 +226,7 @@
             },
             {
               "category": "Outils",
-              "stack": ["Mend", "Azure DevOps", "GIT"]
+              "stack": ["Azure DevOps", "GIT"]
             }
           ],
           "description": "J'ai développé un système de gestion intégré (SIG) pour une grande école professionnelle brésilienne (SENAC). Pendant ce projet, mes responsabilités ont inclus le développement d'API internes en .NET Core 2.0, la création de pages web et de composants en utilisant Angular et CSS, ainsi que la rédaction de tests unitaires à la fois côté front-end et back-end à l'aide de Moq, AutoFixture et FluentAssertions. J'étais également responsable de l'exécution et de la rédaction de cas de test pour les activités de contrôle qualité. J'ai activement participé aux cérémonies SCRUM, y compris les réunions quotidiennes, les sessions de raffinage, les rétrospectives et les revues de sprint."
