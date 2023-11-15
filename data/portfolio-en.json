@@ -73,11 +73,11 @@
           "techStack": [
             {
               "category": "Technologies",
-              "stack": ["C#", "JavaScript", "SQL Server"]
+              "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
             },
             {
               "category": "Frameworks & Libraries",
-              "stack": [".NET", "AngularJs", "jQuery"]
+              "stack": [".NET", "AngularJs", "jQuery", "MassTransit"]
             },
             {
               "category": "Methodologies",
@@ -85,7 +85,7 @@
             },
             {
               "category": "Tools",
-              "stack": ["Mend", "Azure DevOps", "GIT"]
+              "stack": ["Mend", "Azure DevOps", "GIT", "Docker", "RabbitMQ"]
             }
           ],
           "description": "Since I joined Sherweb, I've had the opportunity to play a key role in the development and support of the C2-ITSM solution. My main responsibilities have included developing and maintaining internal APIs using technologies like .NET 6, Entity Framework 6, and SQL Server. Additionally, I've created and maintained web pages and components using AngularJS and CSS to enhance the user experience. I've written unit, integration, and interface tests with tools like NUnit, Moq, FluentAssertions, and Selenium to ensure software quality. I've also facilitated developer meetings, promoting continuous development process improvement and technical debt reduction. In addition, I've investigated and supervised vulnerabilities identified by the Mend (WhiteSource) tool to maintain system security. I've actively participated in SCRUM ceremonies, including daily meetings, refinement, retrospectives, and sprint reviews."
