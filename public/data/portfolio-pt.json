@@ -68,8 +68,38 @@
           "link": "http://www.sherweb.com/"
         },
         "job": {
-          "title": "Desenvolvedor Full Stack",
-          "duration": "Desde Outubro 2021",
+          "title": "Desenvolvedor Full Stack - Projeto SSP",
+          "duration": "Desde novembro 2024",
+          "techStack": [
+            {
+              "category": "Tecnologias",
+              "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
+            },
+            {
+              "category": "Frameworks & Bibliotecas",
+              "stack": [".NET", "React", "Tailwind CSS"]
+            },
+            {
+              "category": "Metodologias",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Ferramentas",
+              "stack": ["Azure DevOps", "GIT", "Docker"]
+            }
+          ],
+          "description": "Depois de três anos no projeto C2, começo uma nova página da minha carreira no projeto SSP. Novidades à seguir."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/sherweb.svg",
+          "name": "Sherweb",
+          "link": "http://www.sherweb.com/"
+        },
+        "job": {
+          "title": "Desenvolvedor Full Stack - Projeto C2",
+          "duration": "Outubro 2021 à Outubro 2024",
           "techStack": [
             {
               "category": "Tecnologias",
@@ -240,7 +270,7 @@
         },
         "job": {
           "title": "Desenvolvedor .NET",
-          "duration": "Setembro 2018 à Março 2019",
+          "duration": "Setembro 2016 à Agosto 2018",
           "techStack": [
             {
               "category": "Tecnologias",
