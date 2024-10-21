@@ -68,8 +68,38 @@
           "link": "http://www.sherweb.com/"
         },
         "job": {
-          "title": "Full Stack Developer",
-          "duration": "Since October 2021",
+          "title": "Full Stack Developer - SSP Project",
+          "duration": "Since November 2024",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": [".NET", "React", "Tailwind CSS"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Scrum"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["Azure DevOps", "GIT", "Docker"]
+            }
+          ],
+          "description": "After three years working for C2 Project, I'm starting a new chapter in my carrer in SSP project. Updates do come."
+        }
+      },
+      {
+        "company": {
+          "logo": "./icons/sherweb.svg",
+          "name": "Sherweb",
+          "link": "http://www.sherweb.com/"
+        },
+        "job": {
+          "title": "Full Stack Developer - C2 Project",
+          "duration": "October 2021 to October 2024",
           "techStack": [
             {
               "category": "Technologies",
@@ -240,7 +270,7 @@
         },
         "job": {
           "title": ".NET Developer",
-          "duration": "September 2018 to March 2019",
+          "duration": "September 2016 to August 2018",
           "techStack": [
             {
               "category": "Technologies",
