@@ -67,59 +67,54 @@
           "name": "Sherweb",
           "link": "http://www.sherweb.com/"
         },
-        "job": {
-          "title": "Desenvolvedor Full Stack - Projeto SSP",
-          "duration": "Desde novembro 2024",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "React", "Tailwind CSS"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["Azure DevOps", "GIT", "Docker"]
-            }
-          ],
-          "description": "Depois de três anos no projeto C2, começo uma nova página da minha carreira no projeto SSP. Novidades à seguir."
-        }
-      },
-      {
-        "company": {
-          "logo": "./icons/sherweb.svg",
-          "name": "Sherweb",
-          "link": "http://www.sherweb.com/"
-        },
-        "job": {
-          "title": "Desenvolvedor Full Stack - Projeto C2",
-          "duration": "Outubro 2021 à Outubro 2024",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "AngularJs", "jQuery", "MassTransit"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["Mend", "Azure DevOps", "GIT", "Docker", "RabbitMQ"]
-            }
-          ],
-          "description": "Desde que cheguei na Sherweb, tive a oportunidade de desempenhar um papel fundamental no desenvolvimento e suporte da solução C2-ITSM. Minhas principais responsabilidades incluíram o desenvolvimento e manutenção de APIs internas, utilizando tecnologias como .NET 6, Entity Framework 6 e SQL Server. Além disso, realizei a criação e manutenção de páginas e componentes web, empregando AngularJS e CSS para melhorar a experiência do usuário. Elaborei testes unitários, de integração e de interface com ferramentas como nUnit, Moq, FluentAssertions e Selenium para garantir a qualidade do software. Também, fui responsável pela facilitação de reuniões de desenvolvedores, promovendo a melhoria contínua do processo de desenvolvimento e a redução de débitos técnicos. Adicionalmente, realizei a investigação e supervisão de vulnerabilidades identificadas pela ferramenta Mend (WhiteSource) para manter a segurança do sistema. Participei ativamente nas cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor Full Stack - Projeto SSP",
+            "duration": "Desde novembro 2024",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "React", "Tailwind CSS"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["Azure DevOps", "GIT", "Docker"]
+              }
+            ],
+            "description": "Depois de três anos no projeto C2, começo uma nova página da minha carreira no projeto SSP. Novidades à seguir."
+          },
+          {
+            "title": "Desenvolvedor Full Stack - Projeto C2",
+            "duration": "Outubro 2021 à Outubro 2024",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "AngularJs", "jQuery", "MassTransit"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["Mend", "Azure DevOps", "GIT", "Docker", "RabbitMQ"]
+              }
+            ],
+            "description": "Desde que cheguei na Sherweb, tive a oportunidade de desempenhar um papel fundamental no desenvolvimento e suporte da solução C2-ITSM. Minhas principais responsabilidades incluíram o desenvolvimento e manutenção de APIs internas, utilizando tecnologias como .NET 6, Entity Framework 6 e SQL Server. Além disso, realizei a criação e manutenção de páginas e componentes web, empregando AngularJS e CSS para melhorar a experiência do usuário. Elaborei testes unitários, de integração e de interface com ferramentas como nUnit, Moq, FluentAssertions e Selenium para garantir a qualidade do software. Também, fui responsável pela facilitação de reuniões de desenvolvedores, promovendo a melhoria contínua do processo de desenvolvimento e a redução de débitos técnicos. Adicionalmente, realizei a investigação e supervisão de vulnerabilidades identificadas pela ferramenta Mend (WhiteSource) para manter a segurança do sistema. Participei ativamente nas cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
+          }
+        ]
       },
       {
         "company": {
@@ -134,29 +129,31 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "terceirizado"
         },
-        "job": {
-          "title": "Desenvolvedor Full Stack",
-          "duration": "Fevereiro à Setembro 2021",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "JavaScript", "SQL Server", "SQL Design"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "Vue.js", "jQuery"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["Azure DevOps", "TFS"]
-            }
-          ],
-          "description": "Desenvolvimento de sistema interno como consultor pela empresa SERTI. Durante meu tempo na Revenu Québec, minhas principais responsabilidades incluíram o desenvolvimento de APIs internas usando o .NET Framework 4.5, a criação de páginas e componentes web com Vue.JS, jQuery e CSS, além da escrita de testes unitários, tanto no front-end quanto no back-end, com o uso de Moq, AutoFixture e FluentAssertions. Participei ativamente nas cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint. Além disso, executei casos de teste para tarefas de controle de qualidade e lidei com a leitura e interpretação de código legado em SQL Design, semelhante ao VB6."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor Full Stack",
+            "duration": "Fevereiro à Setembro 2021",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "JavaScript", "SQL Server", "SQL Design"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "Vue.js", "jQuery"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["Azure DevOps", "TFS"]
+              }
+            ],
+            "description": "Desenvolvimento de sistema interno como consultor pela empresa SERTI. Durante meu tempo na Revenu Québec, minhas principais responsabilidades incluíram o desenvolvimento de APIs internas usando o .NET Framework 4.5, a criação de páginas e componentes web com Vue.JS, jQuery e CSS, além da escrita de testes unitários, tanto no front-end quanto no back-end, com o uso de Moq, AutoFixture e FluentAssertions. Participei ativamente nas cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint. Além disso, executei casos de teste para tarefas de controle de qualidade e lidei com a leitura e interpretação de código legado em SQL Design, semelhante ao VB6."
+          }
+        ]
       },
       {
         "company": {
@@ -171,29 +168,31 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "terceirizado"
         },
-        "job": {
-          "title": "Desenvolvedor Full Stack",
-          "duration": "Março 2020 à Fevereiro 2021",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "TypeScript", "SQL Server"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "React"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["BrowserStack", "Azure DevOps", "GIT"]
-            }
-          ],
-          "description": "Desenvolvimento de páginas e REST API 'backend for frontend' para o sistema distribuído Modernia como consultor pela empresa COFOMO Québec. Durante esse período, minhas responsabilidades incluíram o desenvolvimento e manutenção das APIs em .NET Core 3.1, Entity Framework 6 e SQL Server, além da criação de páginas e componentes web em React. Também escrevi testes unitários, de ponta a ponta (end-to-end) e de Desenvolvimento Orientado por Comportamento (BDD) utilizando Moq, FluentAssertions, PlayWright e SpecFlow. Além disso, participei ativamente das cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor Full Stack",
+            "duration": "Março 2020 à Fevereiro 2021",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "TypeScript", "SQL Server"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "React"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["BrowserStack", "Azure DevOps", "GIT"]
+              }
+            ],
+            "description": "Desenvolvimento de páginas e REST API 'backend for frontend' para o sistema distribuído Modernia como consultor pela empresa COFOMO Québec. Durante esse período, minhas responsabilidades incluíram o desenvolvimento e manutenção das APIs em .NET Core 3.1, Entity Framework 6 e SQL Server, além da criação de páginas e componentes web em React. Também escrevi testes unitários, de ponta a ponta (end-to-end) e de Desenvolvimento Orientado por Comportamento (BDD) utilizando Moq, FluentAssertions, PlayWright e SpecFlow. Além disso, participei ativamente das cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
+          }
+        ]
       },
       {
         "company": {
@@ -208,29 +207,31 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "terceirizado"
         },
-        "job": {
-          "title": "Desenvolvedor de Software",
-          "duration": "Julho 2019 à Fevereiro 2020",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "SQL Server"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "WPF"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum", "SAFe"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["Azure DevOps", "GIT"]
-            }
-          ],
-          "description": "Desenvolvimento da solução iA-Evo, uma calculadora/simulador de seguro, como consultor pela empresa COFOMO Québec. Durante esse período, minhas responsabilidades incluíram o desenvolvimento em WPF seguindo o padrão MVVM, manutenção e suporte da versão anterior, execução e escrita de casos de teste para as atividades de controle de qualidade, bem como a criação de testes unitários usando Moq e FluentAssertions. Além disso, participei ativamente das cerimônias SCRUM, que englobam reuniões diárias, refinamento, retrospectiva e revisão do Sprint, e também participei das cerimônias SAFe, incluindo o planejamento de Program Increment (PI Planning) e a revisão do Program Increment (PI Review)."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor de Software",
+            "duration": "Julho 2019 à Fevereiro 2020",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "SQL Server"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "WPF"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum", "SAFe"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["Azure DevOps", "GIT"]
+              }
+            ],
+            "description": "Desenvolvimento da solução iA-Evo, uma calculadora/simulador de seguro, como consultor pela empresa COFOMO Québec. Durante esse período, minhas responsabilidades incluíram o desenvolvimento em WPF seguindo o padrão MVVM, manutenção e suporte da versão anterior, execução e escrita de casos de teste para as atividades de controle de qualidade, bem como a criação de testes unitários usando Moq e FluentAssertions. Além disso, participei ativamente das cerimônias SCRUM, que englobam reuniões diárias, refinamento, retrospectiva e revisão do Sprint, e também participei das cerimônias SAFe, incluindo o planejamento de Program Increment (PI Planning) e a revisão do Program Increment (PI Review)."
+          }
+        ]
       },
       {
         "company": {
@@ -238,29 +239,31 @@
           "name": "DB1 Global Software",
           "link": "https://db1global.com/"
         },
-        "job": {
-          "title": "Desenvolvedor Full Stack",
-          "duration": "Setembro 2018 à Março 2019",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "TypeScript", "SQL Server"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "Angular", "jQuery"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["Azure DevOps", "GIT"]
-            }
-          ],
-          "description": "Desenvolvimento de um sistema integrado de gestão (SIG) para uma grande escola profissional brasileira (SENAC). Durante este projeto, minhas responsabilidades incluíram o desenvolvimento de APIs internas em .NET Core 2.0, a criação de páginas e componentes web utilizando Angular e CSS, a escrita de testes unitários tanto na camada frontend quanto no backend com o uso de Moq, AutoFixture e FluentAssertions. Além disso, fui encarregado da execução e escrita de casos de teste para as atividades de controle de qualidade. Também participei ativamente das cerimônias SCRUM, que incluem reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor Full Stack",
+            "duration": "Setembro 2018 à Março 2019",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "TypeScript", "SQL Server"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "Angular", "jQuery"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["Azure DevOps", "GIT"]
+              }
+            ],
+            "description": "Desenvolvimento de um sistema integrado de gestão (SIG) para uma grande escola profissional brasileira (SENAC). Durante este projeto, minhas responsabilidades incluíram o desenvolvimento de APIs internas em .NET Core 2.0, a criação de páginas e componentes web utilizando Angular e CSS, a escrita de testes unitários tanto na camada frontend quanto no backend com o uso de Moq, AutoFixture e FluentAssertions. Além disso, fui encarregado da execução e escrita de casos de teste para as atividades de controle de qualidade. Também participei ativamente das cerimônias SCRUM, que incluem reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
+          }
+        ]
       },
       {
         "company": {
@@ -268,29 +271,31 @@
           "name": "Paschoalotto",
           "link": "https://paschoalotto.com.br/"
         },
-        "job": {
-          "title": "Desenvolvedor .NET",
-          "duration": "Setembro 2016 à Agosto 2018",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["C#", "PostgreSQL"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": [".NET", "PL/pgSQL"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["Azure DevOps", "GIT", "TFS"]
-            }
-          ],
-          "description": "Desenvolvimento e manutenção de um sistema de recuperação de dívidas amigáveis \"Pagou Fácil\" na recuperadora de créditos Paschoalotto. Durante meu período lá, fui responsável pelo desenvolvimento de APIs internas utilizando o .NET Framework 4.7. Também desempenhei um papel fundamental na execução e na escrita de casos de teste para as atividades de controle de qualidade. Além disso, participei ativamente das cerimônias SCRUM, que incluem reuniões diárias, refinamento, retrospectiva e revisão do Sprint. Além dessas tarefas, lidei com a leitura e interpretação de código legado em VB6."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor .NET",
+            "duration": "Setembro 2016 à Agosto 2018",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["C#", "PostgreSQL"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "PL/pgSQL"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["Azure DevOps", "GIT", "TFS"]
+              }
+            ],
+            "description": "Desenvolvimento e manutenção de um sistema de recuperação de dívidas amigáveis \"Pagou Fácil\" na recuperadora de créditos Paschoalotto. Durante meu período lá, fui responsável pelo desenvolvimento de APIs internas utilizando o .NET Framework 4.7. Também desempenhei um papel fundamental na execução e na escrita de casos de teste para as atividades de controle de qualidade. Além disso, participei ativamente das cerimônias SCRUM, que incluem reuniões diárias, refinamento, retrospectiva e revisão do Sprint. Além dessas tarefas, lidei com a leitura e interpretação de código legado em VB6."
+          }
+        ]
       },
       {
         "company": {
@@ -298,29 +303,31 @@
           "name": "Lecom",
           "link": "http://www.lecom.com.br/"
         },
-        "job": {
-          "title": "Desenvolvedor PHP",
-          "duration": "Fevereiro 2015 à Agosto 2016",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["PHP", "JavaScript", "MySQL"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": ["WordPress", "jQuery"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Kanban"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["SVN"]
-            }
-          ],
-          "description": "Desenvolvimento e manutenção de sites para pequenas e médias empresas. Durante esse período, fui responsável pelo desenvolvimento de páginas utilizando PHP, CSS e jQuery, bem como a criação de páginas em WordPress. Além disso, desempenhei um papel fundamental na coleta de requisitos, na proposição de soluções e na implementação no cliente, visando atender às necessidades específicas de cada projeto."
-        }
+        "jobs": [
+          {
+            "title": "Desenvolvedor PHP",
+            "duration": "Fevereiro 2015 à Agosto 2016",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["PHP", "JavaScript", "MySQL"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": ["WordPress", "jQuery"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Kanban"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["SVN"]
+              }
+            ],
+            "description": "Desenvolvimento e manutenção de sites para pequenas e médias empresas. Durante esse período, fui responsável pelo desenvolvimento de páginas utilizando PHP, CSS e jQuery, bem como a criação de páginas em WordPress. Além disso, desempenhei um papel fundamental na coleta de requisitos, na proposição de soluções e na implementação no cliente, visando atender às necessidades específicas de cada projeto."
+          }
+        ]
       },
       {
         "company": {
@@ -335,29 +342,31 @@
           "ribbonFontColor": "text-white",
           "ribbonDescription": "impulsionado pela"
         },
-        "job": {
-          "title": "Estagiário em Engenharia de Software",
-          "duration": "Maio 2014 à August 2014",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["Node.js", "Cloudant"]
-            },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": ["Express"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Waterfall"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["GIT"]
-            }
-          ],
-          "description": "Estágio de verão pelo programa graduação-sanduíche \"Ciência sem fronteiras\" na Universidade de Toronto. Durante o periodo que estagiei na Cognitive Class (antigamente chamada Big Data Univesity) pude aprender diversas tecnologias cloud da IBM e pude escrever artigos introdutórios para sua plataforma SaaS Bluemix. Dentre as tecnologias aprendidas destaca-se Node.js e Cloudant onde resultou na publicação de um artigo no portal da IBM e traduzidos em diversas linguas. O formato do estágio se dava através da mentoria de funcionários da IBM que nos recebeu, nos apresentou as ferramentas, nos forneceu acesso e local de trabalho durante todo o periodo de trabalho."
-        }
+        "jobs": [
+          {
+            "title": "Estagiário em Engenharia de Software",
+            "duration": "Maio 2014 à August 2014",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["Node.js", "Cloudant"]
+              },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": ["Express"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Waterfall"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": ["GIT"]
+              }
+            ],
+            "description": "Estágio de verão pelo programa graduação-sanduíche \"Ciência sem fronteiras\" na Universidade de Toronto. Durante o periodo que estagiei na Cognitive Class (antigamente chamada Big Data Univesity) pude aprender diversas tecnologias cloud da IBM e pude escrever artigos introdutórios para sua plataforma SaaS Bluemix. Dentre as tecnologias aprendidas destaca-se Node.js e Cloudant onde resultou na publicação de um artigo no portal da IBM e traduzidos em diversas linguas. O formato do estágio se dava através da mentoria de funcionários da IBM que nos recebeu, nos apresentou as ferramentas, nos forneceu acesso e local de trabalho durante todo o periodo de trabalho."
+          }
+        ]
       },
       {
         "company": {
@@ -370,17 +379,19 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "não levar a sério"
         },
-        "job": {
-          "title": "Web Master & Web Designer",
-          "duration": "2003 to 2005",
-          "techStack": [
-            {
-              "category": "Tecnologias",
-              "stack": ["PHP", "HTML", "CSS"]
-            }
-          ],
-          "description": "Eu não falei? Minha primeira experiência em desenvolvimento web foi ainda criança aos 13 anos quando procurava o que fazer em uma época onde o acesso à internet era limitado mas a vontade em aprender a fazer sites ja existia. Aprendi a utilisar Microsoft Frontpage e Dreamweaver e comecei a desenvolver meu primeiro site de pokémon que se chamaria Blaziken Domain. Apesar de todo o amadorismo, esse projeto me possibilitou fazer os primeiros passos em PHP, entender conceitos importantes como \"Don't repeat yourself\" e me deu a certeza de que era isso que eu gostaria de fazer pelo resto da minha vida: desenvolver. O site acabou tendo um pequeno sucesso durante o tempo em que esteve online chegando à 500 visitas diàrias, segundo os contadores de visita da época. Ao clicar no Blaziken ao lado você pode ser redirecionado ao Wayback Machine na minha pagina (ou o que sobrou dela) de 2004. O site esta todo em portugues mas na sessao \"Equipe\" ainda é possîvel ler o meu nome! :)"
-        }
+        "jobs": [
+          {
+            "title": "Web Master & Web Designer",
+            "duration": "2003 to 2005",
+            "techStack": [
+              {
+                "category": "Tecnologias",
+                "stack": ["PHP", "HTML", "CSS"]
+              }
+            ],
+            "description": "Eu não falei? Minha primeira experiência em desenvolvimento web foi ainda criança aos 13 anos quando procurava o que fazer em uma época onde o acesso à internet era limitado mas a vontade em aprender a fazer sites ja existia. Aprendi a utilisar Microsoft Frontpage e Dreamweaver e comecei a desenvolver meu primeiro site de pokémon que se chamaria Blaziken Domain. Apesar de todo o amadorismo, esse projeto me possibilitou fazer os primeiros passos em PHP, entender conceitos importantes como \"Don't repeat yourself\" e me deu a certeza de que era isso que eu gostaria de fazer pelo resto da minha vida: desenvolver. O site acabou tendo um pequeno sucesso durante o tempo em que esteve online chegando à 500 visitas diàrias, segundo os contadores de visita da época. Ao clicar no Blaziken ao lado você pode ser redirecionado ao Wayback Machine na minha pagina (ou o que sobrou dela) de 2004. O site esta todo em portugues mas na sessao \"Equipe\" ainda é possîvel ler o meu nome! :)"
+          }
+        ]
       }
     ]
   },
