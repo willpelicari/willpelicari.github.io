@@ -2,15 +2,13 @@ import { useContext, useEffect, useState } from 'react'
 import { FilterContext } from '../contexts/FilterContext'
 
 interface TagProps {
-  key: number
   bgColor?: string
   value: string
 }
 
 export default function Tag({
   bgColor = 'bg-gray-100 dark:bg-gray-900',
-  value,
-  ...props
+  value
 }: TagProps) {
   const filterContext = useContext(FilterContext)
   const [isSelected, setTagAsSelected] = useState(false)
@@ -35,7 +33,6 @@ export default function Tag({
   return (
     <button
       onClick={() => switchTag(value)}
-      key={props.key}
       className={`m-1 inline-block ${
         isSelected
           ? 'text-green-700 dark:text-green-400 bg-green-500/10 dark:bg-green-950 ring-green-600/20 dark:ring-green-500/20'

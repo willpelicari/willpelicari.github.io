@@ -16,8 +16,29 @@ function App() {
 
   useEffect(() => {
     fetch('./data/portfolio-' + i18n.language + '.json')
-      .then((res) => res.json())
-      .then((result) => setContent(result))
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`)
+        }
+        return res.json()
+      })
+      .then((result) => {
+        setContent(result)
+      })
+      .catch((error) => {
+        console.error('Error loading portfolio data:', error)
+        // Fallback to English if the requested language fails
+        if (i18n.language !== 'en') {
+          fetch('./data/portfolio-en.json')
+            .then((res) => res.json())
+            .then((result) => {
+              setContent(result)
+            })
+            .catch((fallbackError) => {
+              console.error('Error loading fallback data:', fallbackError)
+            })
+        }
+      })
   }, [i18n.language])
 
   return (

@@ -2,29 +2,90 @@
 <html lang="en">
   <head>
     <title>Wilton Pelicari</title>
-    
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="title" content="Wilton Pelicari - Full Stack Developer">
-    <meta name="description" content="Wilton Pelicari's portfolio">
-    <meta name="keywords" content="Full Stack Developer, Software Developer, Desenvolvedor Fullstack, Développeur Full Stack, Fullstack">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="author" content="Wilton Pelicari">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+    <meta name="title" content="Wilton Pelicari - Full Stack Developer" />
+    <meta
+      name="description"
+      content="Wilton Pelicari's portfolio - Full Stack Developer with expertise in .NET, React, and modern web technologies. View my experience and projects."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Software Developer, .NET, React, TypeScript, C#, JavaScript, Web Development, Desenvolvedor Fullstack, Développeur Full Stack"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Wilton Pelicari" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://willpelicari.github.io/" />
+    <meta
+      property="og:title"
+      content="Wilton Pelicari - Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack Developer with expertise in .NET, React, and modern web technologies. View my experience and projects."
+    />
+    <meta
+      property="og:image"
+      content="https://willpelicari.github.io/main-photo.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://willpelicari.github.io/" />
+    <meta
+      property="twitter:title"
+      content="Wilton Pelicari - Full Stack Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Full Stack Developer with expertise in .NET, React, and modern web technologies. View my experience and projects."
+    />
+    <meta
+      property="twitter:image"
+      content="https://willpelicari.github.io/main-photo.jpg"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+    />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {})
+            .catch((registrationError) => {})
+        })
+      }
+    </script>
   </body>
 </html>

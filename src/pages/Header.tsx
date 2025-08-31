@@ -62,15 +62,21 @@ export default function Header() {
           <span>{secondLogoPart}</span>
         </div>
         <div className="block lg:hidden">
-          <svg
+          <button
             onClick={() => setMobileMenu(!showMenu)}
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+            className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+            aria-label="Toggle menu"
+            aria-expanded={showMenu}
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+            <svg
+              className="fill-current h-6 w-6"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
         </div>
         <div
           className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
@@ -95,8 +101,13 @@ export default function Header() {
           >
             <div className="mr-5 mt-5 md:mt-auto flex">
               <button
-                className="p-2 rounded-full bg-slate-500"
+                className="p-2 rounded-full bg-slate-500 hover:bg-slate-600 focus:outline-none focus:bg-slate-600"
                 onClick={setNewTheme}
+                aria-label={
+                  theme === Themes.light
+                    ? 'Switch to dark mode'
+                    : 'Switch to light mode'
+                }
               >
                 {theme === Themes.light && (
                   <BsMoonStarsFill
@@ -114,20 +125,23 @@ export default function Header() {
             </div>
             <div className="mr-5 flex">
               <button
-                className="mr-3"
-                onClick={() => i18n.changeLanguage("en")}
+                className="mr-3 px-2 py-1 rounded hover:bg-slate-700 focus:outline-none focus:bg-slate-700"
+                onClick={() => i18n.changeLanguage('en')}
+                aria-label="Switch to English"
               >
                 EN
               </button>
               <button
-                className="mr-3"
-                onClick={() => i18n.changeLanguage("fr")}
+                className="mr-3 px-2 py-1 rounded hover:bg-slate-700 focus:outline-none focus:bg-slate-700"
+                onClick={() => i18n.changeLanguage('fr')}
+                aria-label="Switch to French"
               >
                 FR
               </button>
               <button
-                className="mr-3"
-                onClick={() => i18n.changeLanguage("pt")}
+                className="mr-3 px-2 py-1 rounded hover:bg-slate-700 focus:outline-none focus:bg-slate-700"
+                onClick={() => i18n.changeLanguage('pt')}
+                aria-label="Switch to Portuguese"
               >
                 PT
               </button>

@@ -46,6 +46,7 @@ export type Company = {
   logo: string
   name: string
   link: string
+  invertInDarkMode?: boolean
 }
 
 export type ThirdParty = {
@@ -83,6 +84,7 @@ export type Experiences = {
 export type SocialMedia = {
   icon: string
   link: string
+  invertInDarkMode?: boolean
 }
 
 export type Footer = {

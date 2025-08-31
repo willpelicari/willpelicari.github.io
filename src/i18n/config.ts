@@ -5,11 +5,17 @@ import { initReactI18next } from 'react-i18next'
 export const RESOURCES = {
   en: {
     translation: 'portfolio-en.json'
+  },
+  fr: {
+    translation: 'portfolio-fr.json'
+  },
+  pt: {
+    translation: 'portfolio-pt.json'
   }
 }
 
 i18next.use(initReactI18next).init({
-  lng: 'fr',
+  lng: 'en',
   debug: false,
   resources: RESOURCES,
   fallbackLng: 'en'

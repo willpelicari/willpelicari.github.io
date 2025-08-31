@@ -4,20 +4,17 @@ import { FilterContext } from '../contexts/FilterContext'
 import Tag from './Tag'
 
 interface ExperienceEntryProps {
-  key: number
   entry: Entry
 }
 
-export default function ExperienceEntry({
-  entry,
-  ...props
-}: ExperienceEntryProps) {
+export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
   const consultingText =
     entry?.thirdParty?.ribbonDescription ?? 'consulting for '
   const bgColor = entry?.thirdParty?.ribbonBgColor ?? 'bg-green-400'
   const fontColor = entry?.thirdParty?.ribbonFontColor ?? 'text-black'
 
   const [showExperience, setShowExperience] = useState(true)
+  const [imageError, setImageError] = useState(false)
   const filterContext = useContext(FilterContext)
 
   useEffect(() => {
@@ -42,14 +39,14 @@ export default function ExperienceEntry({
           !showExperience ? 'hidden' : 'block md:flex'
         } items-start space-x-3 mb-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white shadow-sm px-4 py-8 rounded`}
       >
-        <div key={props.key} className="text-center w-fit mx-auto">
+        <div className="text-center w-fit mx-auto">
           <a
             href={entry.company.link}
             target="_blank"
             aria-label={entry.company.name}
             rel="noreferrer"
           >
-            {
+            {!imageError ? (
               <img
                 src={entry.company.logo}
                 style={{
@@ -59,8 +56,24 @@ export default function ExperienceEntry({
                   marginRight: 5
                 }}
                 alt={entry.company.name}
+                onError={() => setImageError(true)}
+                className={entry.company.invertInDarkMode ? "dark:invert dark:brightness-0 dark:contrast-200" : ""}
               />
-            }
+            ) : (
+              <div
+                className="w-37.5 h-37.5 bg-slate-400 dark:bg-slate-600 rounded flex items-center justify-center"
+                style={{
+                  width: 150,
+                  maxWidth: 150,
+                  minHeight: 150,
+                  marginRight: 5
+                }}
+              >
+                <span className="text-slate-600 dark:text-slate-400 text-sm">
+                  {entry.company.name}
+                </span>
+              </div>
+            )}
           </a>
           {entry.thirdParty && (
             <div
