@@ -30,7 +30,7 @@
     }
   },
   "greeting": {
-    "picture": "./main-photo.jpg",
+    "picture": "/main-photo.jpg",
     "message": "L'apprentissage est ma passion. Le partage est ma mission."
   },
   "values": {
@@ -38,17 +38,17 @@
     "description": "J'ai commencé à coder étant enfant (sérieusement !), mais je travaille professionnellement dans ce domaine depuis 2014. 😅",
     "cards": [
       {
-        "icon": "./icons/dotnet.svg",
+        "icon": "/icons/dotnet.svg",
         "title": "Orienté Windows",
         "description": "J'ai commencé le développement orienté objet avec .NET et j'ai continué à travailler sur cette plateforme depuis. (Et j'en suis fier :) )"
       },
       {
-        "icon": "./icons/react.svg",
+        "icon": "/icons/react.svg",
         "title": "Pour chaque action, une REACT-ion",
         "description": "J'ai travaillé avec différents frameworks côté client, mais j'adore vraiment développer avec REACT. Ce site web entier a été développé avec lui."
       },
       {
-        "icon": "./icons/solid.svg",
+        "icon": "/icons/solid.svg",
         "title": "Faible couplage, forte cohésion",
         "description": "Passionné par les principes SOLID, je développe de manière pragmatique, je parle, et j'apprends sans cesse ce qui fait un bon code."
       }
@@ -63,13 +63,14 @@
     "entries": [
       {
         "company": {
-          "logo": "./icons/sherweb.svg",
+          "logo": "/icons/sherweb.svg",
           "name": "Sherweb",
-          "link": "http://www.sherweb.com/"
+          "link": "http://www.sherweb.com/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
-            "title": "Développeur Full Stack - Projet SSP",
+            "title": "Développeur Full Stack - (Projet SSP)",
             "duration": "Depuis novembre 2024",
             "techStack": [
               {
@@ -92,7 +93,7 @@
             "description": "Après trois ans dans le projet C2, Je commence une nouvelle page de ma carrière dans le projet SSP. Des nouvelles à venir."
           },
           {
-            "title": "Développeur Full Stack - Projet C2",
+            "title": "Développeur Full Stack - (Projet C2)",
             "duration": "Octobre 2021 à Octobre 2024",
             "techStack": [
               {
@@ -118,9 +119,10 @@
       },
       {
         "company": {
-          "logo": "./icons/revenu-quebec.svg",
+          "logo": "/icons/revenu-quebec.svg",
           "name": "Revenu Québec",
-          "link": "http://www.revenuquebec.ca/"
+          "link": "http://www.revenuquebec.ca/",
+          "invertInDarkMode": false
         },
         "thirdParty": {
           "name": "SERTI",
@@ -157,9 +159,10 @@
       },
       {
         "company": {
-          "logo": "./icons/industrielle-alliance.svg",
+          "logo": "/icons/industrielle-alliance.svg",
           "name": "Industrielle Alliance",
-          "link": "https://ia.ca/"
+          "link": "https://ia.ca/",
+          "invertInDarkMode": true
         },
         "thirdParty": {
           "name": "COFOMO",
@@ -196,9 +199,10 @@
       },
       {
         "company": {
-          "logo": "./icons/industrielle-alliance.svg",
+          "logo": "/icons/industrielle-alliance.svg",
           "name": "Industrielle Alliance",
-          "link": "https://ia.ca/"
+          "link": "https://ia.ca/",
+          "invertInDarkMode": true
         },
         "thirdParty": {
           "name": "COFOMO",
@@ -235,9 +239,10 @@
       },
       {
         "company": {
-          "logo": "./icons/db1-global-software.svg",
+          "logo": "/icons/db1-global-software.svg",
           "name": "DB1 Global Software",
-          "link": "https://db1global.com/"
+          "link": "https://db1global.com/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -267,9 +272,10 @@
       },
       {
         "company": {
-          "logo": "./icons/paschoalotto.svg",
+          "logo": "/icons/paschoalotto.svg",
           "name": "Paschoalotto",
-          "link": "https://paschoalotto.com.br/"
+          "link": "https://paschoalotto.com.br/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -299,9 +305,10 @@
       },
       {
         "company": {
-          "logo": "./icons/lecom.svg",
+          "logo": "/icons/lecom.svg",
           "name": "Lecom",
-          "link": "http://www.lecom.com.br/"
+          "link": "http://www.lecom.com.br/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -331,9 +338,10 @@
       },
       {
         "company": {
-          "logo": "./icons/big-data-university.webp",
+          "logo": "/icons/big-data-university.webp",
           "name": "Cognitive Class (anciennement Big Data University)",
-          "link": "https://cognitiveclass.ai/"
+          "link": "https://cognitiveclass.ai/",
+          "invertInDarkMode": false
         },
         "thirdParty": {
           "name": "IBM",
@@ -342,56 +350,29 @@
           "ribbonFontColor": "text-white",
           "ribbonDescription": "impulsioné par"
         },
-        "jobs": [
-          {
-            "title": "Stagiaire en génie logiciel",
-            "duration": "Mai 2014 à août 2014",
-            "techStack": [
-              {
-                "category": "Technologies",
-                "stack": ["Node.js", "Cloudant"]
-              },
-              {
-                "category": "Frameworks & Libraries",
-                "stack": ["Express"]
-              },
-              {
-                "category": "Methodologies",
-                "stack": ["Cascade"]
-              },
-              {
-                "category": "Outils",
-                "stack": ["GIT"]
-              }
-            ],
-            "description": "Stage d'été dans le cadre du programme d'échange \"Science Without Borders\" à l'Université de Toronto. Pendant mon stage chez Cognitive Class (anciennement connue sous le nom de Big Data University), j'ai appris diverses technologies cloud IBM et rédigé des articles d'introduction pour leur plateforme SaaS, Bluemix. Parmi les technologies que j'ai apprises, figuraient Node.js et Cloudant, ce qui a abouti à la publication d'un article sur le portail IBM et à des traductions dans plusieurs langues. Le format du stage comprenait un encadrement par les employés d'IBM qui nous ont présenté les outils, fourni un accès et un espace de travail tout au long de la période de travail."
-          }
-        ]
-      },
-      {
-        "company": {
-          "logo": "./icons/blaziken-domain.svg",
-          "name": "Blaziken Domain",
-          "link": "https://web.archive.org/web/20040714173604/http://blazikendomain.clubedohost.com/"
-        },
-        "thirdParty": {
-          "ribbonBgColor": "bg-yellow-400",
-          "ribbonFontColor": "text-black",
-          "ribbonDescription": "à ne pas prendre au sérieux"
-        },
-        "jobs": [
-          {
-            "title": "Webmestre et concepteur de sites web",
-            "duration": "2003 à 2005",
-            "techStack": [
-              {
-                "category": "Technologies",
-                "stack": ["PHP", "HTML", "CSS"]
-              }
-            ],
-            "description": "Ai-je mentionné ? Ma première expérience de développement web remonte à l'enfance, à l'âge de 13 ans, lorsque je cherchais quelque chose à faire à une époque où l'accès à Internet était limité, mais où le désir d'apprendre à créer des sites web existait déjà. J'ai appris à utiliser Microsoft Frontpage et Dreamweaver et j'ai commencé à développer mon premier site web Pokémon appelé Blaziken Domain. Malgré tout l'amateurisme, ce projet m'a permis de faire mes premiers pas en PHP, de comprendre des concepts importants comme 'Ne vous répétez pas' et de m'assurer que c'était ce que je voulais faire pour le reste de ma vie."
-          }
-        ]
+        "job": {
+          "title": "Stagiaire en génie logiciel",
+          "duration": "Mai 2014 à août 2014",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["Node.js", "Cloudant"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": ["Express"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Cascade"]
+            },
+            {
+              "category": "Outils",
+              "stack": ["GIT"]
+            }
+          ],
+          "description": "Stage d'été dans le cadre du programme d'échange \"Science Without Borders\" à l'Université de Toronto. Pendant mon stage chez Cognitive Class (anciennement connue sous le nom de Big Data University), j'ai appris diverses technologies cloud IBM et rédigé des articles d'introduction pour leur plateforme SaaS, Bluemix. Parmi les technologies que j'ai apprises, figuraient Node.js et Cloudant, ce qui a abouti à la publication d'un article sur le portail IBM et à des traductions dans plusieurs langues. Le format du stage comprenait un encadrement par les employés d'IBM qui nous ont présenté les outils, fourni un accès et un espace de travail tout au long de la période de travail."
+        }
       }
     ]
   },
@@ -400,12 +381,14 @@
     "link": "https://github.com/willpelicari/JsonBasedPortfolio",
     "socialMedia": [
       {
-        "icon": "./icons/github-mark.svg",
-        "link": "https://github.com/willpelicari"
+        "icon": "/icons/github-mark.svg",
+        "link": "https://github.com/willpelicari",
+        "invertInDarkMode": true
       },
       {
-        "icon": "./icons/linkedin.svg",
-        "link": "https://www.linkedin.com/in/wiltonpelicari/"
+        "icon": "/icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/wiltonpelicari/",
+        "invertInDarkMode": false
       }
     ]
   }

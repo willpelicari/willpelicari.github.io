@@ -30,7 +30,7 @@
     }
   },
   "greeting": {
-    "picture": "./main-photo.jpg",
+    "picture": "/main-photo.jpg",
     "message": "Learning is my passion. Sharing is my mission."
   },
   "values": {
@@ -38,17 +38,17 @@
     "description": "I started coding as a child (seriously!) but have been working professionally in the field since 2014. 😅",
     "cards": [
       {
-        "icon": "./icons/dotnet.svg",
+        "icon": "/icons/dotnet.svg",
         "title": "Windows Oriented",
         "description": "I began object-oriented development with .NET and have continued working on this platform since then. (And I'm proud of it :) )"
       },
       {
-        "icon": "./icons/react.svg",
+        "icon": "/icons/react.svg",
         "title": "For every action, a REACT-ion",
         "description": "I've worked with different client-side frameworks, but I really enjoy developing with REACT. This entire website was developed using it."
       },
       {
-        "icon": "./icons/solid.svg",
+        "icon": "/icons/solid.svg",
         "title": "Low coupling, high cohesion",
         "description": "Passionate about SOLID principles, I pragmatically develop, talk, and endlessly learn what makes good code."
       }
@@ -63,9 +63,10 @@
     "entries": [
       {
         "company": {
-          "logo": "./icons/sherweb.svg",
+          "logo": "/icons/sherweb.svg",
           "name": "Sherweb",
-          "link": "http://www.sherweb.com/"
+          "link": "http://www.sherweb.com/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -118,9 +119,10 @@
       },
       {
         "company": {
-          "logo": "./icons/revenu-quebec.svg",
+          "logo": "/icons/revenu-quebec.svg",
           "name": "Revenu Québec",
-          "link": "http://www.revenuquebec.ca/"
+          "link": "http://www.revenuquebec.ca/",
+          "invertInDarkMode": false
         },
         "thirdParty": {
           "name": "SERTI",
@@ -157,9 +159,10 @@
       },
       {
         "company": {
-          "logo": "./icons/industrielle-alliance.svg",
+          "logo": "/icons/industrielle-alliance.svg",
           "name": "Industrielle Alliance",
-          "link": "https://ia.ca/"
+          "link": "https://ia.ca/",
+          "invertInDarkMode": true
         },
         "thirdParty": {
           "name": "COFOMO",
@@ -196,9 +199,10 @@
       },
       {
         "company": {
-          "logo": "./icons/industrielle-alliance.svg",
+          "logo": "/icons/industrielle-alliance.svg",
           "name": "Industrielle Alliance",
-          "link": "https://ia.ca/"
+          "link": "https://ia.ca/",
+          "invertInDarkMode": true
         },
         "thirdParty": {
           "name": "COFOMO",
@@ -235,9 +239,10 @@
       },
       {
         "company": {
-          "logo": "./icons/db1-global-software.svg",
+          "logo": "/icons/db1-global-software.svg",
           "name": "DB1 Global Software",
-          "link": "https://db1global.com/"
+          "link": "https://db1global.com/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -267,9 +272,10 @@
       },
       {
         "company": {
-          "logo": "./icons/paschoalotto.svg",
+          "logo": "/icons/paschoalotto.svg",
           "name": "Paschoalotto",
-          "link": "https://paschoalotto.com.br/"
+          "link": "https://paschoalotto.com.br/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -299,9 +305,10 @@
       },
       {
         "company": {
-          "logo": "./icons/lecom.svg",
+          "logo": "/icons/lecom.svg",
           "name": "Lecom",
-          "link": "http://www.lecom.com.br/"
+          "link": "http://www.lecom.com.br/",
+          "invertInDarkMode": true
         },
         "jobs": [
           {
@@ -331,9 +338,10 @@
       },
       {
         "company": {
-          "logo": "./icons/big-data-university.webp",
+          "logo": "/icons/big-data-university.webp",
           "name": "Cognitive Class (formerly Big Data University)",
-          "link": "https://cognitiveclass.ai/"
+          "link": "https://cognitiveclass.ai/",
+          "invertInDarkMode": false
         },
         "thirdParty": {
           "name": "IBM",
@@ -342,56 +350,29 @@
           "ribbonFontColor": "text-white",
           "ribbonDescription": "driven by"
         },
-        "jobs": [
-          {
-            "title": "Software Engineering Intern",
-            "duration": "May 2014 to August 2014",
-            "techStack": [
-              {
-                "category": "Technologies",
-                "stack": ["Node.js", "Cloudant"]
-              },
-              {
-                "category": "Frameworks & Libraries",
-                "stack": ["Express"]
-              },
-              {
-                "category": "Methodologies",
-                "stack": ["Waterfall"]
-              },
-              {
-                "category": "Tools",
-                "stack": ["GIT"]
-              }
-            ],
-            "description": "Summer internship through the \"Science Without Borders\" exchange program at the University of Toronto. During my internship at Cognitive Class (formerly known as Big Data University), I learned various IBM cloud technologies and wrote introductory articles for their SaaS platform, Bluemix. Among the technologies I learned were Node.js and Cloudant, which resulted in the publication of an article on the IBM portal and translations into multiple languages. The internship format included mentoring by IBM employees who introduced us to the tools, provided access, and a workspace throughout the work period."
-          }
-        ]
-      },
-      {
-        "company": {
-          "logo": "./icons/blaziken-domain.svg",
-          "name": "Blaziken Domain",
-          "link": "https://web.archive.org/web/20040714173604/http://blazikendomain.clubedohost.com/"
-        },
-        "thirdParty": {
-          "ribbonBgColor": "bg-yellow-400",
-          "ribbonFontColor": "text-black",
-          "ribbonDescription": "not to be taken seriously"
-        },
-        "jobs": [
-          {
-            "title": "Web Master & Web Designer",
-            "duration": "2003 to 2005",
-            "techStack": [
-              {
-                "category": "Technologies",
-                "stack": ["PHP", "HTML", "CSS"]
-              }
-            ],
-            "description": "Did I mention? My first web development experience was as a child at the age of 13 when I was looking for something to do in a time when internet access was limited, but the desire to learn how to create websites already existed. I learned to use Microsoft Frontpage and Dreamweaver and started developing my first Pokémon website called Blaziken Domain. Despite all the amateurism, this project allowed me to take my first steps in PHP, understand important concepts like 'Don't repeat yourself,' and gave me the certainty that this was what I wanted to do for the rest of my life: develop. The site ended up having a small success during the time it was online, reaching 500 daily visits, according to the visitor counters of the time. By clicking on the Blaziken icon, you can be redirected to the Wayback Machine to see my 2004 page (or what's left of it). The site is in Portuguese, but in the 'Team' section, you can still read my name! :)"
-          }
-        ]
+        "job": {
+          "title": "Software Engineering Intern",
+          "duration": "May 2014 to August 2014",
+          "techStack": [
+            {
+              "category": "Technologies",
+              "stack": ["Node.js", "Cloudant"]
+            },
+            {
+              "category": "Frameworks & Libraries",
+              "stack": ["Express"]
+            },
+            {
+              "category": "Methodologies",
+              "stack": ["Waterfall"]
+            },
+            {
+              "category": "Tools",
+              "stack": ["GIT"]
+            }
+          ],
+          "description": "Summer internship through the \"Science Without Borders\" exchange program at the University of Toronto. During my internship at Cognitive Class (formerly known as Big Data University), I learned various IBM cloud technologies and wrote introductory articles for their SaaS platform, Bluemix. Among the technologies I learned were Node.js and Cloudant, which resulted in the publication of an article on the IBM portal and translations into multiple languages. The internship format included mentoring by IBM employees who introduced us to the tools, provided access, and a workspace throughout the work period."
+        }
       }
     ]
   },
@@ -400,12 +381,14 @@
     "link": "https://github.com/willpelicari/JsonBasedPortfolio",
     "socialMedia": [
       {
-        "icon": "./icons/github-mark.svg",
-        "link": "https://github.com/willpelicari"
+        "icon": "/icons/github-mark.svg",
+        "link": "https://github.com/willpelicari",
+        "invertInDarkMode": true
       },
       {
-        "icon": "./icons/linkedin.svg",
-        "link": "https://www.linkedin.com/in/wiltonpelicari/"
+        "icon": "/icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/wiltonpelicari/",
+        "invertInDarkMode": false
       }
     ]
   }
