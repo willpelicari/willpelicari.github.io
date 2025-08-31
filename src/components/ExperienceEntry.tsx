@@ -4,10 +4,14 @@ import { FilterContext } from '../contexts/FilterContext'
 import Tag from './Tag'
 
 interface ExperienceEntryProps {
+  key: number
   entry: Entry
 }
 
-export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
+export default function ExperienceEntry({
+  entry,
+  ...props
+}: ExperienceEntryProps) {
   const consultingText =
     entry?.thirdParty?.ribbonDescription ?? 'consulting for '
   const bgColor = entry?.thirdParty?.ribbonBgColor ?? 'bg-green-400'
@@ -21,8 +25,9 @@ export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
     if (filterContext.filteredTags.length === 0) {
       setShowExperience(true)
     } else {
+      const jobs = entry.jobs || (entry.job ? [entry.job] : [])
       setShowExperience(
-        entry.jobs
+        jobs
           .map((x) => x.techStack)
           .flat()
           .map((x) => x.stack)
@@ -30,7 +35,7 @@ export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
           .some((tech) => filterContext.filteredTags.includes(tech))
       )
     }
-  }, [entry.jobs, filterContext.filteredTags])
+  }, [entry.jobs, entry.job, filterContext.filteredTags])
 
   return (
     entry && (
@@ -39,7 +44,7 @@ export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
           !showExperience ? 'hidden' : 'block md:flex'
         } items-start space-x-3 mb-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white shadow-sm px-4 py-8 rounded`}
       >
-        <div className="text-center w-fit mx-auto">
+        <div key={props.key} className="text-center w-fit mx-auto">
           <a
             href={entry.company.link}
             target="_blank"
@@ -57,7 +62,11 @@ export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
                 }}
                 alt={entry.company.name}
                 onError={() => setImageError(true)}
-                className={entry.company.invertInDarkMode ? "dark:invert dark:brightness-0 dark:contrast-200" : ""}
+                className={
+                  entry.company.invertInDarkMode
+                    ? 'dark:invert dark:brightness-0 dark:contrast-200'
+                    : ''
+                }
               />
             ) : (
               <div
@@ -93,8 +102,8 @@ export default function ExperienceEntry({ entry }: ExperienceEntryProps) {
           )}
         </div>
         <div className="grid gap-10">
-          {entry.jobs.map((job, key) => (
-            <div key={`${props.key}-${key}`} className="space-y-2">
+          {(entry.jobs || (entry.job ? [entry.job] : [])).map((job, key) => (
+            <div key={`${entry.company.name}-${key}`} className="space-y-2">
               <div className="flex-col md:flex-row mb-5 flex items-center justify-between space-x-4 mr-4 text-center">
                 <h4 className="text-xl md:text-2xl font-semibold">
                   {job.title}

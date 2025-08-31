@@ -71,8 +71,9 @@ export type Job = {
 
 export type Entry = {
   company: Company
-  thirdParty: ThirdParty
-  jobs: Job[]
+  thirdParty?: ThirdParty
+  jobs?: Job[]
+  job?: Job
 }
 
 export type Experiences = {
