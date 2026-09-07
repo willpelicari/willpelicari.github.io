@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cataloc — Privacy Policy</title>
 
-    <meta name="description" content="Privacy policy for Cataloc. Cataloc collects nothing: no account, no server, no analytics, no advertising. Everything stays on your device." />
+    <meta name="description" content="Privacy policy for Cataloc. Cataloc collects nothing: no account, no server, no analytics, no advertising. Your catalogue stays on your device unless you choose to sync, share or export it." />
     <meta name="author" content="Wilton Pelicari" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/privacy" />
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/privacy" />
     <meta property="og:title" content="Cataloc — Privacy Policy" />
-    <meta property="og:description" content="Cataloc collects nothing: no account, no server, no analytics, no advertising. Everything stays on your device." />
+    <meta property="og:description" content="Cataloc collects nothing: no account, no server, no analytics, no advertising. Your catalogue stays on your device unless you choose to sync, share or export it." />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -102,6 +102,22 @@
         text-underline-offset: 2px;
       }
 
+      h3 {
+        font-size: 1.02rem;
+        line-height: 1.4;
+        margin: 1.75rem 0 0.6rem;
+        color: var(--text);
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.88em;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 0.05em 0.35em;
+      }
+
       .lede {
         background: var(--surface);
         border: 1px solid var(--border);
@@ -128,20 +144,23 @@
   <body>
     <main>
       <h1>Cataloc — Privacy Policy</h1>
-      <p class="updated">Last updated: 6 September 2026</p>
+      <p class="updated">Last updated: 7 September 2026</p>
 
       <section class="lede">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">The short version</h2>
         <p>
           Cataloc does not collect anything. There is no account, no server, no
           analytics, no advertising and no third-party SDK that reports on you.
-          Everything you put into the app stays on your device.
+          Everything you put into the app stays on your device unless you
+          deliberately send it somewhere.
         </p>
         <p>
-          The one time data leaves your phone is when <em>you</em> choose to sync a
-          household with someone else's phone on your own Wi-Fi. That connection is
-          directly between the two phones. It does not touch the internet, and the
-          developer has no part in it and no access to it.
+          There are four ways data can leave your phone, and you have to set up
+          every one of them: pairing with another phone on your Wi-Fi, syncing
+          through a shared folder whose address you supply, sharing a list as a
+          web page, and exporting your data. In none of them does anything pass
+          through the developer, who has no access to your catalogue by any
+          route.
         </p>
       </section>
 
@@ -157,6 +176,10 @@
         <li>Your settings: language, appearance, and which household you last opened.</li>
       </ul>
       <p>
+        Households are kept separate from one another: each has its own
+        catalogue, search and history, and nothing passes between them.
+      </p>
+      <p>
         None of this is transmitted anywhere by default. It is not backed up to any
         service run by the developer, because no such service exists.
       </p>
@@ -166,15 +189,18 @@
         between you and Apple or Google, and is governed by their privacy policies.
       </p>
 
-      <h2>Syncing with another phone</h2>
+      <h2>Syncing a household across devices</h2>
       <p>
-        Syncing is entirely opt-in and happens only while you are on the invite or
-        join screen.
+        Syncing is entirely opt-in. Neither method is set up out of the box, and
+        there is no Cataloc account or Cataloc server in either one.
       </p>
+
+      <h3>Pairing two phones directly</h3>
       <ul>
         <li>
-          One phone shares a household and displays a single-use code, valid for
-          five minutes. The other phone must present that code to connect.
+          One phone shares a household and displays a QR code and a single-use
+          code, valid for five minutes. The other phone must present that code to
+          connect.
         </li>
         <li>
           The two phones then exchange that household directly over your local
@@ -182,38 +208,93 @@
           photos attached to them.
         </li>
         <li>
-          Nothing is sent to the internet. There is no server in the middle, no
-          relay, and no copy retained anywhere by the developer.
+          Nothing is sent to the internet by this method. There is no server in
+          the middle, no relay, and no copy retained anywhere by the developer.
         </li>
         <li>
-          The connection is open only while that screen is on screen. Cataloc does
-          not listen on your network in the background and does not advertise
-          itself.
-        </li>
-        <li>
-          Each phone keeps its own complete copy. Removing a member on one phone
-          does not delete the copy already on the other — it only stops future
-          syncs.
+          The connection is open only while the invite or join screen is on
+          screen. Cataloc does not listen on your network in the background and
+          does not advertise itself.
         </li>
       </ul>
+
+      <h3>Syncing through a shared folder</h3>
       <p>
-        Be aware of what sharing means: once you sync a household with someone, they
-        hold a full copy of it, exactly as if you had handed them an export file.
+        Instead of pairing in person, you can point several devices at one shared
+        folder and let them keep each other current. This is off until you
+        configure it under Me → Sync.
+      </p>
+      <ul>
+        <li>
+          <strong>You choose the folder.</strong> It might be a drive on your own
+          network or hosting space of your own. Cataloc has no default provider
+          and no folder of its own, and the developer never learns the address
+          you use.
+        </li>
+        <li>
+          A copy of the household — items, photos and history — is written to that
+          folder. Anyone who can read the folder can read your catalogue, so treat
+          access to it exactly as you would access to the data itself.
+        </li>
+        <li>
+          <strong>Cataloc adds no encryption of its own.</strong> Protection in
+          transit is whatever the address you entered provides: an
+          <code>https://</code> folder is encrypted in transit, an
+          <code>http://</code> one is not. Prefer <code>https://</code>.
+        </li>
+        <li>
+          Whoever operates that folder — a hosting company, or you — is
+          responsible for it, under their terms rather than this policy.
+        </li>
+      </ul>
+
+      <p>
+        <strong>Either way, each device keeps its own complete copy.</strong>
+        Removing a member on one device does not delete the copy already on the
+        other — it only stops future syncs. Once you sync a household with
+        someone, they hold a full copy of it, exactly as if you had handed them an
+        export file.
       </p>
       <p>
         <strong>Device name.</strong> Each install has a name — taken from your
         device's own name unless you change it — and a random identifier. These are
-        shared only with phones you have paired with, so that changes can be
-        attributed to a person in the household's history. They are never sent
+        shared only with devices and folders you have set up, so that changes can
+        be attributed to a person in the household's history. They are never sent
         anywhere else.
+      </p>
+
+      <h2>Sharing, labels and export</h2>
+      <p>
+        <strong>Sharing a list.</strong> You can turn a shelf or a tag into a
+        single web page, photos included, and hand it to your device's share
+        sheet. It opens in any browser without an app or an account — which also
+        means anyone who receives the page or its link can see everything on it,
+        so share it only with people you would show the shelf to. If you enable
+        the "ask to borrow" button, the page carries a way to send a message back
+        to you.
+      </p>
+      <p>
+        <strong>Labels.</strong> A printed label can carry a QR code, a short code
+        and the container's name. Scanning the QR opens that container in Cataloc.
+        Each of those elements can be switched off before printing, so a box that
+        leaves the house need not carry its name or location on the outside.
+        Printing or sharing a label produces a PDF through your device's own print
+        and share systems.
+      </p>
+      <p>
+        <strong>Export everything.</strong> This writes a single JSON file
+        containing your data and photos, and hands it to your device's share
+        sheet. Where that file then goes is entirely your choice. Cataloc does not
+        upload it anywhere.
       </p>
 
       <h2>Permissions</h2>
       <p>
-        <strong>Camera</strong> — requested only when you tap "Take photo". The
-        image is written to the app's storage and is not uploaded. Declining the
-        camera does not block anything: you can still pick pictures from your
-        library, and items do not require a photo at all.
+        <strong>Camera</strong> — requested when you tap "Take photo", and when
+        you scan a label's QR code or a pairing code. Photographs are written to
+        the app's storage and are not uploaded. Declining the camera does not
+        block anything: you can still pick pictures from your library, and items
+        do not require a photo at all.
       </p>
       <p>
         <strong>Photo library</strong> — requested only when you tap "Library".
@@ -221,19 +302,21 @@
         own folder.
       </p>
       <p>
-        <strong>Local network (iOS).</strong> Requested the first time you sync, so
-        the two phones can find each other on your Wi-Fi. Used only for that, and
-        only while a sync screen is open.
+        <strong>Local network (iOS)</strong> — requested the first time you sync,
+        so that two phones can find each other on your Wi-Fi, or so Cataloc can
+        reach a shared folder held on your own network. Used only for syncing.
       </p>
       <p>
-        Cataloc requests no other permissions. It does not use location, contacts or
-        the microphone, and it never sends your data to the internet.
+        Cataloc requests no other permissions. It does not use location, contacts
+        or the microphone. It sends no notifications and shows no badges, so it
+        never asks to notify you.
       </p>
 
       <h2>In-app purchases</h2>
       <p>
-        Cataloc is free for one household and 100 containers and items. Cataloc PRO
-        is an optional subscription that removes both limits.
+        Cataloc is free for one household and 100 containers and items, with every
+        feature included. Cataloc PRO is an optional subscription that lifts both
+        limits; it is $2.99 per month or $14.99 per year.
       </p>
       <p>
         If you subscribe, the transaction is handled entirely by Apple or Google,
@@ -254,17 +337,6 @@
         stop.
       </p>
 
-      <h2>Sharing and export</h2>
-      <p>
-        "Export everything" writes a single JSON file containing your data and
-        photos, and hands it to your device's share sheet. Where that file then goes
-        is entirely your choice. Cataloc does not upload it anywhere.
-      </p>
-      <p>
-        Printing or sharing a label produces a PDF through your device's own print
-        and share systems.
-      </p>
-
       <h2>Deleting your data</h2>
       <p>
         "Delete all data" on the Me tab erases every household, container, item,
@@ -276,6 +348,11 @@
         therefore nothing to request the deletion of.
         <strong>Export first if you want to keep a copy</strong> — once it is gone,
         it is gone.
+      </p>
+      <p>
+        Copies you have already sent elsewhere are outside the app's reach: a
+        shared sync folder, a device you paired with, an exported file or a shared
+        page all have to be deleted where they now live.
       </p>
 
       <h2>Children</h2>
