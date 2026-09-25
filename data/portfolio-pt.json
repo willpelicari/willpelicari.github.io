@@ -1,91 +1,189 @@
 {
   "header": {
     "logo": "Wilton Pelicari",
-    "menu": [
-      {
-        "text": "Inicio",
-        "link": "#"
-      },
-      {
-        "text": "Valores",
-        "link": "#values"
-      },
-      {
-        "text": "Aplicativos",
-        "link": "#apps"
-      },
-      {
-        "text": "Competências",
-        "link": "#toolbox"
-      },
-      {
-        "text": "Experiências",
-        "link": "#experiences"
-      },
-      {
-        "text": "Meu Hobby",
-        "link": "https://www.strava.com/athletes/25213111",
-        "target": "_blank"
-      }
+    "nav": [
+      { "text": "Aplicativos", "path": "/apps" },
+      { "text": "Sobre", "path": "/about" },
+      { "text": "Experiências", "path": "/experiences" }
     ],
     "buttonCv": {
-      "text": "Baixe meu Curriculo!",
+      "text": "Currículo",
       "link": "./cv/wilton-pelicari-cv.pdf"
     }
   },
-  "greeting": {
-    "picture": "/main-photo.jpg",
-    "message": "Aprender é minha paixão. Compartilhar é minha missão."
+  "home": {
+    "heroTitle": "Aplicativos e sites que eu projeto, desenvolvo e publico. Do início ao fim.",
+    "byline": {
+      "name": "Wilton Pelicari",
+      "role": "Desenvolvedor de software",
+      "location": "Cidade de Québec",
+      "github": "GitHub",
+      "githubLink": "https://github.com/willpelicari",
+      "linkedin": "LinkedIn",
+      "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
+    },
+    "featured": {
+      "kicker": "03 — Em desenvolvimento",
+      "icon": "/icons/cataloc.png",
+      "name": "Cataloc",
+      "tagline": "Encontre qualquer coisa em casa.",
+      "learnMore": "Saiba mais",
+      "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
+      "support": "Suporte",
+      "supportLink": "/cataloc/support.html",
+      "breadcrumb": ["Garagem", "Prateleira de aço", "Caixa 1", "A barraca"]
+    },
+    "facts": [
+      "Funciona inteiramente no seu telefone. Sem conta, sem servidor, nada enviado.",
+      "iPhone, iPad e Android.",
+      "Gratuito para uma casa e 200 itens."
+    ],
+    "networkTitle": "A rede",
+    "allApps": "Todos os aplicativos"
   },
+  "apps": {
+    "kicker": "O que eu construí",
+    "title": "Todos os projetos",
+    "description": "Cada aplicativo tem sua própria página em wiltonpelicari.com. Eu desenvolvo e publico todos por conta própria.",
+    "filters": {
+      "all": "Todos",
+      "apps": "Aplicativos",
+      "websites": "Sites",
+      "inProgress": "Em andamento"
+    },
+    "featuredTagline": "Encontre qualquer coisa em casa",
+    "featuredDescription": "Um catálogo dos seus próprios pertences que funciona inteiramente no seu telefone. Fotografe uma prateleira, aninhe recipientes tão fundo quanto a realidade exigir, e a busca lhe dá o caminho completo até qualquer coisa que você tenha.",
+    "detailsLabel": "Detalhes",
+    "details": [
+      { "label": "Categoria", "value": "Inventário doméstico" },
+      { "label": "Plataformas", "value": "iPhone · iPad · Android" },
+      { "label": "Preço", "value": "Grátis · PRO a partir de US$ 2,99" },
+      { "label": "Conta", "value": "Nenhuma necessária" },
+      { "label": "Caminho", "value": "/cataloc" }
+    ],
+    "screenshot": "/uploads/01-home.png",
+    "screenshotAlt": "Tela inicial do Cataloc: 14 Alder Road com os lugares Porão, Entrada e Sala",
+    "getNotifiedLabel": "Seja avisado",
+    "getNotifiedText": "Siga no GitHub para ver os novos aplicativos assim que forem lançados.",
+    "getNotifiedLink": "https://github.com/willpelicari",
+    "getNotifiedLinkText": "github.com/willpelicari"
+  },
+  "network": [
+    {
+      "number": "01",
+      "kind": "website",
+      "initials": "{ }",
+      "initialsBg": "#e2e8f0",
+      "initialsFg": "#1e293b",
+      "initialsBordered": true,
+      "name": "JSON-based Portfolio",
+      "year": "2023",
+      "descriptor": "Modelo de portfólio",
+      "tileDescription": "2023 · Modelo de site · Monte um portfólio multilíngue editando um único arquivo JSON. React + Tailwind CSS.",
+      "pathText": "github.com/willpelicari",
+      "link": "https://github.com/willpelicari/JsonBasedPortfolio",
+      "external": true,
+      "status": "open-source",
+      "statusLabel": "Código aberto"
+    },
+    {
+      "number": "02",
+      "kind": "website",
+      "initials": "EL",
+      "initialsBg": "#12403c",
+      "initialsFg": "#fff",
+      "name": "Eliana Leite Podóloga",
+      "descriptor": "Site de cliente",
+      "tileDescription": "Site de cliente · Podologia clínica em Bauru, com agendamento on-line",
+      "pathText": "elianaleitepodologa.com.br",
+      "link": "https://elianaleitepodologa.com.br",
+      "external": true,
+      "status": "live",
+      "statusLabel": "No ar"
+    },
+    {
+      "number": "03",
+      "kind": "app",
+      "icon": "/icons/cataloc.png",
+      "name": "Cataloc",
+      "descriptor": "Inventário doméstico",
+      "pathText": "/cataloc",
+      "link": "https://www.wiltonpelicari.com/cataloc/",
+      "external": false,
+      "status": "in-development",
+      "statusLabel": "Em desenvolvimento",
+      "featured": true
+    },
+    {
+      "number": "04",
+      "kind": "app",
+      "initials": "21–17",
+      "initialsBg": "#1e293b",
+      "initialsFg": "#fff",
+      "name": "Score Predictions",
+      "descriptor": "Palpites de futebol americano",
+      "tileDescription": "Aplicativo · Acerte o placar final de cada jogo da NFL antes do apito inicial",
+      "pathText": "nfl.wiltonpelicari.com",
+      "link": "https://nfl.wiltonpelicari.com",
+      "external": true,
+      "status": "in-development",
+      "statusLabel": "Em desenvolvimento"
+    }
+  ],
   "values": {
-    "title": "Desenvolvedor Full Stack",
-    "description": "Comecei a desenvolver ainda criança (sério!) mas trabalho profissionalmente com isso desde 2014. 😅",
+    "title": "O que eu valorizo",
+    "description": "",
     "cards": [
       {
         "icon": "/icons/dotnet.svg",
-        "title": "Orientado à Windows",
-        "description": "Comecei o desenvolvimento em orientação à objetos com .NET e continuo desenvolvendo para essa plataforma desde então. (E tenho orgulho disso :) )"
+        "title": "Orientado a Windows",
+        "description": "Comecei o desenvolvimento orientado a objetos com .NET e continuo trabalhando nessa plataforma desde então. (E tenho orgulho disso :) )"
       },
       {
         "icon": "/icons/react.svg",
-        "title": "Para toda ação, uma REACT-ção",
-        "description": "Ja trabalhei com diferentes frameworks client-side mas gosto mesmo é de desenvolvimento com REACT. Esse site foi desenvolvido inteiramente com ele."
+        "title": "Para cada ação, uma REACT-ion",
+        "description": "Já trabalhei com vários frameworks do lado do cliente, mas gosto mesmo é de desenvolver com React."
       },
       {
         "icon": "/icons/solid.svg",
         "title": "Baixo acoplamento, alta coesão",
-        "description": "Apaixonado pelos princípios SOLID, pragmaticamente desenvolvendo, falando e eternamente aprendendo o que compõe um bom código."
+        "description": "Me importo com os princípios SOLID. Desenvolvo de forma pragmática, e continuo discutindo e aprendendo o que faz um bom código."
       }
     ]
   },
-  "apps": {
-    "title": "O que eu construí",
-    "description": "Aplicativos que eu projeto, desenvolvo e publico por conta própria, do início ao fim.",
-    "entries": [
-      {
-        "icon": "/icons/cataloc.png",
-        "name": "Cataloc",
-        "tagline": "Encontre qualquer coisa em casa",
-        "description": "Um catálogo dos seus próprios pertences que funciona inteiramente no seu telefone. Fotografe uma prateleira, aninhe recipientes tão fundo quanto a realidade exigir, e a busca lhe dá o caminho completo até qualquer coisa que você tenha. Sem conta, sem servidor, nada enviado.",
-        "links": [
-          {
-            "text": "Saiba mais",
-            "link": "/cataloc/"
-          },
-          {
-            "text": "Suporte",
-            "link": "/cataloc/support.html"
-          }
-        ]
-      }
-    ]
+  "about": {
+    "kicker": "Sobre",
+    "title": "Aprender é minha paixão. Compartilhar é minha missão.",
+    "bio": "Eu sou Wilton Pelicari, desenvolvedor full stack na cidade de Québec. Comecei a programar quando criança (sério!) e trabalho profissionalmente com isso desde 2014. De dia, trabalho em plataformas SaaS. No meu tempo livre, projeto, desenvolvo e publico pequenos aplicativos e sites.",
+    "downloadResume": "Baixar meu currículo",
+    "seeExperience": "Ver minha experiência",
+    "facts": [
+      { "value": "2014", "label": "Programando profissionalmente desde" },
+      { "value": "7", "label": "Empresas, do Brasil ao Québec" },
+      { "value": "EN · FR · PT", "label": "Idiomas" },
+      { "value": "Cidade de Québec", "label": "Baseado em" }
+    ],
+    "valuesTitle": "O que eu valorizo",
+    "hobbyKicker": "Fora do teclado",
+    "hobbyTitle": "Eu corro. O histórico é público.",
+    "hobbyLink": "https://www.strava.com/athletes/25213111",
+    "hobbyLinkText": "Me siga no Strava"
   },
-  "toolbox": {
-    "title": "Na minha caixa de ferramentas...",
-    "description": "Clique em uma palavra-chave abaixo para filtrar as experiências listadas 😉"
+  "experiencesPage": {
+    "kicker": "Onde eu trabalhei",
+    "title": "Experiências",
+    "description": "Desenvolvimento full stack desde 2014, do Brasil ao Québec. Clique em uma ferramenta para filtrar os cargos.",
+    "downloadResume": "Baixar currículo (PDF)",
+    "toolboxLabel": "Na minha caixa de ferramentas",
+    "allLabel": "Todos",
+    "clearLabel": "Limpar",
+    "rolesLabel": "cargos",
+    "countAllSuffix": "· 2014 – atualmente",
+    "ofLabel": "de",
+    "useLabel": "usam"
   },
   "experiences": {
-    "title": "Onde tenho trabalhado...",
+    "title": "Onde eu trabalhei...",
     "entries": [
       {
         "company": {
@@ -96,50 +194,50 @@
         },
         "jobs": [
           {
-            "title": "Desenvolvedor Full Stack - Projeto SSP",
-            "duration": "Desde novembro 2024",
+            "title": "Desenvolvedor Full Stack — SSP",
+            "duration": "Nov 2024 – atualmente",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": [".NET", "React", "Tailwind CSS"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum"]
-              },
+              { "category": "Metodologias", "stack": ["Scrum"] },
               {
                 "category": "Ferramentas",
-                "stack": ["Azure DevOps", "GIT", "Docker"]
+                "stack": ["Azure DevOps", "Git", "Docker"]
               }
             ],
-            "description": "Depois de três anos no projeto C2, começo uma nova página da minha carreira no projeto SSP. Novidades à seguir."
+            "description": "Um novo capítulo no projeto SSP após três anos no C2."
           },
           {
-            "title": "Desenvolvedor Full Stack - Projeto C2",
-            "duration": "Outubro 2021 à Outubro 2024",
+            "title": "Desenvolvedor Full Stack — C2",
+            "duration": "Out 2021 – Out 2024",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
-                "stack": [".NET", "AngularJs", "jQuery", "MassTransit"]
+                "stack": [".NET", "AngularJS", "jQuery", "MassTransit"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum"]
-              },
+              { "category": "Metodologias", "stack": ["Scrum"] },
               {
                 "category": "Ferramentas",
-                "stack": ["Mend", "Azure DevOps", "GIT", "Docker", "RabbitMQ"]
+                "stack": [
+                  "Mend",
+                  "Azure DevOps",
+                  "Git",
+                  "Docker",
+                  "RabbitMQ"
+                ]
               }
             ],
-            "description": "Desde que cheguei na Sherweb, tive a oportunidade de desempenhar um papel fundamental no desenvolvimento e suporte da solução C2-ITSM. Minhas principais responsabilidades incluíram o desenvolvimento e manutenção de APIs internas, utilizando tecnologias como .NET 6, Entity Framework 6 e SQL Server. Além disso, realizei a criação e manutenção de páginas e componentes web, empregando AngularJS e CSS para melhorar a experiência do usuário. Elaborei testes unitários, de integração e de interface com ferramentas como nUnit, Moq, FluentAssertions e Selenium para garantir a qualidade do software. Também, fui responsável pela facilitação de reuniões de desenvolvedores, promovendo a melhoria contínua do processo de desenvolvimento e a redução de débitos técnicos. Adicionalmente, realizei a investigação e supervisão de vulnerabilidades identificadas pela ferramenta Mend (WhiteSource) para manter a segurança do sistema. Participei ativamente nas cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
+            "description": "Desenvolvedor principal na solução C2-ITSM. Desenvolvimento e manutenção de APIs internas em .NET 6 e front-ends AngularJS, escrita das suítes de teste, condução de reuniões sobre processo e dívida técnica, e acompanhamento de vulnerabilidades apontadas pelo Mend."
           }
         ]
       },
@@ -151,35 +249,26 @@
           "invertInDarkMode": false
         },
         "thirdParty": {
-          "name": "SERTI",
-          "link": "http://www.serti.com",
-          "ribbonBgColor": "bg-green-400",
-          "ribbonFontColor": "text-black",
-          "ribbonDescription": "terceirizado"
+          "name": "Terceirizado · SERTI",
+          "link": "http://www.serti.com"
         },
         "jobs": [
           {
             "title": "Desenvolvedor Full Stack",
-            "duration": "Fevereiro à Setembro 2021",
+            "duration": "Fev – Set 2021",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["C#", "JavaScript", "SQL Server", "SQL Design"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": [".NET", "Vue.js", "jQuery"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum"]
-              },
-              {
-                "category": "Ferramentas",
-                "stack": ["Azure DevOps", "TFS"]
-              }
+              { "category": "Metodologias", "stack": ["Scrum"] },
+              { "category": "Ferramentas", "stack": ["Azure DevOps", "TFS"] }
             ],
-            "description": "Desenvolvimento de sistema interno como consultor pela empresa SERTI. Durante meu tempo na Revenu Québec, minhas principais responsabilidades incluíram o desenvolvimento de APIs internas usando o .NET Framework 4.5, a criação de páginas e componentes web com Vue.JS, jQuery e CSS, além da escrita de testes unitários, tanto no front-end quanto no back-end, com o uso de Moq, AutoFixture e FluentAssertions. Participei ativamente nas cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint. Além disso, executei casos de teste para tarefas de controle de qualidade e lidei com a leitura e interpretação de código legado em SQL Design, semelhante ao VB6."
+            "description": "Desenvolvimento de um sistema interno: APIs em .NET Framework e front-end em Vue.js, testes unitários dos dois lados, e leitura de código legado em SQL Design."
           }
         ]
       },
@@ -191,35 +280,29 @@
           "invertInDarkMode": true
         },
         "thirdParty": {
-          "name": "COFOMO",
-          "link": "https://www.cofomo.com/",
-          "ribbonBgColor": "bg-green-400",
-          "ribbonFontColor": "text-black",
-          "ribbonDescription": "terceirizado"
+          "name": "Terceirizado · COFOMO",
+          "link": "https://www.cofomo.com/"
         },
         "jobs": [
           {
             "title": "Desenvolvedor Full Stack",
-            "duration": "Março 2020 à Fevereiro 2021",
+            "duration": "Mar 2020 – Fev 2021",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["C#", "TypeScript", "SQL Server"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": [".NET", "React"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum"]
-              },
+              { "category": "Metodologias", "stack": ["Scrum"] },
               {
                 "category": "Ferramentas",
-                "stack": ["BrowserStack", "Azure DevOps", "GIT"]
+                "stack": ["BrowserStack", "Azure DevOps", "Git"]
               }
             ],
-            "description": "Desenvolvimento de páginas e REST API 'backend for frontend' para o sistema distribuído Modernia como consultor pela empresa COFOMO Québec. Durante esse período, minhas responsabilidades incluíram o desenvolvimento e manutenção das APIs em .NET Core 3.1, Entity Framework 6 e SQL Server, além da criação de páginas e componentes web em React. Também escrevi testes unitários, de ponta a ponta (end-to-end) e de Desenvolvimento Orientado por Comportamento (BDD) utilizando Moq, FluentAssertions, PlayWright e SpecFlow. Além disso, participei ativamente das cerimônias SCRUM, incluindo reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
+            "description": "Páginas e uma API REST \"backend for frontend\" para o sistema distribuído Modernia, em .NET Core e React, com testes unitários, end-to-end e BDD."
           }
         ]
       },
@@ -231,35 +314,23 @@
           "invertInDarkMode": true
         },
         "thirdParty": {
-          "name": "COFOMO",
-          "link": "https://www.cofomo.com/",
-          "ribbonBgColor": "bg-green-400",
-          "ribbonFontColor": "text-black",
-          "ribbonDescription": "terceirizado"
+          "name": "Terceirizado · COFOMO",
+          "link": "https://www.cofomo.com/"
         },
         "jobs": [
           {
             "title": "Desenvolvedor de Software",
-            "duration": "Julho 2019 à Fevereiro 2020",
+            "duration": "Jul 2019 – Fev 2020",
             "techStack": [
-              {
-                "category": "Tecnologias",
-                "stack": ["C#", "SQL Server"]
-              },
+              { "category": "Technologies", "stack": ["C#", "SQL Server"] },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": [".NET", "WPF"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum", "SAFe"]
-              },
-              {
-                "category": "Ferramentas",
-                "stack": ["Azure DevOps", "GIT"]
-              }
+              { "category": "Metodologias", "stack": ["Scrum", "SAFe"] },
+              { "category": "Ferramentas", "stack": ["Azure DevOps", "Git"] }
             ],
-            "description": "Desenvolvimento da solução iA-Evo, uma calculadora/simulador de seguro, como consultor pela empresa COFOMO Québec. Durante esse período, minhas responsabilidades incluíram o desenvolvimento em WPF seguindo o padrão MVVM, manutenção e suporte da versão anterior, execução e escrita de casos de teste para as atividades de controle de qualidade, bem como a criação de testes unitários usando Moq e FluentAssertions. Além disso, participei ativamente das cerimônias SCRUM, que englobam reuniões diárias, refinamento, retrospectiva e revisão do Sprint, e também participei das cerimônias SAFe, incluindo o planejamento de Program Increment (PI Planning) e a revisão do Program Increment (PI Review)."
+            "description": "iA-Evo, uma calculadora/simuladora de seguros, desenvolvida em WPF com MVVM, além de dar suporte à versão anterior."
           }
         ]
       },
@@ -273,26 +344,20 @@
         "jobs": [
           {
             "title": "Desenvolvedor Full Stack",
-            "duration": "Setembro 2018 à Março 2019",
+            "duration": "Set 2018 – Mar 2019",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["C#", "TypeScript", "SQL Server"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": [".NET", "Angular", "jQuery"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum"]
-              },
-              {
-                "category": "Ferramentas",
-                "stack": ["Azure DevOps", "GIT"]
-              }
+              { "category": "Metodologias", "stack": ["Scrum"] },
+              { "category": "Ferramentas", "stack": ["Azure DevOps", "Git"] }
             ],
-            "description": "Desenvolvimento de um sistema integrado de gestão (SIG) para uma grande escola profissional brasileira (SENAC). Durante este projeto, minhas responsabilidades incluíram o desenvolvimento de APIs internas em .NET Core 2.0, a criação de páginas e componentes web utilizando Angular e CSS, a escrita de testes unitários tanto na camada frontend quanto no backend com o uso de Moq, AutoFixture e FluentAssertions. Além disso, fui encarregado da execução e escrita de casos de teste para as atividades de controle de qualidade. Também participei ativamente das cerimônias SCRUM, que incluem reuniões diárias, refinamento, retrospectiva e revisão do Sprint."
+            "description": "Um sistema de gestão integrado para o SENAC, uma grande escola profissionalizante brasileira: APIs em .NET Core, front-end em Angular e testes dos dois lados."
           }
         ]
       },
@@ -306,26 +371,23 @@
         "jobs": [
           {
             "title": "Desenvolvedor .NET",
-            "duration": "Setembro 2016 à Agosto 2018",
+            "duration": "Set 2016 – Ago 2018",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["C#", "PostgreSQL"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": [".NET", "PL/pgSQL"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Scrum"]
-              },
+              { "category": "Metodologias", "stack": ["Scrum"] },
               {
                 "category": "Ferramentas",
-                "stack": ["Azure DevOps", "GIT", "TFS"]
+                "stack": ["Azure DevOps", "Git", "TFS"]
               }
             ],
-            "description": "Desenvolvimento e manutenção de um sistema de recuperação de dívidas amigáveis \"Pagou Fácil\" na recuperadora de créditos Paschoalotto. Durante meu período lá, fui responsável pelo desenvolvimento de APIs internas utilizando o .NET Framework 4.7. Também desempenhei um papel fundamental na execução e na escrita de casos de teste para as atividades de controle de qualidade. Além disso, participei ativamente das cerimônias SCRUM, que incluem reuniões diárias, refinamento, retrospectiva e revisão do Sprint. Além dessas tarefas, lidei com a leitura e interpretação de código legado em VB6."
+            "description": "Atuação no \"Pagou Fácil\", um sistema amigável de recuperação de crédito: APIs .NET internas, casos de teste de QA e código legado em VB6."
           }
         ]
       },
@@ -339,83 +401,53 @@
         "jobs": [
           {
             "title": "Desenvolvedor PHP",
-            "duration": "Fevereiro 2015 à Agosto 2016",
+            "duration": "Fev 2015 – Ago 2016",
             "techStack": [
               {
-                "category": "Tecnologias",
+                "category": "Technologies",
                 "stack": ["PHP", "JavaScript", "MySQL"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
                 "stack": ["WordPress", "jQuery"]
               },
-              {
-                "category": "Metodologias",
-                "stack": ["Kanban"]
-              },
-              {
-                "category": "Ferramentas",
-                "stack": ["SVN"]
-              }
+              { "category": "Metodologias", "stack": ["Kanban"] },
+              { "category": "Ferramentas", "stack": ["SVN"] }
             ],
-            "description": "Desenvolvimento e manutenção de sites para pequenas e médias empresas. Durante esse período, fui responsável pelo desenvolvimento de páginas utilizando PHP, CSS e jQuery, bem como a criação de páginas em WordPress. Além disso, desempenhei um papel fundamental na coleta de requisitos, na proposição de soluções e na implementação no cliente, visando atender às necessidades específicas de cada projeto."
+            "description": "Sites para pequenas e médias empresas, do levantamento de requisitos até o lançamento em PHP e WordPress."
           }
         ]
       },
       {
         "company": {
           "logo": "/icons/big-data-university.webp",
-          "name": "Cognitive Class (formerly Big Data University)",
+          "name": "Cognitive Class (antiga Big Data University)",
           "link": "https://cognitiveclass.ai/",
           "invertInDarkMode": false
         },
         "thirdParty": {
-          "name": "IBM",
-          "link": "http://www.serti.com",
-          "ribbonBgColor": "bg-red-600",
-          "ribbonFontColor": "text-white",
-          "ribbonDescription": "impulsionado pela"
+          "name": "Impulsionado pela IBM",
+          "link": "http://www.serti.com"
         },
         "job": {
           "title": "Estagiário em Engenharia de Software",
-          "duration": "Maio 2014 à August 2014",
+          "duration": "Mai – Ago 2014",
           "techStack": [
             {
-              "category": "Tecnologias",
+              "category": "Technologies",
               "stack": ["Node.js", "Cloudant"]
             },
-            {
-              "category": "Frameworks & Bibliotecas",
-              "stack": ["Express"]
-            },
-            {
-              "category": "Metodologias",
-              "stack": ["Waterfall"]
-            },
-            {
-              "category": "Ferramentas",
-              "stack": ["GIT"]
-            }
+            { "category": "Frameworks & Bibliotecas", "stack": ["Express"] },
+            { "category": "Ferramentas", "stack": ["Git"] }
           ],
-          "description": "Estágio de verão pelo programa graduação-sanduíche \"Ciência sem fronteiras\" na Universidade de Toronto. Durante o periodo que estagiei na Cognitive Class (antigamente chamada Big Data Univesity) pude aprender diversas tecnologias cloud da IBM e pude escrever artigos introdutórios para sua plataforma SaaS Bluemix. Dentre as tecnologias aprendidas destaca-se Node.js e Cloudant onde resultou na publicação de um artigo no portal da IBM e traduzidos em diversas linguas. O formato do estágio se dava através da mentoria de funcionários da IBM que nos recebeu, nos apresentou as ferramentas, nos forneceu acesso e local de trabalho durante todo o periodo de trabalho."
+          "description": "Estágio \"Ciência sem Fronteiras\" na Universidade de Toronto. Aprendi ferramentas de nuvem da IBM e escrevi artigos sobre o Bluemix, incluindo um sobre Node.js e Cloudant publicado e traduzido pela IBM."
         }
       }
     ]
   },
   "footer": {
-    "message": "Código-fonte disponível no meu GitHub! dê uma olhada :)",
-    "link": "https://github.com/willpelicari/JsonBasedPortfolio",
-    "socialMedia": [
-      {
-        "icon": "/icons/github-mark.svg",
-        "link": "https://github.com/willpelicari",
-        "invertInDarkMode": true
-      },
-      {
-        "icon": "/icons/linkedin.svg",
-        "link": "https://www.linkedin.com/in/wiltonpelicari/",
-        "invertInDarkMode": false
-      }
-    ]
+    "copyright": "© 2026 Wilton Pelicari · Cidade de Québec",
+    "github": "https://github.com/willpelicari",
+    "linkedin": "https://www.linkedin.com/in/wiltonpelicari/"
   }
 }
