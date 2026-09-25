@@ -1,190 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr-CA">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cataloc — Conditions d'utilisation</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cataloc — Conditions d'utilisation</title>
+<meta name="description" content="Conditions d'utilisation de Cataloc : une licence sur les appareils que vous possédez, une version gratuite, et aucun serveur de notre part qui détienne vos données.">
+<meta name="author" content="Wilton Pelicari">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/conditions">
+<link rel="alternate" hreflang="fr-CA" href="https://www.wiltonpelicari.com/cataloc/conditions">
+<link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cataloc/terms">
+<link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cataloc/conditions">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/conditions">
+<meta property="og:title" content="Cataloc — Conditions d'utilisation">
+<meta property="og:description" content="L'entente entre vous et le développeur de Cataloc.">
+<meta property="og:image" content="https://www.wiltonpelicari.com/cataloc/icon.png">
+<link rel="icon" href="/cataloc/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="/cataloc/styles.css">
+<style>
+main { padding-block: 10px 0; }
+main h1 { margin-top: 24px; }
+.updated { color: var(--ink3); font-size: 15px; margin: 0 0 28px; }
+main h2 { margin: 42px 0 10px; padding-top: 30px; border-top: 1px solid var(--rule); }
+main h3 { margin: 28px 0 8px; }
+main p { color: var(--ink2); max-width: 36em; margin: 0 0 14px; }
+main ul { color: var(--ink2); max-width: 36em; margin: 0 0 16px; padding-left: 20px; }
+main li { margin-bottom: 9px; }
+main strong { color: var(--ink); }
 
-    <meta name="description" content="Conditions d'utilisation de Cataloc. Une licence d'utilisation sur les appareils que vous possédez, une version gratuite, un abonnement facultatif facturé par l'App Store ou Google Play, et aucun serveur de notre part qui détienne vos données." />
-    <meta name="author" content="Wilton Pelicari" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/conditions" />
+.summary { background: var(--surface2); border-radius: 14px; padding: 20px 22px 6px; margin-bottom: 6px; }
+.summary h2 { margin: 0 0 10px; padding-top: 0; border-top: none; font-size: 21px; }
+.summary p { max-width: none; }
 
-    <link rel="alternate" hreflang="fr-CA" href="https://www.wiltonpelicari.com/cataloc/conditions" />
-    <link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cataloc/terms" />
-    <link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cataloc/terms" />
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em; background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 5px; padding: 0.05em 0.35em;
+}
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/conditions" />
-    <meta property="og:title" content="Cataloc — Conditions d'utilisation" />
-    <meta property="og:description" content="L'entente entre vous et le développeur de Cataloc." />
+address { font-style: normal; color: var(--ink2); line-height: 1.8; margin: 0 0 14px; }
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="theme-color" content="#ffffff" />
+.todo {
+  display: inline-block; background: #FDE68A; color: #7C2D12;
+  border: 1px dashed #B45309; border-radius: 6px;
+  padding: 0.1em 0.45em; font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .todo { background: #4A3308; color: #FCD34D; }
+}
 
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #ffffff;
-        --surface: #f6f7f9;
-        --border: #e3e6ea;
-        --text: #1b1f24;
-        --muted: #5c6672;
-        --accent: #0d9488;
-      }
+header.top b a { color: inherit; text-decoration: none; }
+.lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; }
+.lang a {
+  padding: 5px 13px; text-decoration: none; color: var(--ink3);
+  font-family: var(--display); font-weight: 700; font-size: 13px; line-height: 1.4;
+}
+.lang a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #12151a;
-          --surface: #1a1f26;
-          --border: #2c333d;
-          --text: #e7eaee;
-          --muted: #9aa5b1;
-          --accent: #2dd4bf;
-        }
-      }
+  <header class="top">
+    <img src="/cataloc/icon.png" alt="">
+    <b><a href="/cataloc/">Cataloc</a></b>
+    <nav>
+      <a href="/cataloc/support.html">Assistance</a>
+      <span class="lang"><a href="/cataloc/conditions" aria-current="page">FR</a><a href="/cataloc/terms">EN</a></span>
+    </nav>
+  </header>
 
-      * { box-sizing: border-box; }
-
-      html { -webkit-text-size-adjust: 100%; }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Helvetica, Arial, sans-serif;
-        font-size: 17px;
-        line-height: 1.65;
-      }
-
-      main {
-        max-width: 44rem;
-        margin: 0 auto;
-        padding: 3rem 1.25rem 4rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-        margin: 0 0 0.35rem;
-        letter-spacing: -0.02em;
-      }
-
-      h2 {
-        font-size: 1.25rem;
-        line-height: 1.3;
-        margin: 2.75rem 0 0.75rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border);
-        letter-spacing: -0.01em;
-      }
-
-      .updated {
-        color: var(--muted);
-        font-size: 0.9rem;
-        margin: 0 0 2rem;
-      }
-
-      p { margin: 0 0 1rem; }
-
-      ul {
-        margin: 0 0 1rem;
-        padding-left: 1.25rem;
-      }
-
-      li { margin-bottom: 0.5rem; }
-
-      strong { font-weight: 600; }
-
-      a {
-        color: var(--accent);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 2px;
-      }
-
-      h3 {
-        font-size: 1.02rem;
-        line-height: 1.4;
-        margin: 1.75rem 0 0.6rem;
-        color: var(--text);
-      }
-
-      code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        font-size: 0.88em;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 5px;
-        padding: 0.05em 0.35em;
-      }
-
-      .langbar {
-        font-size: 0.85rem;
-        margin: 0 0 1.5rem;
-      }
-
-      .langbar a {
-        color: var(--muted);
-      }
-
-      .lede {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.25rem 1.25rem 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      footer {
-        margin-top: 3rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border);
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
-      @media (max-width: 480px) {
-        body { font-size: 16px; }
-        main { padding: 2rem 1rem 3rem; }
-        h1 { font-size: 1.6rem; }
-      }
-    </style>
-
-    <style>
-      .todo {
-        display: inline-block;
-        background: #fde68a;
-        color: #7c2d12;
-        border: 1px dashed #b45309;
-        border-radius: 6px;
-        padding: 0.1em 0.45em;
-        font-weight: 600;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        .todo {
-          background: #4a3308;
-          color: #fcd34d;
-          border-color: #b45309;
-        }
-      }
-
-      address {
-        font-style: normal;
-        line-height: 1.6;
-        margin: 0 0 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <p class="langbar"><a href="/cataloc/terms">English</a></p>
-      <h1>Cataloc — Conditions d'utilisation</h1>
-      <p class="updated">Dernière mise à jour : 7 septembre 2026</p>
+  <main>
+<h1>Cataloc — Conditions d'utilisation</h1>
+      <p class="updated">Dernière mise à jour : 25 septembre 2026</p>
 
       <p>
         Les présentes conditions constituent l'entente entre vous et le
@@ -204,12 +95,13 @@
       <p>
         Cataloc est un catalogue de vos propres biens qui fonctionne sur votre
         propre appareil. Vous pouvez l'utiliser sur les appareils que vous
-        possédez. Un foyer de cent choses est gratuit pour toujours ; au-delà, il
-        s'agit d'un abonnement que l'App Store ou Google Play facture et que vous
-        résiliez là. Il n'y a aucun compte et aucun serveur de notre part, ce qui
-        veut dire qu'il n'y a pas non plus de sauvegarde de vos données : elles
-        sont à vous à garder, et à vous à perdre si vous supprimez l'application
-        sans exporter d'abord.
+        possédez. Un foyer de deux cents choses est gratuit pour toujours, tout
+        comme le fait de laisser la recherche et l'assistant de votre téléphone
+        répondre à votre place. Au-delà, il y a PRO, que l'App Store ou Google Play
+        facture : au mois, à l'année, ou une seule fois et plus jamais. Il n'y a
+        aucun compte et aucun serveur de notre part, ce qui veut dire qu'il n'y a
+        pas non plus de sauvegarde de vos données : elles sont à vous à garder, et
+        à vous à perdre si vous supprimez l'application sans exporter d'abord.
       </p>
 
       <h2>2. Avec qui vous concluez cette entente</h2>
@@ -253,13 +145,16 @@
 
       <h2>4. La version gratuite, et Cataloc PRO</h2>
       <p>
-        Cataloc est gratuit à installer et gratuit à conserver. Sans abonnement,
-        vous pouvez détenir un foyer contenant jusqu'à cent contenants et objets au
-        total, toutes les fonctions de l'application étant comprises.
+        Cataloc est gratuit à installer et gratuit à conserver. Sans payer, vous
+        pouvez détenir un foyer contenant jusqu'à deux cents contenants et objets
+        au total. Laisser la recherche et l'assistant de votre téléphone voir votre
+        catalogue est inclus gratuitement, et a toujours le consentement pour seule
+        condition.
       </p>
       <p>
-        Cataloc PRO est un abonnement à renouvellement automatique qui lève ces
-        deux plafonds. Il est offert à 2,99 $ par mois ou 14,99 $ par année ; la
+        Cataloc PRO lève ces deux plafonds et se vend de trois façons : un
+        abonnement à renouvellement automatique à 2,99 $ par mois ou 14,99 $ par
+        année, ou un paiement unique de 29,99 $ qui ne se renouvelle jamais. La
         boutique affiche le prix réel dans votre devise avant l'achat, et c'est ce
         prix qui fait foi.
       </p>
@@ -270,34 +165,48 @@
           paiement.
         </li>
         <li>
-          <strong>Renouvellement.</strong> L'abonnement se renouvelle
+          <strong>Renouvellement.</strong> Un abonnement se renouvelle
           automatiquement à la fin de chaque période, à moins que vous ne
           désactiviez le renouvellement au moins 24 heures avant la fin de
-          celle-ci.
+          celle-ci. Le paiement unique ne se renouvelle pas : il n'y a rien à
+          résilier, et vous n'êtes plus jamais facturé pour celui-ci.
         </li>
         <li>
-          <strong>Résiliation.</strong> Vous résiliez dans les réglages de votre
-          compte Apple ou Google, et non dans Cataloc. La résiliation met fin au
+          <strong>Résiliation.</strong> Vous résiliez un abonnement dans les
+          réglages de votre compte Apple ou Google, et non dans Cataloc. La résiliation met fin au
           prochain renouvellement ; la période déjà payée se poursuit jusqu'à son
           terme.
         </li>
         <li>
           <strong>Restauration.</strong> « Restaurer les achats », sur l'écran du
           forfait, relit votre droit d'accès auprès de la boutique, pour un nouveau
-          téléphone ou une réinstallation.
+          téléphone ou une réinstallation. C'est ainsi que le paiement unique vous
+          suit sur un nouvel appareil, pourvu que celui-ci soit connecté au même
+          compte Apple ou Google.
         </li>
         <li>
           <strong>Rien ne vous est retiré.</strong> Si un abonnement prend fin, ou
-          si vous n'en avez jamais eu, tout ce que vous avez déjà catalogué demeure
+          si vous n'avez jamais payé, tout ce que vous avez déjà catalogué demeure
           visible et modifiable. Les limites ne s'appliquent qu'au moment de créer
           quelque chose de nouveau. Un catalogue qui dépasse déjà la limite — monté
           avant que les limites n'existent, ou importé — n'est jamais tronqué.
         </li>
         <li>
-          <strong>PRO Nuage</strong> figure sur l'écran du forfait avec la mention
-          « Bientôt ». Il ne peut pas être acheté, aucun paiement n'est perçu à son
-          égard, et rien dans les présentes conditions ne promet qu'il verra le
-          jour.
+          <strong>Les fonctions à venir.</strong> L'écran du forfait indique que
+          PRO comprend chaque nouvelle fonction dès son arrivée, et cela est à
+          prendre au pied de la lettre : une fonction ajoutée à PRO après votre
+          achat vous revient sans frais supplémentaires, quelle que soit la façon
+          dont vous avez payé.
+        </li>
+        <li>
+          <strong>Votre famille.</strong> Lorsque la boutique permet de partager un
+          achat avec un groupe familial, PRO est partagé : un seul achat couvre le
+          groupe, et les autres membres n'ont rien à payer. Cela partage
+          <em>l'achat</em> et rien d'autre. Votre catalogue, vos photos et votre
+          historique ne sont pas partagés par ce biais et ne sont visibles par
+          personne dans le groupe — mettre un foyer sur le téléphone de quelqu'un
+          d'autre est une démarche distincte que vous effectuez vous-même, et cela
+          le reste.
         </li>
       </ul>
       <p>
@@ -346,9 +255,13 @@
         quelqu'un d'autre. Il n'est pas exploité par nous et nous n'y avons aucun
         accès. Sa disponibilité, sa sécurité et le sort de ce qui y est conservé
         relèvent de vous et de la personne qui l'exploite, selon les conditions de
-        celle-ci. Cataloc n'ajoute aucun chiffrement qui lui soit propre : la
-        protection dont bénéficie ce dossier, en transit comme au repos, est celle
-        qu'il offre déjà.
+        celle-ci. La protection dont bénéficie ce dossier, en transit comme au
+        repos, est celle qu'il offre déjà, à moins que vous n'activiez
+        « Verrouiller ce dossier », qui chiffre ce que Cataloc y écrit avant que
+        cela ne quitte votre téléphone. Si vous le faites, conservez la phrase de
+        passe : elle n'existe que sur vos appareils, et ni nous ni la personne qui
+        exploite le dossier ne pouvons la récupérer, non plus que ce qu'elle
+        protège.
       </p>
       <p>
         La façon dont tout cela est traité est décrite dans la
@@ -494,12 +407,18 @@
         Questions sur les présentes conditions :
         <strong><a href="mailto:willpelicari@gmail.com">willpelicari@gmail.com</a></strong>
       </p>
+  </main>
 
-      <footer>
-        <a href="/cataloc/confidentialite">Politique de confidentialité</a> &nbsp;·&nbsp;
-        <a href="/cataloc/terms">English</a> &nbsp;·&nbsp;
-        <a href="/">wiltonpelicari.com</a>
-      </footer>
-    </main>
-  </body>
+  <footer>
+    <nav>
+      <a href="/cataloc/">Accueil</a>
+      <a href="/cataloc/confidentialite">Politique de confidentialité</a>
+      <a href="/cataloc/support.html">Assistance</a>
+    </nav>
+    © <span id="year">2026</span> Wilton Pelicari
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</div>
+</body>
 </html>
