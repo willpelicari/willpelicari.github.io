@@ -11,6 +11,10 @@
         "link": "#values"
       },
       {
+        "text": "Apps",
+        "link": "#apps"
+      },
+      {
         "text": "Skills",
         "link": "#toolbox"
       },
@@ -51,6 +55,28 @@
         "icon": "/icons/solid.svg",
         "title": "Low coupling, high cohesion",
         "description": "Passionate about SOLID principles, I pragmatically develop, talk, and endlessly learn what makes good code."
+      }
+    ]
+  },
+  "apps": {
+    "title": "Things I've built",
+    "description": "Apps I design, build and ship on my own, start to finish.",
+    "entries": [
+      {
+        "icon": "/icons/cataloc.png",
+        "name": "Cataloc",
+        "tagline": "Find anything at home",
+        "description": "A catalogue of your own belongings that runs entirely on your phone. Photograph a shelf, nest containers as deep as reality goes, and search gives you the full path to anything you own. No account, no server, nothing uploaded.",
+        "links": [
+          {
+            "text": "Learn more",
+            "link": "/cataloc/"
+          },
+          {
+            "text": "Support",
+            "link": "/cataloc/support.html"
+          }
+        ]
       }
     ]
   },
