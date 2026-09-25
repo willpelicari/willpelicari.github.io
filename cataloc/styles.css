@@ -137,3 +137,26 @@ footer {
   color: var(--ink3); font-size: 15px;
 }
 footer nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 10px; }
+footer .credit-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- portfolio bar ---------- */
+/*
+ * Cataloc is one app in a larger portfolio. This strip says so and lets
+ * visitors jump to the rest of the site without hunting for the domain root.
+ */
+
+.portfolio-bar {
+  background: #020617;
+  color: #bfdbfe;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  padding: 10px clamp(20px, 5vw, 56px);
+}
+.portfolio-bar a { color: #bfdbfe; text-decoration: none; }
+.portfolio-bar a:hover, .portfolio-bar a:focus-visible { color: #fff; }
+.portfolio-bar .brand { color: #fff; font-weight: 700; margin-right: auto; }
+.portfolio-bar nav { display: flex; flex-wrap: wrap; gap: 16px; }
