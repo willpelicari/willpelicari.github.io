@@ -1,166 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cataloc — Privacy Policy</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cataloc — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Cataloc. Cataloc collects nothing: no account, no server, no analytics, no advertising.">
+<meta name="author" content="Wilton Pelicari">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/privacy">
+<link rel="alternate" hreflang="fr-CA" href="https://www.wiltonpelicari.com/cataloc/confidentialite">
+<link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cataloc/privacy">
+<link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cataloc/confidentialite">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/privacy">
+<meta property="og:title" content="Cataloc — Privacy Policy">
+<meta property="og:description" content="Cataloc collects nothing: no account, no server, no analytics, no advertising.">
+<meta property="og:image" content="https://www.wiltonpelicari.com/cataloc/icon.png">
+<link rel="icon" href="/cataloc/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="/cataloc/styles.css">
+<style>
+main { padding-block: 10px 0; }
+main h1 { margin-top: 24px; }
+.updated { color: var(--ink3); font-size: 15px; margin: 0 0 28px; }
+main h2 { margin: 42px 0 10px; padding-top: 30px; border-top: 1px solid var(--rule); }
+main h3 { margin: 28px 0 8px; }
+main p { color: var(--ink2); max-width: 36em; margin: 0 0 14px; }
+main ul { color: var(--ink2); max-width: 36em; margin: 0 0 16px; padding-left: 20px; }
+main li { margin-bottom: 9px; }
+main strong { color: var(--ink); }
 
-    <meta name="description" content="Privacy policy for Cataloc. Cataloc collects nothing: no account, no server, no analytics, no advertising. Your catalogue stays on your device unless you choose to sync, share or export it." />
-    <meta name="author" content="Wilton Pelicari" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/privacy" />
+.summary { background: var(--surface2); border-radius: 14px; padding: 20px 22px 6px; margin-bottom: 6px; }
+.summary h2 { margin: 0 0 10px; padding-top: 0; border-top: none; font-size: 21px; }
+.summary p { max-width: none; }
 
-    <link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cataloc/privacy" />
-    <link rel="alternate" hreflang="fr-CA" href="https://www.wiltonpelicari.com/cataloc/confidentialite" />
-    <link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cataloc/privacy" />
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em; background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 5px; padding: 0.05em 0.35em;
+}
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/privacy" />
-    <meta property="og:title" content="Cataloc — Privacy Policy" />
-    <meta property="og:description" content="Cataloc collects nothing: no account, no server, no analytics, no advertising. Your catalogue stays on your device unless you choose to sync, share or export it." />
+address { font-style: normal; color: var(--ink2); line-height: 1.8; margin: 0 0 14px; }
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="theme-color" content="#ffffff" />
+.todo {
+  display: inline-block; background: #FDE68A; color: #7C2D12;
+  border: 1px dashed #B45309; border-radius: 6px;
+  padding: 0.1em 0.45em; font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .todo { background: #4A3308; color: #FCD34D; }
+}
 
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #ffffff;
-        --surface: #f6f7f9;
-        --border: #e3e6ea;
-        --text: #1b1f24;
-        --muted: #5c6672;
-        --accent: #0d9488;
-      }
+header.top b a { color: inherit; text-decoration: none; }
+.lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; }
+.lang a {
+  padding: 5px 13px; text-decoration: none; color: var(--ink3);
+  font-family: var(--display); font-weight: 700; font-size: 13px; line-height: 1.4;
+}
+.lang a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #12151a;
-          --surface: #1a1f26;
-          --border: #2c333d;
-          --text: #e7eaee;
-          --muted: #9aa5b1;
-          --accent: #2dd4bf;
-        }
-      }
+  <header class="top">
+    <img src="/cataloc/icon.png" alt="">
+    <b><a href="/cataloc/">Cataloc</a></b>
+    <nav>
+      <a href="/cataloc/support.html">Support</a>
+      <span class="lang"><a href="/cataloc/confidentialite">FR</a><a href="/cataloc/privacy" aria-current="page">EN</a></span>
+    </nav>
+  </header>
 
-      * { box-sizing: border-box; }
+  <main>
+<h1>Cataloc — Privacy Policy</h1>
+      <p class="updated">Last updated: 25 September 2026</p>
 
-      html { -webkit-text-size-adjust: 100%; }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Helvetica, Arial, sans-serif;
-        font-size: 17px;
-        line-height: 1.65;
-      }
-
-      main {
-        max-width: 44rem;
-        margin: 0 auto;
-        padding: 3rem 1.25rem 4rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-        margin: 0 0 0.35rem;
-        letter-spacing: -0.02em;
-      }
-
-      h2 {
-        font-size: 1.25rem;
-        line-height: 1.3;
-        margin: 2.75rem 0 0.75rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border);
-        letter-spacing: -0.01em;
-      }
-
-      .updated {
-        color: var(--muted);
-        font-size: 0.9rem;
-        margin: 0 0 2rem;
-      }
-
-      p { margin: 0 0 1rem; }
-
-      ul {
-        margin: 0 0 1rem;
-        padding-left: 1.25rem;
-      }
-
-      li { margin-bottom: 0.5rem; }
-
-      strong { font-weight: 600; }
-
-      a {
-        color: var(--accent);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 2px;
-      }
-
-      h3 {
-        font-size: 1.02rem;
-        line-height: 1.4;
-        margin: 1.75rem 0 0.6rem;
-        color: var(--text);
-      }
-
-      code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        font-size: 0.88em;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 5px;
-        padding: 0.05em 0.35em;
-      }
-
-      .langbar {
-        font-size: 0.85rem;
-        margin: 0 0 1.5rem;
-      }
-
-      .langbar a {
-        color: var(--muted);
-      }
-
-      .lede {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.25rem 1.25rem 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      footer {
-        margin-top: 3rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border);
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
-      @media (max-width: 480px) {
-        body { font-size: 16px; }
-        main { padding: 2rem 1rem 3rem; }
-        h1 { font-size: 1.6rem; }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <p class="langbar"><a href="/cataloc/confidentialite">Français</a></p>
-      <h1>Cataloc — Privacy Policy</h1>
-      <p class="updated">Last updated: 7 September 2026</p>
-
-      <section class="lede">
+      <section class="summary">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">The short version</h2>
         <p>
           Cataloc does not collect anything. There is no account, no server, no
@@ -171,10 +88,16 @@
         <p>
           There are four ways data can leave your phone, and you have to set up
           every one of them: pairing with another phone on your Wi-Fi, syncing
-          through a shared folder whose address you supply, sharing a list as a
-          web page, and exporting your data. In none of them does anything pass
-          through the developer, who has no access to your catalogue by any
-          route.
+          through a shared folder whose address you supply, sharing a list as a web
+          page, and exporting your data. In none of them does anything pass through
+          the developer, who has no access to your catalogue by any route.
+        </p>
+        <p>
+          There is a fifth way data can leave <em>Cataloc</em> without leaving your
+          phone, and it is off until you switch it on: letting your phone's own
+          assistant and search find your things. It is described in full under
+          <a href="#your-phones-assistant-and-search">Your phone's assistant and
+          search</a>.
         </p>
       </section>
 
@@ -187,11 +110,28 @@
         </li>
         <li>The photos you take or choose, saved as files inside the app's own folder.</li>
         <li>A history of changes you have made within the app.</li>
-        <li>Your settings: language, appearance, and which household you last opened.</li>
+        <li>
+          Your settings: language, appearance, which household you last opened,
+          whether you have allowed your phone's assistant and search to see your
+          things, whether you have allowed an assistant to propose adding one,
+          whether the one-time "enjoying it?" question has already been asked, the
+          name this device goes by in a household's history, and what the store
+          last told the app about your plan — whether PRO is active, and whether it
+          was bought outright. That last pair is a copy of the store's own answer,
+          kept so that opening the app without a network does not lock a paying
+          customer out of their own catalogue. It is not a record of a payment, and
+          it holds nothing about how you paid.
+        </li>
+        <li>
+          If you have set up a shared folder, the password for it, and the key
+          derived from your folder passphrase if you have locked one. Both are kept
+          in the device's own secure storage — the Keychain on iOS, the Keystore on
+          Android — rather than alongside the catalogue.
+        </li>
       </ul>
       <p>
-        Households are kept separate from one another: each has its own
-        catalogue, search and history, and nothing passes between them.
+        Households are kept separate from one another: each has its own catalogue,
+        search and history, and nothing passes between them.
       </p>
       <p>
         None of this is transmitted anywhere by default. It is not backed up to any
@@ -222,13 +162,13 @@
           photos attached to them.
         </li>
         <li>
-          Nothing is sent to the internet by this method. There is no server in
-          the middle, no relay, and no copy retained anywhere by the developer.
+          Nothing is sent to the internet by this method. There is no server in the
+          middle, no relay, and no copy retained anywhere by the developer.
         </li>
         <li>
-          The connection is open only while the invite or join screen is on
-          screen. Cataloc does not listen on your network in the background and
-          does not advertise itself.
+          The connection is open only while the invite or join screen is on screen.
+          Cataloc does not listen on your network in the background and does not
+          advertise itself.
         </li>
       </ul>
 
@@ -241,9 +181,18 @@
       <ul>
         <li>
           <strong>You choose the folder.</strong> It might be a drive on your own
-          network or hosting space of your own. Cataloc has no default provider
-          and no folder of its own, and the developer never learns the address
-          you use.
+          network or hosting space of your own. The sync screen names a few
+          providers that hand you a WebDAV address, purely as examples of where to
+          look — Cataloc has no default provider, no arrangement with any of them
+          and no folder of its own, and the developer never learns the address you
+          use.
+        </li>
+        <li>
+          <strong>It runs on its own once you have set it up.</strong> Cataloc
+          checks the folder when you open the app, and publishes what you changed
+          about ten seconds after you stop changing it. There is no button and no
+          schedule: the app reaches the address you gave it while you are using it,
+          and at no other time. It never syncs in the background.
         </li>
         <li>
           A copy of the household — items, photos and history — is written to that
@@ -251,23 +200,36 @@
           access to it exactly as you would access to the data itself.
         </li>
         <li>
-          <strong>Cataloc adds no encryption of its own.</strong> Protection in
-          transit is whatever the address you entered provides: an
-          <code>https://</code> folder is encrypted in transit, an
-          <code>http://</code> one is not. Prefer <code>https://</code>.
+          <strong>Protection in transit is whatever the address you entered
+          provides:</strong> an <code>https://</code> folder is encrypted in
+          transit, an <code>http://</code> one is not. Prefer <code>https://</code>.
         </li>
         <li>
-          Whoever operates that folder — a hosting company, or you — is
-          responsible for it, under their terms rather than this policy.
+          <strong>You can lock the folder.</strong> Under Me → Sync, "Lock this
+          folder" encrypts everything Cataloc writes there — the containers, items,
+          names, dates and the photos — on your phone, before it is sent. Whoever
+          keeps the folder then holds files they cannot read. You choose a
+          passphrase and type the same one into every phone that syncs there; it
+          never leaves your devices, and there is no copy of it anywhere else,
+          which also means nobody can recover it for you. Anything written to the
+          folder <em>before</em> you turned the lock on stays there unencrypted
+          until you delete it yourself, from the folder. Even with the lock on,
+          whoever keeps the folder can still see how many devices publish to it,
+          how many photos there are and how large each file is — never a name, a
+          date or a picture.
+        </li>
+        <li>
+          Whoever operates that folder — a hosting company, or you — is responsible
+          for it, under their terms rather than this policy.
         </li>
       </ul>
 
       <p>
         <strong>Either way, each device keeps its own complete copy.</strong>
         Removing a member on one device does not delete the copy already on the
-        other — it only stops future syncs. Once you sync a household with
-        someone, they hold a full copy of it, exactly as if you had handed them an
-        export file.
+        other — it only stops future syncs. Once you sync a household with someone,
+        they hold a full copy of it, exactly as if you had handed them an export
+        file.
       </p>
       <p>
         <strong>Device name.</strong> Each install has a name — taken from your
@@ -280,12 +242,15 @@
       <h2>Sharing, labels and export</h2>
       <p>
         <strong>Sharing a list.</strong> You can turn a shelf or a tag into a
-        single web page, photos included, and hand it to your device's share
-        sheet. It opens in any browser without an app or an account — which also
-        means anyone who receives the page or its link can see everything on it,
-        so share it only with people you would show the shelf to. If you enable
-        the "ask to borrow" button, the page carries a way to send a message back
-        to you.
+        single web page, photos included, and hand it to your device's share sheet.
+        It opens in any browser without an app or an account — which also means
+        anyone who receives the page or its link can see everything on it, so share
+        it only with people you would show the shelf to. If you switch on the "ask
+        to borrow" button, you type in a WhatsApp number or an email address, and
+        it is written into the page itself so that tapping the button opens a
+        message to you. It travels with the file: anyone the page is forwarded to
+        has that number or address, not only the person you sent it to. Left off —
+        which is how it starts — nothing of the sort is included.
       </p>
       <p>
         <strong>Labels.</strong> A printed label can carry a QR code, a short code
@@ -297,18 +262,112 @@
       </p>
       <p>
         <strong>Export everything.</strong> This writes a single JSON file
-        containing your data and photos, and hands it to your device's share
-        sheet. Where that file then goes is entirely your choice. Cataloc does not
-        upload it anywhere.
+        containing your data and photos, and hands it to your device's share sheet.
+        Where that file then goes is entirely your choice. Cataloc does not upload
+        it anywhere.
+      </p>
+
+      <h2 id="your-phones-assistant-and-search">Your phone's assistant and search</h2>
+      <p>
+        This is off when you install Cataloc. You are asked about it plainly while
+        setting up, and you can change the answer at any time under
+        <strong>Me → Assistant</strong>. It is free, and consent is the only thing
+        that turns it on: there is no subscription anywhere in this, and nothing at
+        all happens until you say yes.
+      </p>
+
+      <h3>What it does</h3>
+      <p>
+        When you turn it on, Cataloc writes a list of your things into your phone's
+        own search index — the one behind Spotlight on iPhone and behind system
+        search on Android. For each container and item that list holds its name,
+        the full path to where it is kept, its household's name, its tags, its
+        short code, a reference to its photograph, how many of it there are, its
+        best-before date if it has one, and — if it is out on loan — the name you
+        typed for whoever has it.
+      </p>
+      <p>
+        That is what lets you search your phone rather than the app, and what lets
+        you ask Siri or your Android assistant where something is and be told which
+        shelf it is on.
+      </p>
+      <p>
+        <strong>The borrower's name is the one piece of this that is not
+        yours.</strong> Ask where the drill is while it is lent out and the answer
+        is "lent to Marta", because that is the useful answer — but it also means a
+        name you typed about somebody else sits in your phone's index for as long
+        as the loan is open. Marking the thing returned takes it straight back out,
+        as does turning this setting off. If you would rather no borrower's name
+        ever reached the index, either do not record who has your things or leave
+        this setting off.
+      </p>
+
+      <h3>What this does and does not mean</h3>
+      <ul>
+        <li>
+          <strong>Nothing is uploaded.</strong> The index is on your phone. There
+          is still no Cataloc server, and the developer still has no way to see any
+          of it.
+        </li>
+        <li>
+          <strong>It does leave Cataloc.</strong> This is the honest qualification
+          to "everything stays in the app's own storage" above. The index belongs
+          to the operating system, not to Cataloc, and what can read it is governed
+          by Apple's and Google's rules rather than by this policy. On iPhone,
+          Apple's own privacy policy covers Siri, Spotlight and Apple Intelligence;
+          on Android, Google's covers system search and the assistant.
+        </li>
+        <li>
+          <strong>Every household is included</strong> while the setting is on.
+          There is no per-household switch.
+        </li>
+        <li>
+          <strong>Turning it off removes it.</strong> Switching the setting off, or
+          using "Remove everything from search", takes the whole list back out of
+          the system index. Deleting a container or item removes it from the index
+          too, as does letting your subscription lapse.
+        </li>
+      </ul>
+
+      <h3>Letting the assistant add things</h3>
+      <p>
+        There is a second, separate setting, off unless you turn it on, which lets
+        your assistant offer to add something to your catalogue.
+      </p>
+      <p>
+        <strong>An assistant can never write to your catalogue.</strong> When you
+        ask one to add something, Cataloc opens with what it heard already filled
+        in, and nothing is saved until you confirm it. Assistants mishear and they
+        invent; this setting changes what they can <em>propose</em>, never what
+        they can do.
+      </p>
+
+      <h2>Photographing a whole shelf</h2>
+      <p>
+        Cataloc PRO lets you take one photograph of a shelf and drag a box around
+        each thing on it, giving each one a name. Every thing you mark is saved
+        with its own crop of that picture.
+      </p>
+      <p>
+        Nothing looks at the photograph but you. Cataloc does not recognise,
+        classify or otherwise analyse what is in a picture — it has no such feature
+        — and no artificial intelligence of any kind is involved in adding things
+        to your catalogue. The boxes are where you drew them and the names are what
+        you typed.
+      </p>
+      <p>
+        The cropping happens on your phone. <strong>The photograph is not
+        uploaded</strong>, and the original picture of the shelf is discarded once
+        the things you marked have been saved.
       </p>
 
       <h2>Permissions</h2>
       <p>
-        <strong>Camera</strong> — requested when you tap "Take photo", and when
-        you scan a label's QR code or a pairing code. Photographs are written to
-        the app's storage and are not uploaded. Declining the camera does not
-        block anything: you can still pick pictures from your library, and items
-        do not require a photo at all.
+        <strong>Camera</strong> — requested when you tap "Take photo", and when you
+        scan a label's QR code or a pairing code. Photographs are written to the
+        app's storage and are not uploaded. Declining the camera does not block
+        anything: you can still pick pictures from your library, and items do not
+        require a photo at all.
       </p>
       <p>
         <strong>Photo library</strong> — requested only when you tap "Library".
@@ -325,12 +384,26 @@
         or the microphone. It sends no notifications and shows no badges, so it
         never asks to notify you.
       </p>
+      <p>
+        <strong>What Android lists on the store page.</strong> Android prints every
+        permission an app declares, including the ones granted automatically and
+        never prompted for. Besides the camera, Cataloc's declares three: network
+        access, used for syncing and nothing else; vibration, which React Native
+        declares by default and Cataloc never actually uses; and reading and
+        writing shared storage on Android 12 and older, which is the old way of
+        doing what the photo picker does on newer versions. That is the whole list.
+        There is no location, no contacts, no microphone, and nothing that lets the
+        app draw over other apps.
+      </p>
 
       <h2>In-app purchases</h2>
       <p>
-        Cataloc is free for one household and 100 containers and items, with every
-        feature included. Cataloc PRO is an optional subscription that lifts both
-        limits; it is $2.99 per month or $14.99 per year.
+        Cataloc is free for one household and 200 containers and items. Cataloc PRO
+        lifts both limits and adds one of the features described above —
+        photographing a whole shelf and marking several things on it at once.
+        Letting your phone's assistant and search see your things is free. PRO is
+        $2.99 per month, $14.99 per year, or $29.99 as a single payment that never
+        renews.
       </p>
       <p>
         If you subscribe, the transaction is handled entirely by Apple or Google,
@@ -354,8 +427,16 @@
       <h2>Deleting your data</h2>
       <p>
         "Delete all data" on the Me tab erases every household, container, item,
-        photo and history entry from the device permanently. Deleting the app does
+        photo and history entry from the device permanently, and takes everything
+        back out of your phone's search index along with it. Deleting the app does
         the same.
+      </p>
+      <p>
+        <strong>Making it smaller.</strong> Me → Storage is a gentler version of
+        the same thing: it re-encodes your photographs at a lower resolution and
+        can drop history older than a date you choose. Both are permanent, both
+        show you the exact number of megabytes and lines they will remove before
+        you confirm, and neither sends anything anywhere.
       </p>
       <p>
         Because there is no server, there is no copy for the developer to hold, and
@@ -386,12 +467,18 @@
         Questions about this policy:
         <strong><a href="mailto:willpelicari@gmail.com">willpelicari@gmail.com</a></strong>
       </p>
+  </main>
 
-      <footer>
-        <a href="/cataloc/terms">Terms of Use</a> &nbsp;·&nbsp;
-        <a href="/cataloc/confidentialite">Français</a> &nbsp;·&nbsp;
-        <a href="/">wiltonpelicari.com</a>
-      </footer>
-    </main>
-  </body>
+  <footer>
+    <nav>
+      <a href="/cataloc/">Home</a>
+      <a href="/cataloc/terms">Terms of Use</a>
+      <a href="/cataloc/support.html">Support</a>
+    </nav>
+    © <span id="year">2026</span> Wilton Pelicari
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</div>
+</body>
 </html>
