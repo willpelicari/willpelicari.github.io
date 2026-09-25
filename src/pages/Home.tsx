@@ -21,7 +21,10 @@ export default function Home() {
   return (
     <div className="flex-1">
       {/* Hero */}
-      <div className="pt-16 pb-16 sm:pt-24 md:pt-[104px] md:pb-[84px] px-5 sm:px-8 md:px-14 flex flex-wrap gap-x-14 gap-y-10 items-end">
+      <div
+        className="pt-16 pb-16 sm:pt-24 md:pt-[104px] md:pb-[84px] px-5 sm:px-8 md:px-14 flex flex-wrap gap-x-14 gap-y-10 items-end"
+        style={{ minHeight: 'calc(100svh - var(--nav-h, 96px))' }}
+      >
         <h1
           className="flex-1 basis-[560px] font-extrabold text-[clamp(44px,6.5vw,80px)] leading-[0.98] tracking-[-0.02em] text-slate-800 dark:text-slate-100"
           style={{ textWrap: 'balance' as any }}

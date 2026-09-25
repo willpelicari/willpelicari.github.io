@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useLayoutEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
@@ -16,6 +16,21 @@ export default function Header() {
   const i18n = useTranslation()[1]
   const { theme, setTheme } = useContext(ThemeContext)
   const content = useContext(PortfolioContext)
+  const navRef = useRef<HTMLElement>(null)
+
+  useLayoutEffect(() => {
+    function syncNavHeight() {
+      if (navRef.current) {
+        document.documentElement.style.setProperty(
+          '--nav-h',
+          `${navRef.current.getBoundingClientRect().height}px`
+        )
+      }
+    }
+    syncNavHeight()
+    window.addEventListener('resize', syncNavHeight)
+    return () => window.removeEventListener('resize', syncNavHeight)
+  })
 
   function setNewTheme() {
     setTheme(theme === Themes.dark ? Themes.light : Themes.dark)
@@ -28,7 +43,10 @@ export default function Header() {
   const [firstLogoPart, ...restLogoParts] = content.header.logo.split(' ')
 
   return (
-    <nav className="bg-slate-950 text-white flex items-center flex-wrap gap-x-7 gap-y-3 px-5 py-4 sm:px-8 md:px-14">
+    <nav
+      ref={navRef}
+      className="bg-slate-950 text-white flex items-center flex-wrap gap-x-7 gap-y-3 px-5 py-4 sm:px-8 md:px-14"
+    >
       <NavLink
         to="/"
         className="text-xl tracking-[-0.01em] mr-auto text-white"
