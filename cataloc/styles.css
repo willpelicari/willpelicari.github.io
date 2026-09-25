@@ -79,7 +79,15 @@ header.top {
  */
 header.top img { width: 38px; height: 38px; border-radius: 22.5%; }
 header.top b { font-family: var(--display); font-weight: 800; font-size: 19px; }
-header.top nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
+header.top b a { color: inherit; text-decoration: none; }
+header.top nav { margin-left: auto; display: flex; align-items: center; gap: 18px; font-size: 15px; }
+
+.lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; }
+.lang a {
+  padding: 5px 13px; text-decoration: none; color: var(--ink3);
+  font-family: var(--display); font-weight: 700; font-size: 13px; line-height: 1.4;
+}
+.lang a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
 
 /* ---------- hero ---------- */
 
