@@ -22,7 +22,7 @@ export default function Home() {
     <div className="flex-1">
       {/* Hero */}
       <div
-        className="pt-16 pb-16 sm:pt-24 md:pt-[104px] md:pb-[84px] px-5 sm:px-8 md:px-14 flex flex-wrap gap-x-14 gap-y-10 items-end"
+        className="pt-16 pb-16 sm:pt-24 md:pt-[104px] md:pb-[84px] px-5 sm:px-8 md:px-14 flex flex-wrap gap-x-14 gap-y-10 items-center"
         style={{ minHeight: 'calc(100svh - var(--nav-h, 96px))' }}
       >
         <h1
