@@ -41,6 +41,26 @@ export type Toolbox = {
   description: string
 }
 
+// Apps
+export type AppLink = {
+  text: string
+  link: string
+}
+
+export type AppEntry = {
+  icon: string
+  name: string
+  tagline: string
+  description: string
+  links: AppLink[]
+}
+
+export type Apps = {
+  title: string
+  description: string
+  entries: AppEntry[]
+}
+
 // Experiences
 export type Company = {
   logo: string
@@ -100,6 +120,7 @@ export type Portfolio = {
   greeting: Greetings
   values: Values
   toolbox: Toolbox
+  apps?: Apps
   experiences: Experiences
   footer: Footer
 }
@@ -125,6 +146,11 @@ export const DefaultPortfolio = {
   toolbox: {
     title: '',
     description: ''
+  },
+  apps: {
+    title: '',
+    description: '',
+    entries: []
   },
   experiences: {
     title: '',

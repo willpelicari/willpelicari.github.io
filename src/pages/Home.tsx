@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import { FilterContext } from '../contexts/FilterContext'
 import { PortfolioContext } from '../contexts/PortfolioContext'
+import Apps from './Apps'
 import { Career } from './Career'
 import Greeting from './Greeting'
 import { Toolbox } from './Toolbox'
@@ -33,6 +34,9 @@ export default function Home() {
         />
       )}
       {content.values && <Values content={content.values} />}
+      {content.apps && content.apps.entries?.length > 0 && (
+        <Apps content={content.apps} />
+      )}
       <FilterContext.Provider value={{ filteredTags, setTags }}>
         {content.toolbox && (
           <Toolbox

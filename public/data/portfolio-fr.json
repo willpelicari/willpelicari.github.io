@@ -11,6 +11,10 @@
         "link": "#values"
       },
       {
+        "text": "Applications",
+        "link": "#apps"
+      },
+      {
         "text": "Compétences",
         "link": "#toolbox"
       },
@@ -51,6 +55,28 @@
         "icon": "/icons/solid.svg",
         "title": "Faible couplage, forte cohésion",
         "description": "Passionné par les principes SOLID, je développe de manière pragmatique, je parle, et j'apprends sans cesse ce qui fait un bon code."
+      }
+    ]
+  },
+  "apps": {
+    "title": "Ce que j'ai construit",
+    "description": "Des applications que je conçois, développe et publie moi-même, du début à la fin.",
+    "entries": [
+      {
+        "icon": "/icons/cataloc.png",
+        "name": "Cataloc",
+        "tagline": "Retrouvez n'importe quoi chez vous",
+        "description": "Un catalogue de vos propres biens qui fonctionne entièrement sur votre téléphone. Photographiez une tablette, imbriquez les contenants aussi profondément que la réalité l'exige, et la recherche vous donne le chemin complet vers tout ce que vous possédez. Aucun compte, aucun serveur, rien de téléversé.",
+        "links": [
+          {
+            "text": "En savoir plus",
+            "link": "/cataloc/"
+          },
+          {
+            "text": "Assistance",
+            "link": "/cataloc/support.html"
+          }
+        ]
       }
     ]
   },
