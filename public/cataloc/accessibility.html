@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cataloc — Accessibility</title>
+<meta name="description" content="How Cataloc supports VoiceOver, Voice Control, Larger Text, Dark Interface, Differentiate Without Color Alone, Sufficient Contrast and Reduced Motion.">
+<meta name="author" content="Wilton Pelicari">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/accessibility.html">
+<link rel="alternate" hreflang="fr-CA" href="https://www.wiltonpelicari.com/cataloc/accessibilite.html">
+<link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cataloc/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cataloc/accessibilite.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/accessibility.html">
+<meta property="og:title" content="Cataloc — Accessibility">
+<meta property="og:description" content="How Cataloc supports VoiceOver, Voice Control, Larger Text, Dark Interface, Differentiate Without Color Alone, Sufficient Contrast and Reduced Motion.">
+<meta property="og:image" content="https://www.wiltonpelicari.com/cataloc/icon.png">
+<link rel="icon" href="/cataloc/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="/cataloc/styles.css">
+</head>
+<body>
+<div class="portfolio-bar">
+  <a class="brand" href="/">Wilton Pelicari</a>
+  <nav>
+    <a href="/#/apps">Apps</a>
+    <a href="/#/about">About</a>
+    <a href="/#/experiences">Experiences</a>
+  </nav>
+</div>
+<div class="wrap">
+
+  <header class="top">
+    <img src="/cataloc/icon.png" alt="">
+    <b><a href="/cataloc/">Cataloc</a></b>
+    <nav>
+      <a href="/cataloc/support.html">Support</a>
+      <span class="lang"><a href="/cataloc/accessibilite.html">FR</a><a href="/cataloc/accessibility.html" aria-current="page">EN</a></span>
+    </nav>
+  </header>
+
+  <div class="hero" style="padding-block:14px 30px">
+    <h1>Accessibility</h1>
+    <p class="lede">
+      Cataloc is a one-person app, not a large team with a dedicated audit — but
+      accessibility was built into its foundations rather than bolted on afterwards.
+      Every tappable control, every label and every screen goes through the same
+      handful of shared components, so a fix made once applies everywhere at once.
+      This page lists what that gets you today, plainly, including where it falls short.
+    </p>
+  </div>
+
+  <section>
+    <h2>What's supported</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>VoiceOver</h3>
+        <p>Every tappable control in the app — buttons, rows, photos, switches — carries a role, a label and, where it helps, a hint. This isn't screen-by-screen effort: one shared button component stamps it on automatically, so new screens inherit it for free.</p>
+      </div>
+      <div class="feature">
+        <h3>Voice Control</h3>
+        <p>The same labels VoiceOver reads give Voice Control something to reference by name, across the whole app.</p>
+      </div>
+      <div class="feature">
+        <h3>Larger Text</h3>
+        <p>Text follows your phone's own text-size setting everywhere in the app — nothing is fixed at a size that stops scaling. Layouts are built to reflow rather than truncate as text grows.</p>
+      </div>
+      <div class="feature">
+        <h3>Dark Interface</h3>
+        <p>Light, dark or system — set once in the app (Me → Appearance) and every screen follows it.</p>
+      </div>
+      <div class="feature">
+        <h3>Differentiate Without Color Alone</h3>
+        <p>Tags and statuses always carry a name alongside their color. Nothing in the app expects you to tell things apart by hue alone.</p>
+      </div>
+      <div class="feature">
+        <h3>Sufficient Contrast</h3>
+        <p>Every text-and-background pairing in the app's own palette is checked against a minimum contrast ratio by a script that fails the build if one falls short — light palette and dark palette both.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Partly there</h2>
+    <div class="faq">
+      <div>
+        <h3>Reduced Motion</h3>
+        <p>Turning this on in your phone's settings already changes how Cataloc moves: screen transitions and pop-up sheets fade instead of sliding. A couple of smaller animations — onboarding's entrance effect, and the photo viewer's zoom-reset — don't check the setting yet and still animate. Being honest about the gap here rather than claiming the box on the App Store listing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Doesn't apply</h2>
+    <p>
+      <strong>Captions</strong> and <strong>Audio Descriptions</strong> are not
+      applicable — Cataloc has no video or audio content to caption or describe.
+      The camera is used only to take still photos.
+    </p>
+  </section>
+
+  <section>
+    <h2>Something not working for you?</h2>
+    <p>
+      If VoiceOver, Voice Control, or any of the above isn't behaving the way this
+      page says it should on your phone, that's a bug, not a trade-off — please
+      <a href="mailto:willpelicari@gmail.com?subject=Cataloc%20accessibility">write in</a>
+      with what you were trying to do and what happened instead.
+    </p>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/cataloc/">Home</a>
+      <a href="/cataloc/support.html">Support</a>
+      <a href="/cataloc/privacy">Privacy policy</a>
+      <a href="/cataloc/terms">Terms</a>
+    </nav>
+    © <span id="year">2026</span> <a class="credit-link" href="/">Wilton Pelicari</a>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cataloc — Accessibilité</title>
+<meta name="description" content="Comment Cataloc prend en charge VoiceOver, le Contrôle vocal, le Texte plus grand, l'Interface sombre, la distinction sans se fier uniquement à la couleur, le Contraste suffisant et la Réduction du mouvement.">
+<meta name="author" content="Wilton Pelicari">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.wiltonpelicari.com/cataloc/accessibilite.html">
+<link rel="alternate" hreflang="fr-CA" href="https://www.wiltonpelicari.com/cataloc/accessibilite.html">
+<link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cataloc/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cataloc/accessibilite.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wiltonpelicari.com/cataloc/accessibilite.html">
+<meta property="og:title" content="Cataloc — Accessibilité">
+<meta property="og:description" content="Comment Cataloc prend en charge VoiceOver, le Contrôle vocal, le Texte plus grand, l'Interface sombre, la distinction sans se fier uniquement à la couleur, le Contraste suffisant et la Réduction du mouvement.">
+<meta property="og:image" content="https://www.wiltonpelicari.com/cataloc/icon.png">
+<link rel="icon" href="/cataloc/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="/cataloc/styles.css">
+</head>
+<body>
+<div class="portfolio-bar">
+  <a class="brand" href="/">Wilton Pelicari</a>
+  <nav>
+    <a href="/#/apps">Applications</a>
+    <a href="/#/about">À propos</a>
+    <a href="/#/experiences">Expériences</a>
+  </nav>
+</div>
+<div class="wrap">
+
+  <header class="top">
+    <img src="/cataloc/icon.png" alt="">
+    <b><a href="/cataloc/accueil">Cataloc</a></b>
+    <nav>
+      <a href="/cataloc/assistance.html">Assistance</a>
+      <span class="lang"><a href="/cataloc/accessibilite.html" aria-current="page">FR</a><a href="/cataloc/accessibility.html">EN</a></span>
+    </nav>
+  </header>
+
+  <div class="hero" style="padding-block:14px 30px">
+    <h1>Accessibilité</h1>
+    <p class="lede">
+      Cataloc est une application développée par une seule personne, pas par une
+      grande équipe avec un audit dédié — mais l'accessibilité a été intégrée dans
+      ses fondations plutôt qu'ajoutée après coup. Chaque contrôle touchable, chaque
+      étiquette et chaque écran passe par les mêmes quelques composants partagés,
+      de sorte qu'une correction faite une seule fois s'applique partout à la fois.
+      Cette page indique, simplement, ce que cela vous apporte aujourd'hui, y
+      compris là où ce n'est pas encore suffisant.
+    </p>
+  </div>
+
+  <section>
+    <h2>Ce qui est pris en charge</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>VoiceOver</h3>
+        <p>Chaque contrôle touchable de l'application — boutons, lignes, photos, interrupteurs — porte un rôle, une étiquette et, quand cela aide, un indice. Ce n'est pas un effort écran par écran : un seul composant de bouton partagé l'applique automatiquement, de sorte que les nouveaux écrans en héritent gratuitement.</p>
+      </div>
+      <div class="feature">
+        <h3>Contrôle vocal</h3>
+        <p>Les mêmes étiquettes que lit VoiceOver donnent au Contrôle vocal de quoi se référer par nom, dans toute l'application.</p>
+      </div>
+      <div class="feature">
+        <h3>Texte plus grand</h3>
+        <p>Le texte suit le réglage de taille de texte de votre téléphone partout dans l'application — rien n'est figé à une taille qui cesse de s'adapter. Les mises en page sont conçues pour se réorganiser plutôt que de tronquer à mesure que le texte grandit.</p>
+      </div>
+      <div class="feature">
+        <h3>Interface sombre</h3>
+        <p>Claire, sombre ou système — réglée une fois dans l'application (Moi → Apparence) et chaque écran la suit.</p>
+      </div>
+      <div class="feature">
+        <h3>Distinction sans se fier uniquement à la couleur</h3>
+        <p>Les étiquettes et les statuts portent toujours un nom en plus de leur couleur. Rien dans l'application ne s'attend à ce que vous distinguiez les choses par la seule teinte.</p>
+      </div>
+      <div class="feature">
+        <h3>Contraste suffisant</h3>
+        <p>Chaque combinaison de texte et d'arrière-plan de la palette propre à l'application est vérifiée par rapport à un ratio de contraste minimal par un script qui fait échouer la compilation si l'un d'eux ne l'atteint pas — pour la palette claire comme pour la palette sombre.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Partiellement en place</h2>
+    <div class="faq">
+      <div>
+        <h3>Réduction du mouvement</h3>
+        <p>Activer ce réglage dans les paramètres de votre téléphone change déjà la façon dont Cataloc bouge : les transitions d'écran et les feuilles contextuelles s'estompent au lieu de glisser. Quelques animations plus mineures — l'effet d'entrée de la configuration initiale, et la remise à zéro du zoom de la visionneuse de photos — ne vérifient pas encore ce réglage et continuent de s'animer. Nous préférons être honnêtes sur cet écart plutôt que de cocher la case sur la fiche de l'App Store.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ne s'applique pas</h2>
+    <p>
+      Les <strong>sous-titres</strong> et l'<strong>audiodescription</strong> ne
+      s'appliquent pas — Cataloc n'a aucun contenu vidéo ou audio à sous-titrer ou
+      à décrire. L'appareil photo ne sert qu'à prendre des photos fixes.
+    </p>
+  </section>
+
+  <section>
+    <h2>Quelque chose ne fonctionne pas pour vous ?</h2>
+    <p>
+      Si VoiceOver, le Contrôle vocal, ou l'un des éléments ci-dessus ne se
+      comporte pas comme cette page l'indique sur votre téléphone, c'est un bogue,
+      pas un compromis — veuillez
+      <a href="mailto:willpelicari@gmail.com?subject=Cataloc%20accessibilit%C3%A9">m'écrire</a>
+      en précisant ce que vous essayiez de faire et ce qui s'est passé à la place.
+    </p>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="/cataloc/accueil">Accueil</a>
+      <a href="/cataloc/assistance.html">Assistance</a>
+      <a href="/cataloc/confidentialite">Politique de confidentialité</a>
+      <a href="/cataloc/conditions">Conditions</a>
+    </nav>
+    © <span id="year">2026</span> <a class="credit-link" href="/">Wilton Pelicari</a>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</div>
+</body>
+</html>
