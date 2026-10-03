@@ -21,10 +21,10 @@
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
 
-  var fr = root.lang.indexOf('fr') === 0;
-  var labels = fr
-    ? { dark: 'Passer au thème sombre', light: 'Passer au thème clair' }
-    : { dark: 'Switch to dark theme', light: 'Switch to light theme' };
+  var labels = {
+    fr: { dark: 'Passer au thème sombre', light: 'Passer au thème clair' },
+    pt: { dark: 'Mudar para o tema escuro', light: 'Mudar para o tema claro' }
+  }[root.lang.slice(0, 2)] || { dark: 'Switch to dark theme', light: 'Switch to light theme' };
 
   function label(button) {
     var text = isDark() ? labels.light : labels.dark;

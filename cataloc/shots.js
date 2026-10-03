@@ -9,10 +9,11 @@
   var links = Array.prototype.slice.call(document.querySelectorAll('.shots a.zoom'));
   if (!links.length || typeof HTMLDialogElement !== 'function') return;
 
-  var fr = document.documentElement.lang.indexOf('fr') === 0;
-  var t = fr
-    ? { close: 'Fermer', prev: 'Capture précédente', next: 'Capture suivante', zoom: 'Toucher pour agrandir ou réduire' }
-    : { close: 'Close', prev: 'Previous screenshot', next: 'Next screenshot', zoom: 'Tap to zoom in or out' };
+  var t = {
+    fr: { close: 'Fermer', prev: 'Capture précédente', next: 'Capture suivante', zoom: 'Toucher pour agrandir ou réduire' },
+    pt: { close: 'Fechar', prev: 'Tela anterior', next: 'Próxima tela', zoom: 'Toque para ampliar ou reduzir' }
+  }[document.documentElement.lang.slice(0, 2)] ||
+    { close: 'Close', prev: 'Previous screenshot', next: 'Next screenshot', zoom: 'Tap to zoom in or out' };
 
   // Arrows beside the heading, for anyone without a trackpad or touch screen.
   var strip = document.querySelector('.shots');
