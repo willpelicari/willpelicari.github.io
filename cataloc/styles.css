@@ -118,6 +118,7 @@ header.top nav { margin-left: auto; display: flex; align-items: center; gap: 18p
 .lang a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
 
 .theme-toggle {
+  -webkit-appearance: none; appearance: none;
   display: inline-grid; place-items: center;
   width: 34px; height: 34px; padding: 0;
   border: 1px solid var(--rule); border-radius: 999px;
@@ -195,6 +196,7 @@ section > p { color: var(--ink2); max-width: 36em; }
 .shots-head { display: flex; align-items: center; gap: 12px; }
 .shots-head h2 { margin-right: auto; }
 .shots-nav {
+  -webkit-appearance: none; appearance: none;
   display: inline-grid; place-items: center;
   width: 40px; height: 40px; padding: 0;
   border: 1px solid var(--rule); border-radius: 999px;
@@ -231,6 +233,7 @@ section > p { color: var(--ink2); max-width: 36em; }
 }
 .viewer-caption b { color: #F1EFEA; font-weight: 500; }
 .viewer button {
+  -webkit-appearance: none; appearance: none;
   position: absolute; width: 44px; height: 44px; border: 0; border-radius: 999px;
   background: rgba(30, 30, 28, 0.82); color: #fff;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
