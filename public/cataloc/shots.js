@@ -14,6 +14,36 @@
     ? { close: 'Fermer', prev: 'Capture précédente', next: 'Capture suivante', zoom: 'Toucher pour agrandir ou réduire' }
     : { close: 'Close', prev: 'Previous screenshot', next: 'Next screenshot', zoom: 'Tap to zoom in or out' };
 
+  // Arrows beside the heading, for anyone without a trackpad or touch screen.
+  var strip = document.querySelector('.shots');
+  var heading = strip.parentNode.querySelector('h2');
+  if (heading) {
+    var head = document.createElement('div');
+    head.className = 'shots-head';
+    heading.parentNode.insertBefore(head, heading);
+    head.appendChild(heading);
+    var back = document.createElement('button');
+    var fwd = document.createElement('button');
+    back.type = fwd.type = 'button';
+    back.className = fwd.className = 'shots-nav';
+    back.textContent = '‹';
+    fwd.textContent = '›';
+    back.setAttribute('aria-label', t.prev);
+    fwd.setAttribute('aria-label', t.next);
+    head.appendChild(back);
+    head.appendChild(fwd);
+    var step = function () { return Math.max(strip.clientWidth - 60, 228); };
+    back.addEventListener('click', function () { strip.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    fwd.addEventListener('click', function () { strip.scrollBy({ left: step(), behavior: 'smooth' }); });
+    var update = function () {
+      back.disabled = strip.scrollLeft <= 2;
+      fwd.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 2;
+    };
+    strip.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
   var dialog = document.createElement('dialog');
   dialog.className = 'viewer';
   dialog.innerHTML =

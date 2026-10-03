@@ -22,6 +22,11 @@
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
+/*
+ * Dark follows the phone unless the switch in the masthead (theme.js) has
+ * picked one: data-theme="light" opts out of the media query, and
+ * data-theme="dark" applies the same tokens regardless of it.
+ */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #131412;
@@ -37,6 +42,24 @@
     --shadow: none;
   }
 }
+
+:root[data-theme="dark"] {
+  --bg: #131412;
+  --surface: #1E211E;
+  --surface2: #282C28;
+  --ink: #F1EFEA;
+  --ink2: #C2BDB8;
+  --ink3: #97938C;
+  --rule: rgba(241, 239, 234, 0.13);
+  --accent: #7BC8BF;
+  --accent-ink: #0E1F1D;
+  --accent-soft: #22332F;
+  --shadow: none;
+}
+
+:root { color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 * { box-sizing: border-box; }
 
@@ -81,6 +104,11 @@ header.top img { width: 38px; height: 38px; border-radius: 22.5%; }
 header.top b { font-family: var(--display); font-weight: 800; font-size: 19px; }
 header.top b a { color: inherit; text-decoration: none; }
 header.top nav { margin-left: auto; display: flex; align-items: center; gap: 18px; font-size: 15px; }
+@media (max-width: 420px) {
+  header.top { gap: 10px; }
+  header.top nav { gap: 10px; }
+  .lang a { padding-inline: 10px; }
+}
 
 .lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; }
 .lang a {
@@ -88,6 +116,24 @@ header.top nav { margin-left: auto; display: flex; align-items: center; gap: 18p
   font-family: var(--display); font-weight: 700; font-size: 13px; line-height: 1.4;
 }
 .lang a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+
+.theme-toggle {
+  display: inline-grid; place-items: center;
+  width: 34px; height: 34px; padding: 0;
+  border: 1px solid var(--rule); border-radius: 999px;
+  background: transparent; color: var(--ink2); cursor: pointer;
+}
+.theme-toggle:hover { color: var(--ink); background: var(--surface2); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.theme-toggle svg { width: 17px; height: 17px; }
+/* Show the moon while light (tap for dark), the sun while dark. */
+.theme-toggle .sun { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .moon { display: none; }
+}
+:root[data-theme="dark"] .theme-toggle .sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .moon { display: none; }
 
 /* ---------- hero ---------- */
 
@@ -125,6 +171,18 @@ section > p { color: var(--ink2); max-width: 36em; }
   overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 22px;
   list-style: none;
 }
+/*
+ * A scrollbar that reads on both themes and does not fade away. Chrome and
+ * Safari get the ::-webkit-scrollbar version, which stays visible even with
+ * macOS overlay scrollbars; setting scrollbar-color there would switch Chrome
+ * back to the standard one, which hides when idle, so Firefox alone gets that.
+ */
+@supports not selector(::-webkit-scrollbar) {
+  .shots { scrollbar-width: thin; scrollbar-color: var(--ink3) var(--surface2); }
+}
+.shots::-webkit-scrollbar { height: 8px; }
+.shots::-webkit-scrollbar-track { background: var(--surface2); border-radius: 999px; margin-inline: 22px; }
+.shots::-webkit-scrollbar-thumb { background: var(--ink3); border-radius: 999px; }
 .shots li { flex: 0 0 210px; scroll-snap-align: start; margin: 0; }
 .shots img {
   display: block; width: 100%; height: auto;
@@ -134,6 +192,18 @@ section > p { color: var(--ink2); max-width: 36em; }
 .shots li.page img { border-radius: 6px; }
 .shots p { margin: 10px 2px 0; font-size: 15px; line-height: 1.45; color: var(--ink2); }
 .shots p b { color: var(--ink); font-weight: 500; }
+.shots-head { display: flex; align-items: center; gap: 12px; }
+.shots-head h2 { margin-right: auto; }
+.shots-nav {
+  display: inline-grid; place-items: center;
+  width: 40px; height: 40px; padding: 0;
+  border: 1px solid var(--rule); border-radius: 999px;
+  background: var(--surface); color: var(--ink); box-shadow: var(--shadow);
+  font: 400 24px/1 var(--body); cursor: pointer;
+}
+.shots-nav:hover:not(:disabled) { background: var(--surface2); }
+.shots-nav:disabled { opacity: 0.35; cursor: default; }
+.shots-nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .shots a.zoom { display: block; cursor: zoom-in; border-radius: 22px; }
 .shots li.page a.zoom { border-radius: 6px; }
 
