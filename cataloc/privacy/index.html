@@ -83,7 +83,7 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Privacy Policy</h1>
-      <p class="updated">Last updated: 25 September 2026</p>
+      <p class="updated">Last updated: 2 October 2026</p>
 
       <section class="summary">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">The short version</h2>
@@ -94,14 +94,16 @@ header.top b a { color: inherit; text-decoration: none; }
           deliberately send it somewhere.
         </p>
         <p>
-          There are four ways data can leave your phone, and you have to set up
+          There are five ways data can leave your phone, and you have to start
           every one of them: pairing with another phone on your Wi-Fi, syncing
           through a shared folder whose address you supply, sharing a list as a web
-          page, and exporting your data. In none of them does anything pass through
-          the developer, who has no access to your catalogue by any route.
+          page, exporting your data, and sending an insurance report as a PDF. In
+          none of them does anything pass through the developer, who has no access
+          to your catalogue by any route. Reminders, if you turn them on, appear on
+          your own lock screen and nowhere else.
         </p>
         <p>
-          There is a fifth way data can leave <em>Cataloc</em> without leaving your
+          There is one more way data can leave <em>Cataloc</em> without leaving your
           phone, and it is off until you switch it on: letting your phone's own
           assistant and search find your things. It is described in full under
           <a href="#your-phones-assistant-and-search">Your phone's assistant and
@@ -114,15 +116,25 @@ header.top b a { color: inherit; text-decoration: none; }
       <ul>
         <li>
           The households, containers and items you create, including their names,
-          tags, quantities, best-before dates and loan details.
+          tags, quantities, expiration dates and loan details.
         </li>
-        <li>The photos you take or choose, saved as files inside the app's own folder.</li>
+        <li>
+          The insurance details you choose to add to a thing: its value and
+          currency, purchase date, brand, model, serial number and a photo of the
+          receipt.
+        </li>
+        <li>
+          The photos you take or choose, saved as files inside the app's own
+          folder, and the date each photo was taken.
+        </li>
         <li>A history of changes you have made within the app.</li>
         <li>
           Your settings: language, appearance, which household you last opened,
           whether you have allowed your phone's assistant and search to see your
           things, whether you have allowed an assistant to propose adding one,
-          whether the one-time "enjoying it?" question has already been asked, the
+          which reminders you have turned on and how far ahead they come, a record
+          of which reminders have already gone off, which first-run tips you have
+          already seen, whether the one-time "enjoying it?" question has already been asked, the
           name this device goes by in a household's history, and what the store
           last told the app about your plan — whether PRO is active, and whether it
           was bought outright. That last pair is a copy of the store's own answer,
@@ -132,7 +144,8 @@ header.top b a { color: inherit; text-decoration: none; }
         </li>
         <li>
           If you have set up a shared folder, the password for it, and the key
-          derived from your folder passphrase if you have locked one. Both are kept
+          derived from your folder passphrase if you have locked one. If you
+          password-protect your exports, that password too. All of these are kept
           in the device's own secure storage — the Keychain on iOS, the Keystore on
           Android — rather than alongside the catalogue.
         </li>
@@ -274,6 +287,33 @@ header.top b a { color: inherit; text-decoration: none; }
         Where that file then goes is entirely your choice. Cataloc does not upload
         it anywhere.
       </p>
+      <p>
+        <strong>Password-protected exports.</strong> Under Me, you can choose a
+        password for your exports. Every export from then on is encrypted on your
+        phone before it is written, with the same encryption as the folder lock,
+        so having the file is no longer the same as reading it. The password is
+        kept in the Keychain or Keystore so exporting stays one tap; it is never
+        sent anywhere, and nobody can recover it for you — lose it and that file
+        cannot be read again. Only the file's format, version and the date it was
+        exported stay readable, so that Cataloc can tell you the file needs a
+        password. Exports made before you turned this on stay as they were.
+      </p>
+
+      <h2 id="insurance-report">Insurance report</h2>
+      <p>
+        The insurance report turns your catalogue into one PDF: each thing with
+        its photo and the day it was taken, its value, receipt, brand, model and
+        serial number, grouped by where it is kept, with subtotals. It is built on
+        your phone and handed to your device's print or share sheet. Nothing is
+        uploaded, and where the file goes from there is your choice.
+      </p>
+      <p>
+        <strong>Whoever receives the report can see everything in it</strong> —
+        values, serial numbers and receipts included — and keeps their own copy.
+        Send it only to people you would show those to. A shared web list never
+        includes values or serial numbers. Syncing and exporting carry the
+        insurance details like any other field of a thing.
+      </p>
 
       <h2 id="your-phones-assistant-and-search">Your phone's assistant and search</h2>
       <p>
@@ -291,7 +331,7 @@ header.top b a { color: inherit; text-decoration: none; }
         search on Android. For each container and item that list holds its name,
         the full path to where it is kept, its household's name, its tags, its
         short code, a reference to its photograph, how many of it there are, its
-        best-before date if it has one, and — if it is out on loan — the name you
+        expiration date if it has one, and — if it is out on loan — the name you
         typed for whoever has it.
       </p>
       <p>
@@ -333,7 +373,7 @@ header.top b a { color: inherit; text-decoration: none; }
           <strong>Turning it off removes it.</strong> Switching the setting off, or
           using "Remove everything from search", takes the whole list back out of
           the system index. Deleting a container or item removes it from the index
-          too, as does letting your subscription lapse.
+          too.
         </li>
       </ul>
 
@@ -352,9 +392,10 @@ header.top b a { color: inherit; text-decoration: none; }
 
       <h2>Photographing a whole shelf</h2>
       <p>
-        Cataloc PRO lets you take one photograph of a shelf and drag a box around
-        each thing on it, giving each one a name. Every thing you mark is saved
-        with its own crop of that picture.
+        Cataloc lets you take one photograph of a shelf and tap or drag a box
+        around each thing on it, giving each one a name and choosing whether it is
+        an item or a container. Every thing you mark is saved with its own crop of
+        that picture. This is free.
       </p>
       <p>
         Nothing looks at the photograph but you. Cataloc does not recognise,
@@ -380,7 +421,9 @@ header.top b a { color: inherit; text-decoration: none; }
       <p>
         <strong>Photo library</strong> — requested only when you tap "Library".
         Cataloc reads only the single picture you select and stores a copy in its
-        own folder.
+        own folder. It reads the date the picture was taken from its metadata;
+        every other piece of metadata, location included, is dropped when the
+        photo is re-encoded.
       </p>
       <p>
         <strong>Local network (iOS)</strong> — requested the first time you sync,
@@ -388,28 +431,50 @@ header.top b a { color: inherit; text-decoration: none; }
         reach a shared folder held on your own network. Used only for syncing.
       </p>
       <p>
+        <strong>Notifications</strong> — requested only when you turn on a
+        reminder under Me → Notifications, and never anywhere else. If you
+        refuse, the switch stays off. Both reminders — for things you have lent
+        out coming due, and for expiration dates — are off until you turn them
+        on. They are scheduled locally, on your phone, from your own catalogue:
+        there is no push service, no notification token and no server, and
+        nothing about a reminder leaves the device. Only this phone is reminded;
+        other members of a shared household are not, and the person who has
+        something of yours is never contacted by Cataloc. Cataloc shows no badges.
+      </p>
+      <p>
+        The text of a reminder is written on your phone, and a loan reminder
+        names the thing and the person you lent it to. Your phone may show that on
+        its lock screen and on a paired watch, as it does any notification. If you
+        would rather it did not, turn loan reminders off, or change how your phone
+        previews notifications in its own settings. Turning a reminder off, or
+        turning off notifications for Cataloc in your phone's settings, cancels
+        everything already scheduled.
+      </p>
+      <p>
         Cataloc requests no other permissions. It does not use location, contacts
-        or the microphone. It sends no notifications and shows no badges, so it
-        never asks to notify you.
+        or the microphone.
       </p>
       <p>
         <strong>What Android lists on the store page.</strong> Android prints every
         permission an app declares, including the ones granted automatically and
-        never prompted for. Besides the camera, Cataloc's declares three: network
-        access, used for syncing and nothing else; vibration, which React Native
+        never prompted for. Besides the camera, Cataloc's declares five: network
+        access, used for syncing and nothing else; posting notifications, asked
+        for only when you turn a reminder on; running at start-up, which is how
+        reminders already scheduled survive the phone being restarted, and which
+        does nothing else; vibration, which React Native
         declares by default and Cataloc never actually uses; and reading and
         writing shared storage on Android 12 and older, which is the old way of
         doing what the photo picker does on newer versions. That is the whole list.
-        There is no location, no contacts, no microphone, and nothing that lets the
-        app draw over other apps.
+        There is no location, no contacts, no microphone, no exact alarms, and
+        nothing that lets the app draw over other apps.
       </p>
 
       <h2>In-app purchases</h2>
       <p>
         Cataloc is free for one household and 200 containers and items. Cataloc PRO
-        lifts both limits and adds one of the features described above —
-        photographing a whole shelf and marking several things on it at once.
-        Letting your phone's assistant and search see your things is free. PRO is
+        lifts both limits and does nothing else: every feature described above —
+        marking several things on one photograph, the insurance report, reminders,
+        and letting your phone's assistant and search see your things — is free. PRO is
         $2.99 per month, $14.99 per year, or $29.99 as a single payment that never
         renews.
       </p>
@@ -435,16 +500,21 @@ header.top b a { color: inherit; text-decoration: none; }
       <h2>Deleting your data</h2>
       <p>
         "Delete all data" on the Me tab erases every household, container, item,
-        photo and history entry from the device permanently, and takes everything
-        back out of your phone's search index along with it. Deleting the app does
+        photo and history entry from the device permanently, takes everything
+        back out of your phone's search index along with it, and cancels any
+        pending reminders — with nothing left for them to be about, none are
+        scheduled again. Deleting the app does
         the same.
       </p>
       <p>
         <strong>Making it smaller.</strong> Me → Storage is a gentler version of
-        the same thing: it re-encodes your photographs at a lower resolution and
-        can drop history older than a date you choose. Both are permanent, both
-        show you the exact number of megabytes and lines they will remove before
-        you confirm, and neither sends anything anywhere.
+        the same thing. It can re-encode your photographs at a lower resolution,
+        delete photos that nothing in the catalogue uses any more, merge bursts of
+        edits in the history into one line, delete history older than a date you
+        choose, and forget old records of deletions once every phone in the
+        household has synced past them. All of it is permanent, the screen shows
+        how much it will free before you confirm, and none of it sends anything
+        anywhere.
       </p>
       <p>
         Because there is no server, there is no copy for the developer to hold, and
@@ -454,8 +524,9 @@ header.top b a { color: inherit; text-decoration: none; }
       </p>
       <p>
         Copies you have already sent elsewhere are outside the app's reach: a
-        shared sync folder, a device you paired with, an exported file or a shared
-        page all have to be deleted where they now live.
+        shared sync folder, a device you paired with, an exported file, a shared
+        page or an insurance report you sent all have to be deleted where they now
+        live.
       </p>
 
       <h2>Children</h2>
