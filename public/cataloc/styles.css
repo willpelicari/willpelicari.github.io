@@ -114,6 +114,64 @@ section > p { color: var(--ink2); max-width: 36em; }
 @media (min-width: 620px) { .features { grid-template-columns: 1fr 1fr; gap: 26px 34px; } }
 .feature p { margin: 0; color: var(--ink2); font-size: 16px; }
 
+/*
+ * Screenshots: one horizontal strip that snaps a phone at a time. It bleeds
+ * past .wrap's gutter to the viewport edge so the next shot peeks in, which
+ * is what tells a visitor the strip scrolls.
+ */
+.shots {
+  display: flex; gap: 18px; align-items: flex-start;
+  margin: 28px -22px 0; padding: 4px 22px 18px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 22px;
+  list-style: none;
+}
+.shots li { flex: 0 0 210px; scroll-snap-align: start; margin: 0; }
+.shots img {
+  display: block; width: 100%; height: auto;
+  border-radius: 22px; border: 1px solid var(--rule); box-shadow: var(--shadow);
+  background: var(--surface);
+}
+.shots li.page img { border-radius: 6px; }
+.shots p { margin: 10px 2px 0; font-size: 15px; line-height: 1.45; color: var(--ink2); }
+.shots p b { color: var(--ink); font-weight: 500; }
+.shots a.zoom { display: block; cursor: zoom-in; border-radius: 22px; }
+.shots li.page a.zoom { border-radius: 6px; }
+
+/* The viewer that shots.js opens over the page. */
+.viewer {
+  width: 100vw; height: 100dvh; max-width: none; max-height: none;
+  margin: 0; padding: 0; border: 0;
+  background: rgba(10, 10, 9, 0.94); color: #F1EFEA;
+}
+.viewer::backdrop { background: transparent; }
+.viewer-stage {
+  position: absolute; inset: 0 0 76px;
+  display: flex; overflow: auto;
+}
+.viewer-stage img {
+  margin: auto; display: block;
+  max-width: calc(100% - 32px); max-height: calc(100% - 32px);
+  border-radius: 14px; cursor: zoom-in; touch-action: pinch-zoom;
+}
+.viewer.zoomed .viewer-stage img { max-width: none; max-height: none; cursor: zoom-out; }
+.viewer-caption {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 76px;
+  margin: 0; padding: 10px 72px; text-align: center;
+  font-size: 15px; line-height: 1.4; color: #C2BDB8;
+}
+.viewer-caption b { color: #F1EFEA; font-weight: 500; }
+.viewer button {
+  position: absolute; width: 44px; height: 44px; border: 0; border-radius: 999px;
+  background: rgba(30, 30, 28, 0.82); color: #fff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+  font: 400 28px/1 var(--body); cursor: pointer;
+}
+.viewer button:hover { background: rgba(60, 60, 56, 0.92); }
+.viewer button:focus-visible { outline: 2px solid #7BC8BF; outline-offset: 2px; }
+.viewer-close { top: 14px; right: 14px; }
+.viewer-prev { left: 14px; bottom: 16px; }
+.viewer-next { right: 14px; bottom: 16px; }
+
 .plans { display: grid; gap: 14px; margin-top: 24px; }
 @media (min-width: 620px) { .plans { grid-template-columns: repeat(3, 1fr); } }
 .plan {

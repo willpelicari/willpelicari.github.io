@@ -83,7 +83,7 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Politique de confidentialité</h1>
-      <p class="updated">Dernière mise à jour : 25 septembre 2026</p>
+      <p class="updated">Dernière mise à jour : 2 octobre 2026</p>
 
       <section class="summary">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">En bref</h2>
@@ -94,16 +94,18 @@ header.top b a { color: inherit; text-decoration: none; }
           appareil, à moins que vous ne l'envoyiez délibérément ailleurs.
         </p>
         <p>
-          Il y a quatre façons dont des données peuvent quitter votre téléphone, et
-          vous devez configurer chacune d'elles : le jumelage avec un autre
+          Il y a cinq façons dont des données peuvent quitter votre téléphone, et
+          c'est vous qui déclenchez chacune d'elles : le jumelage avec un autre
           téléphone sur votre réseau Wi-Fi, la synchronisation par un dossier
           partagé dont vous fournissez l'adresse, le partage d'une liste sous forme
-          de page web, et l'exportation de vos données. Dans aucun de ces cas quoi
-          que ce soit ne transite par le développeur, qui n'a accès à votre
-          catalogue par aucun moyen.
+          de page web, l'exportation de vos données, et l'envoi d'un rapport
+          d'assurance en PDF. Dans aucun de ces cas quoi que ce soit ne transite
+          par le développeur, qui n'a accès à votre catalogue par aucun moyen. Les
+          rappels, si vous les activez, s'affichent sur votre propre écran
+          verrouillé et nulle part ailleurs.
         </p>
         <p>
-          Il existe une cinquième façon dont des données peuvent sortir de
+          Il existe encore une façon dont des données peuvent sortir de
           <em>Cataloc</em> sans quitter votre téléphone, et elle est désactivée
           tant que vous ne l'activez pas : laisser l'assistant et la recherche de
           votre téléphone trouver vos affaires. Elle est décrite en détail sous
@@ -120,18 +122,26 @@ header.top b a { color: inherit; text-decoration: none; }
       <ul>
         <li>
           Les foyers, contenants et objets que vous créez, y compris leurs noms,
-          étiquettes, quantités, dates de péremption et détails de prêt.
+          étiquettes, quantités, dates d'expiration et détails de prêt.
+        </li>
+        <li>
+          Les détails pour l'assurance que vous choisissez d'ajouter à une chose :
+          sa valeur et sa devise, sa date d'achat, sa marque, son modèle, son
+          numéro de série et une photo du reçu.
         </li>
         <li>
           Les photos que vous prenez ou choisissez, enregistrées comme fichiers
-          dans le dossier propre à l'application.
+          dans le dossier propre à l'application, et la date à laquelle chaque
+          photo a été prise.
         </li>
         <li>Un historique des modifications que vous avez faites dans l'application.</li>
         <li>
           Vos réglages : la langue, l'apparence, le dernier foyer ouvert, si vous
           avez autorisé l'assistant et la recherche de votre téléphone à voir vos
           affaires, si vous avez autorisé un assistant à proposer d'en ajouter une,
-          si la question unique « vous aimez l'application ? » a déjà été posée, le
+          quels rappels vous avez activés et combien de temps à l'avance ils
+          arrivent, une trace des rappels déjà déclenchés, quels conseils de
+          première utilisation vous avez déjà vus, si la question unique « vous aimez l'application ? » a déjà été posée, le
           nom que porte cet appareil dans l'historique d'un foyer, et ce que la
           boutique a dit en dernier à l'application au sujet de votre forfait — si
           PRO est actif, et s'il a été acheté d'un coup. Ce dernier couple est une
@@ -143,7 +153,8 @@ header.top b a { color: inherit; text-decoration: none; }
         <li>
           Si vous avez configuré un dossier partagé, le mot de passe de celui-ci,
           ainsi que la clé dérivée de votre phrase de passe si vous en avez
-          verrouillé un. Les deux sont conservés dans le stockage sécurisé de
+          verrouillé un. Si vous protégez vos exportations par un mot de passe, ce
+          mot de passe aussi. Tous sont conservés dans le stockage sécurisé de
           l'appareil — le trousseau sur iOS, le Keystore sur Android — plutôt
           qu'à côté du catalogue.
         </li>
@@ -304,6 +315,39 @@ header.top b a { color: inherit; text-decoration: none; }
         votre appareil. Ce qu'il advient ensuite de ce fichier ne dépend que de
         vous. Cataloc ne le téléverse nulle part.
       </p>
+      <p>
+        <strong>Exportations protégées par un mot de passe.</strong> Sous Moi,
+        vous pouvez choisir un mot de passe pour vos exportations. Chaque
+        exportation est dès lors chiffrée sur votre téléphone avant d'être écrite,
+        avec le même chiffrement que le verrou du dossier, de sorte qu'avoir le
+        fichier ne revient plus à pouvoir le lire. Le mot de passe est conservé
+        dans le trousseau ou le Keystore pour que l'exportation reste à un geste ;
+        il n'est jamais envoyé nulle part, et personne ne peut le récupérer pour
+        vous — perdez-le et ce fichier ne pourra plus être lu. Seuls le format du
+        fichier, sa version et sa date d'exportation restent lisibles, pour que
+        Cataloc puisse vous dire que le fichier exige un mot de passe. Les
+        exportations faites avant que vous n'activiez cette option restent telles
+        quelles.
+      </p>
+
+      <h2 id="rapport-assurance">Rapport d'assurance</h2>
+      <p>
+        Le rapport d'assurance transforme votre catalogue en un seul PDF : chaque
+        chose avec sa photo et le jour où elle a été prise, sa valeur, son reçu, sa
+        marque, son modèle et son numéro de série, regroupée selon l'endroit où
+        elle est rangée, avec des sous-totaux. Il est produit sur votre téléphone
+        et remis à la feuille d'impression ou de partage de votre appareil. Rien
+        n'est téléversé, et ce qu'il advient ensuite du fichier ne dépend que de
+        vous.
+      </p>
+      <p>
+        <strong>Quiconque reçoit le rapport peut voir tout ce qu'il
+        contient</strong> — valeurs, numéros de série et reçus compris — et en
+        garde sa propre copie. Ne l'envoyez qu'à des gens à qui vous les
+        montreriez. Une liste partagée en page web ne contient jamais de valeurs
+        ni de numéros de série. La synchronisation et l'exportation transportent
+        les détails pour l'assurance comme n'importe quel autre champ d'une chose.
+      </p>
 
       <h2 id="assistant-et-recherche">L'assistant et la recherche de votre téléphone</h2>
       <p>
@@ -322,7 +366,7 @@ header.top b a { color: inherit; text-decoration: none; }
         iPhone et la recherche système sur Android. Pour chaque contenant et chaque
         objet, cette liste contient son nom, le chemin complet menant à l'endroit
         où il est rangé, le nom de son foyer, ses étiquettes, son code court, une
-        référence à sa photo, la quantité, sa date de péremption s'il en a une et —
+        référence à sa photo, la quantité, sa date d'expiration s'il en a une et —
         s'il est prêté — le nom que vous avez saisi pour la personne qui l'a.
       </p>
       <p>
@@ -368,7 +412,7 @@ header.top b a { color: inherit; text-decoration: none; }
           <strong>Le désactiver retire tout.</strong> Désactiver le réglage, ou
           utiliser « Tout retirer de la recherche », retire l'ensemble de la liste
           de l'index du système. Supprimer un contenant ou un objet le retire aussi
-          de l'index, tout comme laisser votre abonnement prendre fin.
+          de l'index.
         </li>
       </ul>
 
@@ -389,10 +433,11 @@ header.top b a { color: inherit; text-decoration: none; }
 
       <h2>Photographier une tablette entière</h2>
       <p>
-        Cataloc PRO vous permet de prendre une seule photo d'une tablette et de
-        tracer un cadre autour de chaque chose qui s'y trouve, en donnant un nom à
-        chacune. Chaque chose que vous marquez est enregistrée avec son propre
-        recadrage de cette image.
+        Cataloc vous permet de prendre une seule photo d'une tablette et de toucher
+        ou tracer un cadre autour de chaque chose qui s'y trouve, en donnant un nom
+        à chacune et en choisissant s'il s'agit d'un objet ou d'un contenant.
+        Chaque chose que vous marquez est enregistrée avec son propre recadrage de
+        cette image. C'est gratuit.
       </p>
       <p>
         Personne d'autre que vous ne regarde la photo. Cataloc ne reconnaît, ne
@@ -420,7 +465,9 @@ header.top b a { color: inherit; text-decoration: none; }
       <p>
         <strong>Photothèque</strong> — demandée uniquement lorsque vous touchez
         « Photothèque ». Cataloc ne lit que l'image que vous sélectionnez et en
-        conserve une copie dans son propre dossier.
+        conserve une copie dans son propre dossier. Il lit dans ses métadonnées la
+        date à laquelle l'image a été prise ; toutes les autres métadonnées, y
+        compris la localisation, sont écartées lorsque la photo est ré-encodée.
       </p>
       <p>
         <strong>Réseau local (iOS)</strong> — demandée la première fois que vous
@@ -429,32 +476,58 @@ header.top b a { color: inherit; text-decoration: none; }
         propre réseau. Utilisée uniquement pour la synchronisation.
       </p>
       <p>
+        <strong>Notifications</strong> — demandée uniquement lorsque vous activez
+        un rappel sous Moi → Notifications, et jamais ailleurs. Si vous refusez,
+        l'interrupteur reste désactivé. Les deux rappels — pour les choses prêtées
+        dont le retour approche, et pour les dates d'expiration — sont désactivés
+        tant que vous ne les activez pas. Ils sont programmés localement, sur
+        votre téléphone, à partir de votre propre catalogue : il n'y a ni service
+        de notifications poussées, ni jeton de notification, ni serveur, et rien
+        d'un rappel ne quitte l'appareil. Seul ce téléphone reçoit les rappels ;
+        les autres membres d'un foyer partagé ne les reçoivent pas, et la personne
+        qui a quelque chose à vous n'est jamais contactée par Cataloc. Cataloc
+        n'affiche aucune pastille.
+      </p>
+      <p>
+        Le texte d'un rappel est rédigé sur votre téléphone, et un rappel de prêt
+        nomme la chose et la personne à qui vous l'avez prêtée. Votre téléphone
+        peut l'afficher sur l'écran verrouillé et sur une montre jumelée, comme
+        n'importe quelle notification. Si vous préférez que ce ne soit pas le cas,
+        désactivez les rappels de prêt, ou modifiez l'aperçu des notifications
+        dans les réglages de votre téléphone. Désactiver un rappel, ou désactiver
+        les notifications de Cataloc dans les réglages de votre téléphone, annule
+        tout ce qui était déjà programmé.
+      </p>
+      <p>
         Cataloc ne demande aucune autre autorisation. Il n'utilise ni la
-        localisation, ni les contacts, ni le microphone. Il n'envoie aucune
-        notification et n'affiche aucune pastille, et ne vous demande donc jamais
-        la permission de vous notifier.
+        localisation, ni les contacts, ni le microphone.
       </p>
       <p>
         <strong>Ce qu'Android affiche sur la page de la boutique.</strong> Android
         énumère toutes les autorisations qu'une application déclare, y compris
         celles qui sont accordées automatiquement et qui ne font jamais l'objet
-        d'une demande. Outre l'appareil photo, Cataloc en déclare trois : l'accès
-        au réseau, utilisé pour la synchronisation et rien d'autre ; la vibration,
+        d'une demande. Outre l'appareil photo, Cataloc en déclare cinq : l'accès
+        au réseau, utilisé pour la synchronisation et rien d'autre ; l'envoi de
+        notifications, demandé uniquement lorsque vous activez un rappel ;
+        l'exécution au démarrage, qui permet aux rappels déjà programmés de
+        survivre au redémarrage du téléphone, et qui ne sert à rien d'autre ; la
+        vibration,
         que React Native déclare par défaut et que Cataloc n'utilise en fait
         jamais ; et la lecture et l'écriture dans le stockage partagé sur Android
         12 et versions antérieures, qui est l'ancienne façon de faire ce que le
         sélecteur de photos fait sur les versions plus récentes. Voilà toute la
-        liste. Il n'y a ni localisation, ni contacts, ni microphone, et rien qui
+        liste. Il n'y a ni localisation, ni contacts, ni microphone, ni alarmes exactes,
+        et rien qui
         permette à l'application de s'afficher par-dessus d'autres applications.
       </p>
 
       <h2>Achats intégrés</h2>
       <p>
         Cataloc est gratuit pour un foyer et 200 contenants et objets. Cataloc PRO
-        lève les deux limites et ajoute l'une des fonctions décrites plus haut —
-        photographier une tablette entière et y marquer plusieurs choses d'un coup.
-        Laisser l'assistant et la recherche de votre téléphone voir vos affaires
-        est gratuit. PRO coûte 2,99 $ par mois, 14,99 $ par année, ou 29,99 $ en un
+        lève les deux limites et ne fait rien d'autre : toutes les fonctions
+        décrites plus haut — marquer plusieurs choses sur une seule photo, le
+        rapport d'assurance, les rappels, et laisser l'assistant et la recherche de
+        votre téléphone voir vos affaires — sont gratuites. PRO coûte 2,99 $ par mois, 14,99 $ par année, ou 29,99 $ en un
         seul paiement qui ne se renouvelle jamais.
       </p>
       <p>
@@ -482,16 +555,20 @@ header.top b a { color: inherit; text-decoration: none; }
       <p>
         « Supprimer toutes les données », dans l'onglet Moi, efface définitivement
         de l'appareil tous les foyers, contenants, objets, photos et entrées
-        d'historique, et retire du même coup l'ensemble de l'index de recherche de
-        votre téléphone. Supprimer l'application fait de même.
+        d'historique, retire du même coup l'ensemble de l'index de recherche de
+        votre téléphone, et annule les rappels en attente — puisqu'il ne reste
+        plus rien sur quoi ils porteraient, aucun n'est programmé de nouveau. Supprimer l'application fait de même.
       </p>
       <p>
         <strong>Réduire la taille.</strong> Moi → Stockage est une version plus
-        douce de la même chose : cette fonction ré-encode vos photographies à une
-        résolution inférieure et peut écarter l'historique antérieur à une date que
-        vous choisissez. Les deux sont définitives, les deux vous montrent le
-        nombre exact de mégaoctets et de lignes qu'elles retireront avant que vous
-        ne confirmiez, et ni l'une ni l'autre n'envoie quoi que ce soit où que ce
+        douce de la même chose. Cette fonction peut ré-encoder vos photographies à
+        une résolution inférieure, supprimer les photos que plus rien n'utilise
+        dans le catalogue, fusionner en une seule ligne les rafales de
+        modifications de l'historique, supprimer l'historique antérieur à une date
+        que vous choisissez, et oublier les anciennes traces de suppressions une
+        fois que chaque téléphone du foyer s'est synchronisé au-delà. Tout cela est
+        définitif, l'écran vous montre combien d'espace sera libéré avant que vous
+        ne confirmiez, et rien de tout cela n'envoie quoi que ce soit où que ce
         soit.
       </p>
       <p>
@@ -503,7 +580,8 @@ header.top b a { color: inherit; text-decoration: none; }
       <p>
         Les copies que vous avez déjà envoyées ailleurs échappent à l'application :
         un dossier de synchronisation partagé, un appareil avec lequel vous vous
-        êtes jumelé, un fichier exporté ou une page partagée doivent tous être
+        êtes jumelé, un fichier exporté, une page partagée ou un rapport
+        d'assurance que vous avez envoyé doivent tous être
         supprimés là où ils se trouvent désormais.
       </p>
 
