@@ -487,18 +487,24 @@ header.top b a { color: inherit; text-decoration: none; }
       <p>
         <strong>What Android lists on the store page.</strong> Android prints every
         permission an app declares, including the ones granted automatically and
-        never prompted for. Besides the camera, Cataloc's declares five: network
-        access, used for syncing and nothing else; posting notifications, asked
-        for only when you turn a reminder on; running at start-up, which is how
-        reminders already scheduled survive the phone being restarted, and which
-        does nothing else; connecting to Android's on-device AI service (AICore),
-        which is how a name suggestion reaches Gemini Nano on the phone and is not
-        network access; vibration, which React Native
-        declares by default and Cataloc never actually uses; and reading and
-        writing shared storage on Android 12 and older, which is the old way of
-        doing what the photo picker does on newer versions. That is the whole list.
-        There is no location, no contacts, no microphone, no exact alarms, and
-        nothing that lets the app draw over other apps.
+        never prompted for. Besides the camera, Cataloc's are: network access, and
+        viewing and changing network and Wi-Fi state, used for syncing and nothing
+        else — to reach a shared folder, and to find another phone on the same
+        Wi-Fi when you pair two directly; posting notifications, asked for only
+        when you turn a reminder on; running at start-up, which is how reminders
+        already scheduled survive the phone being restarted, and which does nothing
+        else; connecting to Android's on-device AI service (AICore), which is how a
+        name suggestion reaches Gemini Nano on the phone and is not network access;
+        preventing the phone from sleeping, declared by the library that loads
+        photos, which may briefly hold the phone awake while it reads one;
+        vibration, which React Native declares by default and Cataloc never uses;
+        and Google Play billing, for buying Cataloc PRO, where Google handles the
+        payment. That is the whole list. There is no location, no contacts, no
+        microphone, no access to your phone's shared storage (a photo you pick
+        reaches Cataloc through the system photo picker, one picture at a time), no
+        fingerprint or face unlock, no push messaging, no app badges, no install
+        tracking, no exact alarms, and nothing that lets the app draw over other
+        apps.
       </p>
 
       <h2>In-app purchases</h2>
