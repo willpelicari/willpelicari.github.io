@@ -539,21 +539,27 @@ header.top b a { color: inherit; text-decoration: none; }
         <strong>Ce qu'Android affiche sur la page de la boutique.</strong> Android
         énumère toutes les autorisations qu'une application déclare, y compris
         celles qui sont accordées automatiquement et qui ne font jamais l'objet
-        d'une demande. Outre l'appareil photo, Cataloc en déclare cinq : l'accès
-        au réseau, utilisé pour la synchronisation et rien d'autre ; l'envoi de
-        notifications, demandé uniquement lorsque vous activez un rappel ;
-        l'exécution au démarrage, qui permet aux rappels déjà programmés de
-        survivre au redémarrage du téléphone, et qui ne sert à rien d'autre ; la
-        connexion au service d'IA intégré d'Android (AICore), qui permet à une
-        suggestion de nom de joindre Gemini Nano sur le téléphone et n'est pas un
-        accès réseau ; la vibration,
-        que React Native déclare par défaut et que Cataloc n'utilise en fait
-        jamais ; et la lecture et l'écriture dans le stockage partagé sur Android
-        12 et versions antérieures, qui est l'ancienne façon de faire ce que le
-        sélecteur de photos fait sur les versions plus récentes. Voilà toute la
-        liste. Il n'y a ni localisation, ni contacts, ni microphone, ni alarmes exactes,
-        et rien qui
-        permette à l'application de s'afficher par-dessus d'autres applications.
+        d'une demande. Outre l'appareil photo, celles de Cataloc sont : l'accès au
+        réseau, ainsi que la consultation et la modification de l'état du réseau et
+        du Wi-Fi, utilisés pour la synchronisation et rien d'autre — pour joindre
+        un dossier partagé, et pour trouver un autre téléphone sur le même Wi-Fi
+        quand vous en jumelez deux directement ; l'envoi de notifications, demandé
+        uniquement lorsque vous activez un rappel ; l'exécution au démarrage, qui
+        permet aux rappels déjà programmés de survivre au redémarrage du téléphone,
+        et qui ne sert à rien d'autre ; la connexion au service d'IA intégré
+        d'Android (AICore), qui permet à une suggestion de nom de joindre Gemini
+        Nano sur le téléphone et n'est pas un accès réseau ; l'empêchement de la
+        mise en veille, déclaré par la bibliothèque qui charge les photos, qui peut
+        garder brièvement le téléphone éveillé pendant qu'elle en lit une ; la
+        vibration, que React Native déclare par défaut et que Cataloc n'utilise
+        jamais ; et la facturation Google Play, pour acheter Cataloc PRO, dont
+        Google gère le paiement. Voilà toute la liste. Il n'y a ni localisation, ni
+        contacts, ni microphone, ni accès au stockage partagé du téléphone (une
+        photo que vous choisissez parvient à Cataloc par le sélecteur de photos du
+        système, une image à la fois), ni empreinte digitale ou reconnaissance
+        faciale, ni messages poussés, ni pastilles d'application, ni suivi des
+        installations, ni alarmes exactes, et rien qui permette à l'application de
+        s'afficher par-dessus d'autres applications.
       </p>
 
       <h2>Achats intégrés</h2>
