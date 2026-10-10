@@ -68,7 +68,7 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Política de Privacidade</h1>
-      <p class="updated">Última atualização: 2 de outubro de 2026</p>
+      <p class="updated">Última atualização: 10 de outubro de 2026</p>
 
       <section class="summary">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">Resumindo</h2>
@@ -388,17 +388,50 @@ header.top b a { color: inherit; text-decoration: none; }
         o próprio recorte daquela foto. Isso é de graça.
       </p>
       <p>
-        Ninguém olha para a foto além de você. O Cataloc não reconhece, não
-        classifica nem analisa de forma nenhuma o que há em uma imagem — ele não tem
-        recurso desse tipo — e nenhuma inteligência artificial participa da adição
-        de coisas ao seu catálogo. Os quadrados estão onde você os desenhou e os
-        nomes são os que você digitou.
+        Nada encontra as coisas da prateleira por você. Os quadrados estão onde
+        você os desenhou, e nada recebe nome a não ser que você digite um ou peça
+        uma sugestão, como explicado em
+        <a href="#sugestoes-de-nome">Sugestões de nome</a>.
       </p>
       <p>
         O recorte acontece no seu celular. <strong>A foto não é enviada</strong>, e
         a imagem original da prateleira é descartada assim que as coisas que você
         marcou são salvas.
       </p>
+
+      <h2 id="sugestoes-de-nome">Sugestões de nome</h2>
+      <p>
+        Em um celular com um modelo de IA próprio — um iPhone com a Apple
+        Intelligence ligada (iOS 27 ou mais recente), ou um Android com Gemini
+        Nano, como os Pixel e Galaxy mais recentes — um campo de nome ao lado de
+        uma foto mostra um botão com uma estrelinha. Tocar nele pergunta a esse
+        modelo, no seu celular, como se chama a coisa da foto — ou, na foto de uma prateleira, a coisa dentro do
+        quadrado que você desenhou — e coloca a resposta no campo para você manter,
+        mudar ou apagar.
+      </p>
+      <ul>
+        <li>
+          <strong>Só quando você toca.</strong> Nada é analisado quando você tira
+          uma foto, e nada recebe nome sem você pedir.
+        </li>
+        <li>
+          <strong>Só no seu celular.</strong> O Cataloc usa apenas o modelo que
+          vem no aparelho: a Apple Intelligence no iPhone, e o Gemini Nano pelo
+          AICore do Android. Ele não usa o Private Cloud Compute da Apple, o Gemini
+          online do Google nem nenhum outro serviço online, e <strong>nem a foto
+          nem a resposta são enviadas</strong>. As políticas de privacidade da
+          Apple e do Google cobrem esses modelos.
+        </li>
+        <li>
+          <strong>Pode errar.</strong> Os resultados variam conforme o modelo, e a
+          IA comete erros. O nome salvo é o que estiver no campo quando você salvar.
+        </li>
+        <li>
+          <strong>Só onde o celular tem esse modelo.</strong> Em celulares sem
+          ele, ou enquanto ele ainda está sendo baixado, o botão não aparece. O
+          Cataloc nunca inicia esse download por conta própria.
+        </li>
+      </ul>
 
       <h2>Permissões</h2>
       <p>
@@ -449,16 +482,24 @@ header.top b a { color: inherit; text-decoration: none; }
       <p>
         <strong>O que o Android mostra na página da loja.</strong> O Android lista
         toda permissão que um app declara, inclusive as concedidas automaticamente
-        e que nunca são pedidas. Além da câmera, o Cataloc declara cinco: acesso à
-        rede, usado para sincronizar e nada mais; enviar notificações, pedida só
-        quando você liga um lembrete; executar na inicialização, que é como os
-        lembretes já agendados sobrevivem a uma reinicialização do celular, e que
-        não faz mais nada; vibração, que o React Native declara por padrão e o
-        Cataloc nunca usa de fato; e leitura e gravação no armazenamento
-        compartilhado no Android 12 e anteriores, que é o jeito antigo de fazer o
-        que o seletor de fotos faz nas versões mais novas. A lista é essa. Não há
-        localização, contatos, microfone, alarmes exatos, nem nada que permita ao
-        app se sobrepor a outros apps.
+        e que nunca são pedidas. Além da câmera, as do Cataloc são: acesso à rede,
+        e ver e mudar o estado da rede e do Wi-Fi, usados para sincronizar e nada
+        mais — para chegar a uma pasta compartilhada, e para achar outro celular no
+        mesmo Wi-Fi quando você pareia dois diretamente; enviar notificações,
+        pedida só quando você liga um lembrete; executar na inicialização, que é
+        como os lembretes já agendados sobrevivem a uma reinicialização do celular,
+        e que não faz mais nada; conectar ao serviço de IA do próprio Android
+        (AICore), que é como uma sugestão de nome chega ao Gemini Nano no celular e
+        não é acesso à rede; impedir que o celular entre em repouso, declarada pela
+        biblioteca que carrega as fotos, que pode manter o celular acordado por um
+        instante enquanto lê uma; vibração, que o React Native declara por padrão e
+        o Cataloc nunca usa; e o faturamento do Google Play, para comprar o Cataloc
+        PRO, em que o Google cuida do pagamento. A lista é essa. Não há
+        localização, contatos, microfone, acesso ao armazenamento compartilhado do
+        celular (uma foto que você escolhe chega ao Cataloc pelo seletor de fotos do
+        sistema, uma de cada vez), digital ou desbloqueio facial, mensagens push,
+        selos no ícone, rastreamento de instalação, alarmes exatos, nem nada que
+        permita ao app se sobrepor a outros apps.
       </p>
 
       <h2>Compras no app</h2>
