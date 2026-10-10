@@ -408,11 +408,13 @@ header.top b a { color: inherit; text-decoration: none; }
 
       <h2 id="name-suggestions">Name suggestions</h2>
       <p>
-        On an iPhone with Apple Intelligence turned on (iOS 27 or later), a name
-        field beside a photo shows a sparkle button. Tapping it asks the Apple
-        Intelligence model that runs on your phone what the thing in the photo is
-        called — or, on a photo of a shelf, the thing inside the box you drew — and
-        puts its answer in the field for you to keep, change or delete.
+        On a phone with its own built-in AI model — an iPhone with Apple
+        Intelligence turned on (iOS 27 or later), or an Android phone with Gemini
+        Nano, such as recent Pixel and Galaxy models — a name field beside a photo
+        shows a sparkle button. Tapping it asks that model, on your phone, what the
+        thing in the photo is called — or, on a photo of a shelf, the thing inside
+        the box you drew — and puts its answer in the field for you to keep, change
+        or delete.
       </p>
       <ul>
         <li>
@@ -421,18 +423,20 @@ header.top b a { color: inherit; text-decoration: none; }
         </li>
         <li>
           <strong>On your phone only.</strong> Cataloc uses only the model built
-          into the device. It does not use Apple's Private Cloud Compute or any
-          other online service, makes no network request for this, and
-          <strong>the photo is not uploaded</strong>. Apple's own privacy policy
-          covers Apple Intelligence itself.
+          into the device: Apple Intelligence on iPhone, and Gemini Nano through
+          Android's AICore. It does not use Apple's Private Cloud Compute, Google's
+          online Gemini or any other online service, and <strong>neither the photo
+          nor the answer is uploaded</strong>. Apple's and Google's own privacy
+          policies cover those models.
         </li>
         <li>
           <strong>It can be wrong.</strong> Results vary with the model, and AI
           makes mistakes. The name saved is whatever is in the field when you save.
         </li>
         <li>
-          <strong>iPhone only.</strong> On Android, and on iPhones without Apple
-          Intelligence, the button does not appear.
+          <strong>Only where the phone has such a model.</strong> On phones
+          without one, or while it is still downloading, the button does not
+          appear. Cataloc never starts that download itself.
         </li>
       </ul>
 
@@ -487,7 +491,9 @@ header.top b a { color: inherit; text-decoration: none; }
         access, used for syncing and nothing else; posting notifications, asked
         for only when you turn a reminder on; running at start-up, which is how
         reminders already scheduled survive the phone being restarted, and which
-        does nothing else; vibration, which React Native
+        does nothing else; connecting to Android's on-device AI service (AICore),
+        which is how a name suggestion reaches Gemini Nano on the phone and is not
+        network access; vibration, which React Native
         declares by default and Cataloc never actually uses; and reading and
         writing shared storage on Android 12 and older, which is the old way of
         doing what the photo picker does on newer versions. That is the whole list.

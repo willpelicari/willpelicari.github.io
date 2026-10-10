@@ -401,10 +401,11 @@ header.top b a { color: inherit; text-decoration: none; }
 
       <h2 id="sugestoes-de-nome">Sugestões de nome</h2>
       <p>
-        Em um iPhone com a Apple Intelligence ligada (iOS 27 ou mais recente), um
-        campo de nome ao lado de uma foto mostra um botão com uma estrelinha. Tocar
-        nele pergunta ao modelo da Apple Intelligence que roda no seu celular como
-        se chama a coisa da foto — ou, na foto de uma prateleira, a coisa dentro do
+        Em um celular com um modelo de IA próprio — um iPhone com a Apple
+        Intelligence ligada (iOS 27 ou mais recente), ou um Android com Gemini
+        Nano, como os Pixel e Galaxy mais recentes — um campo de nome ao lado de
+        uma foto mostra um botão com uma estrelinha. Tocar nele pergunta a esse
+        modelo, no seu celular, como se chama a coisa da foto — ou, na foto de uma prateleira, a coisa dentro do
         quadrado que você desenhou — e coloca a resposta no campo para você manter,
         mudar ou apagar.
       </p>
@@ -415,18 +416,20 @@ header.top b a { color: inherit; text-decoration: none; }
         </li>
         <li>
           <strong>Só no seu celular.</strong> O Cataloc usa apenas o modelo que
-          vem no aparelho. Ele não usa o Private Cloud Compute da Apple nem nenhum
-          outro serviço online, não faz nenhum acesso à rede para isso, e
-          <strong>a foto não é enviada</strong>. A política de privacidade da
-          própria Apple cobre a Apple Intelligence.
+          vem no aparelho: a Apple Intelligence no iPhone, e o Gemini Nano pelo
+          AICore do Android. Ele não usa o Private Cloud Compute da Apple, o Gemini
+          online do Google nem nenhum outro serviço online, e <strong>nem a foto
+          nem a resposta são enviadas</strong>. As políticas de privacidade da
+          Apple e do Google cobrem esses modelos.
         </li>
         <li>
           <strong>Pode errar.</strong> Os resultados variam conforme o modelo, e a
           IA comete erros. O nome salvo é o que estiver no campo quando você salvar.
         </li>
         <li>
-          <strong>Só no iPhone.</strong> No Android, e em iPhones sem Apple
-          Intelligence, o botão não aparece.
+          <strong>Só onde o celular tem esse modelo.</strong> Em celulares sem
+          ele, ou enquanto ele ainda está sendo baixado, o botão não aparece. O
+          Cataloc nunca inicia esse download por conta própria.
         </li>
       </ul>
 
@@ -483,7 +486,9 @@ header.top b a { color: inherit; text-decoration: none; }
         rede, usado para sincronizar e nada mais; enviar notificações, pedida só
         quando você liga um lembrete; executar na inicialização, que é como os
         lembretes já agendados sobrevivem a uma reinicialização do celular, e que
-        não faz mais nada; vibração, que o React Native declara por padrão e o
+        não faz mais nada; conectar ao serviço de IA do próprio Android (AICore),
+        que é como uma sugestão de nome chega ao Gemini Nano no celular e não é
+        acesso à rede; vibração, que o React Native declara por padrão e o
         Cataloc nunca usa de fato; e leitura e gravação no armazenamento
         compartilhado no Android 12 e anteriores, que é o jeito antigo de fazer o
         que o seletor de fotos faz nas versões mais novas. A lista é essa. Não há
