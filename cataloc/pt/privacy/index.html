@@ -68,15 +68,21 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Política de Privacidade</h1>
-      <p class="updated">Última atualização: 10 de outubro de 2026</p>
+      <p class="updated">Última atualização: 11 de outubro de 2026</p>
 
       <section class="summary">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">Resumindo</h2>
         <p>
-          O Cataloc não coleta nada. Não há conta, servidor, análise de uso,
-          anúncio nem SDK de terceiro que informe algo sobre você. Tudo o que você
-          coloca no app fica no seu aparelho, a não ser que você mesmo mande para
-          algum lugar.
+          O desenvolvedor não coleta nada. Não há conta, servidor, análise de uso
+          do próprio Cataloc nem anúncio. Tudo o que você coloca no app fica no
+          seu aparelho, a não ser que você mesmo mande para algum lugar.
+        </p>
+        <p>
+          A única exceção é no Android, e ela é do Google, não do Cataloc: dois
+          recursos usam a biblioteca ML Kit do Google, que envia ao Google
+          informações de diagnóstico e de uso sobre como ela funcionou — nunca as
+          suas fotos, os seus códigos ou as suas coisas. Os detalhes estão em
+          <a href="#ml-kit-do-google">O ML Kit do Google no Android</a>.
         </p>
         <p>
           Existem cinco maneiras de dados saírem do seu celular, e é você quem
@@ -432,6 +438,32 @@ header.top b a { color: inherit; text-decoration: none; }
           Cataloc nunca inicia esse download por conta própria.
         </li>
       </ul>
+
+      <h2 id="ml-kit-do-google">O ML Kit do Google no Android</h2>
+      <p>
+        No Android, dois recursos usam a biblioteca ML Kit do Google: ler o QR
+        de uma etiqueta e as sugestões de nome. O ML Kit envia ao Google
+        informações de diagnóstico e de uso sobre como esses recursos
+        funcionaram. O Google lista isso como:
+      </p>
+      <ul>
+        <li>informações sobre o aparelho e o app, como o modelo do celular, a versão do Android e a versão do Cataloc;</li>
+        <li>identificadores do aparelho e desta instalação do app;</li>
+        <li>informações de desempenho e de erro, as configurações com que o recurso funcionou, o tamanho do que ele processou e a versão dele;</li>
+        <li>nas sugestões de nome, os idiomas configurados no celular.</li>
+      </ul>
+      <ul>
+        <li><strong>Não são as suas coisas.</strong> A lista do Google não inclui as suas fotos, os códigos que você lê, os nomes do seu catálogo nem os nomes que o modelo sugere.</li>
+        <li><strong>Criptografado no envio, e não compartilhado.</strong> O Google diz que as informações são enviadas por HTTPS e não são repassadas a terceiros. A política de privacidade do Google cobre isso.</li>
+        <li><strong>O desenvolvedor nunca vê.</strong> Vai para o Google, não para o Cataloc, e continua não existindo servidor do Cataloc.</li>
+        <li><strong>Só quando o recurso funciona.</strong> Nada é enviado enquanto você não lê um código nem toca na estrelinha.</li>
+        <li><strong>Não no iPhone.</strong> O app do Cataloc para iPhone não tem ML Kit: a leitura de códigos e as sugestões de nome usam os recursos da própria Apple, e nada é enviado.</li>
+      </ul>
+      <p>
+        O Cataloc não consegue apagar o que o Google recebeu, porque nunca teve
+        acesso a isso. “Apagar todos os dados”, na aba Você, apaga tudo o que o
+        Cataloc guarda no seu celular.
+      </p>
 
       <h2>Permissões</h2>
       <p>
