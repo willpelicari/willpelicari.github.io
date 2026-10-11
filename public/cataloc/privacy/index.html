@@ -80,15 +80,21 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Privacy Policy</h1>
-      <p class="updated">Last updated: 10 October 2026</p>
+      <p class="updated">Last updated: 11 October 2026</p>
 
       <section class="summary">
         <h2 style="margin-top: 0; padding-top: 0; border-top: none">The short version</h2>
         <p>
-          Cataloc does not collect anything. There is no account, no server, no
-          analytics, no advertising and no third-party SDK that reports on you.
-          Everything you put into the app stays on your device unless you
-          deliberately send it somewhere.
+          The developer collects nothing. There is no account, no server, no
+          analytics of Cataloc's own and no advertising. Everything you put into
+          the app stays on your device unless you deliberately send it somewhere.
+        </p>
+        <p>
+          The one exception is on Android, and it is Google's rather than
+          Cataloc's: two features run on Google's ML Kit library, which sends
+          Google diagnostic and usage information about how it ran — never your
+          photos, your codes or your things. It is described in full under
+          <a href="#google-ml-kit">Google's ML Kit on Android</a>.
         </p>
         <p>
           There are five ways data can leave your phone, and you have to start
@@ -439,6 +445,31 @@ header.top b a { color: inherit; text-decoration: none; }
           appear. Cataloc never starts that download itself.
         </li>
       </ul>
+
+      <h2 id="google-ml-kit">Google's ML Kit on Android</h2>
+      <p>
+        On Android, two features run on Google's ML Kit library: scanning a label's
+        QR code, and name suggestions. ML Kit sends Google diagnostic and usage
+        information about how those features ran. Google lists it as:
+      </p>
+      <ul>
+        <li>information about the device and the app, such as the phone model, the Android version and Cataloc's version;</li>
+        <li>identifiers for the device and for this installation of the app;</li>
+        <li>performance and error information, the settings the feature ran with, the size of what it processed, and its version;</li>
+        <li>for name suggestions, the languages the phone is set to.</li>
+      </ul>
+      <ul>
+        <li><strong>Not your things.</strong> Google's list does not include your photos, the codes you scan, the names in your catalogue or the names the model suggests.</li>
+        <li><strong>Encrypted in transit, and not shared.</strong> Google says the information is sent over HTTPS and not passed to third parties. Google's privacy policy covers it.</li>
+        <li><strong>The developer never sees it.</strong> It goes to Google, not to Cataloc, and there is still no Cataloc server.</li>
+        <li><strong>Only when the feature runs.</strong> Nothing is sent while you do not scan and do not tap the sparkle.</li>
+        <li><strong>Not on iPhone.</strong> Cataloc's iPhone app contains no ML Kit: scanning and name suggestions use Apple's own frameworks, and nothing is sent.</li>
+      </ul>
+      <p>
+        Cataloc cannot delete what Google has received, because it never had it.
+        “Delete all data” on the Me tab erases everything Cataloc keeps on your
+        phone.
+      </p>
 
       <h2>Permissions</h2>
       <p>
