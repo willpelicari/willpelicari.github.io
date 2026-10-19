@@ -152,6 +152,16 @@ header.top nav { margin-left: auto; display: flex; align-items: center; gap: 18p
 .badge.ghost { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
 .soon { font-size: 14px; color: var(--ink3); margin-top: 12px; }
 
+.beta {
+  background: var(--accent-soft); border-radius: 14px; padding: 18px 20px;
+  margin-top: 18px; max-width: 34em;
+}
+.beta h2 { font-size: 18px; margin: 0 0 6px; }
+.beta p { margin: 0; color: var(--ink2); }
+.beta ol { margin: 10px 0; padding-left: 1.4em; display: grid; gap: 6px; color: var(--ink2); }
+.beta a { color: var(--accent); font-weight: 600; }
+.beta .fine { font-size: 14px; color: var(--ink3); }
+
 /* ---------- sections ---------- */
 
 section { padding-block: 40px; border-top: 1px solid var(--rule); }
