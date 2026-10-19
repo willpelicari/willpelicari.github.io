@@ -191,6 +191,12 @@ section > p { color: var(--ink2); max-width: 36em; }
   background: var(--surface);
 }
 .shots li.page img { border-radius: 6px; }
+/* Apple's own iPhone Duo bezel, drawn whole: no card, border or shadow around
+   a product image, which Apple's marketing guidelines rule out. */
+.shots li.device { flex-basis: 420px; }
+.shots li.device img { border: 0; border-radius: 0; box-shadow: none; background: none; }
+.shots li.device a.zoom { border-radius: 0; }
+@media (max-width: 520px) { .shots li.device { flex-basis: 300px; } }
 .shots p { margin: 10px 2px 0; font-size: 15px; line-height: 1.45; color: var(--ink2); }
 .shots p b { color: var(--ink); font-weight: 500; }
 .shots-head { display: flex; align-items: center; gap: 12px; }
