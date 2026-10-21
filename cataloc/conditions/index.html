@@ -55,6 +55,17 @@ address { font-style: normal; color: var(--ink2); line-height: 1.8; margin: 0 0 
 }
 :root[data-theme="dark"] .todo { background: #4A3308; color: #FCD34D; }
 
+
+.platform-picker { margin: 24px 0 34px; }
+.platform-picker > h2 { margin: 0 0 12px; padding: 0; border: 0; font-size: 21px; }
+.platform-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.platform-card { display: block; padding: 18px 20px; border: 1px solid var(--rule); border-radius: 14px; background: var(--surface2); color: var(--ink); text-decoration: none; }
+.platform-card:hover { border-color: var(--accent); }
+.platform-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.platform-card h3 { margin: 0 0 8px; color: var(--ink); font-size: 19px; }
+.platform-card p { max-width: none; margin: 0 0 10px; color: var(--ink2); }
+.platform-action { color: var(--accent); font-weight: 700; }
+
 header.top b a { color: inherit; text-decoration: none; }
 </style>
 </head>
@@ -80,14 +91,26 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Conditions d'utilisation</h1>
-      <p class="updated">Dernière mise à jour : 2 octobre 2026</p>
+      <section class="platform-picker" aria-labelledby="platform-heading">
+        <h2 id="platform-heading">Choisissez la licence de votre plateforme</h2>
+        <div class="platform-options">
+          <a class="platform-card" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">
+            <h3>Apple · iPhone et iPad</h3>
+            <p>Le contrat de licence standard d’Apple régit la licence de l’app iOS. Apple héberge le texte officiel; consultez la version à jour sur son site.</p>
+            <span class="platform-action">Lire le contrat de licence standard d’Apple ↗</span>
+          </a>
+          <a class="platform-card" href="#cataloc-terms">
+            <h3>Android · Google Play</h3>
+            <p>Pour l’app Android, Cataloc accorde la licence à l’article 3. Les conditions ci-dessous expliquent aussi les forfaits, les données et le soutien de Cataloc.</p>
+            <span class="platform-action">Lire les conditions Cataloc ↓</span>
+          </a>
+        </div>
+      </section>
+
+      <p id="cataloc-terms" class="updated">Dernière mise à jour : 2 octobre 2026</p>
 
       <p>
-        Les présentes conditions constituent l'entente entre vous et le
-        développeur de Cataloc quant à votre utilisation de l'application.
-        Installer ou utiliser Cataloc signifie que vous les acceptez. Si vous ne
-        les acceptez pas, n'utilisez pas l'application — et si vous avez déjà
-        payé, demandez un remboursement à la boutique.
+        Les présentes conditions Cataloc portent sur les fonctions, les forfaits, les données et le soutien de l’app. La licence dépend de votre plateforme : le contrat de licence standard d’Apple régit l’app iOS; l’article 3 ci-dessous accorde la licence de l’app Android. Installer ou utiliser Cataloc signifie que vous acceptez ces conditions Cataloc. Sinon, n’utilisez pas l’app — et si vous avez déjà payé, demandez un remboursement à la boutique.
       </p>
       <p>
         Apple et Google ne sont pas parties à la présente entente. Elles
@@ -121,14 +144,7 @@ header.top b a { color: inherit; text-decoration: none; }
 
       <h2>3. Votre licence</h2>
       <p>
-        Il vous est accordé une licence personnelle, non transférable et non
-        exclusive d'utiliser Cataloc sur tout appareil de marque Apple ou Android
-        que vous possédez ou contrôlez, dans la mesure permise par les conditions
-        de service de l'App Store ou de Google Play qui s'appliquent à vous. Ces
-        conditions de boutique s'ajoutent à la présente entente, et lorsqu'une
-        condition de boutique est plus stricte qu'une disposition des présentes,
-        c'est elle qui régit votre utilisation de l'exemplaire provenant de cette
-        boutique.
+        Pour la version iOS téléchargée sur l’App Store, le contrat de licence standard d’Apple constitue la licence de l’app. Pour la version Android téléchargée sur Google Play, il vous est accordé une licence personnelle, non transférable et non exclusive d’utiliser Cataloc sur les appareils Android que vous possédez ou contrôlez, dans la mesure permise par les conditions d’utilisation de Google Play. Les conditions de la boutique s’ajoutent à la présente entente; si une condition de Google Play est plus stricte, elle régit votre utilisation de l’app Android.
       </p>
       <p>
         Vous ne pouvez ni vendre, ni louer, ni accorder de sous-licence, ni

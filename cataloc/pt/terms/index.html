@@ -35,6 +35,17 @@ main strong { color: var(--ink); }
 
 address { font-style: normal; color: var(--ink2); line-height: 1.8; margin: 0 0 14px; }
 
+
+.platform-picker { margin: 24px 0 34px; }
+.platform-picker > h2 { margin: 0 0 12px; padding: 0; border: 0; font-size: 21px; }
+.platform-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.platform-card { display: block; padding: 18px 20px; border: 1px solid var(--rule); border-radius: 14px; background: var(--surface2); color: var(--ink); text-decoration: none; }
+.platform-card:hover { border-color: var(--accent); }
+.platform-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.platform-card h3 { margin: 0 0 8px; color: var(--ink); font-size: 19px; }
+.platform-card p { max-width: none; margin: 0 0 10px; color: var(--ink2); }
+.platform-action { color: var(--accent); font-weight: 700; }
+
 header.top b a { color: inherit; text-decoration: none; }
 </style>
 </head>
@@ -60,12 +71,26 @@ header.top b a { color: inherit; text-decoration: none; }
 
   <main>
 <h1>Cataloc — Termos de Uso</h1>
-      <p class="updated">Última atualização: 2 de outubro de 2026</p>
+      <section class="platform-picker" aria-labelledby="platform-heading">
+        <h2 id="platform-heading">Escolha a licença da sua plataforma</h2>
+        <div class="platform-options">
+          <a class="platform-card" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">
+            <h3>Apple · iPhone e iPad</h3>
+            <p>O Contrato de Licença Padrão da Apple rege a licença do app para iOS. A Apple mantém o texto oficial; leia a versão atual no site da Apple.</p>
+            <span class="platform-action">Ler o Contrato de Licença Padrão da Apple ↗</span>
+          </a>
+          <a class="platform-card" href="#cataloc-terms">
+            <h3>Android · Google Play</h3>
+            <p>Para o app Android, o Cataloc concede a licença na Seção 3. Os termos abaixo também explicam os planos, os dados e o suporte do Cataloc.</p>
+            <span class="platform-action">Ler os termos do Cataloc ↓</span>
+          </a>
+        </div>
+      </section>
+
+      <p id="cataloc-terms" class="updated">Última atualização: 2 de outubro de 2026</p>
 
       <p>
-        Estes termos são o acordo entre você e o desenvolvedor do Cataloc sobre o
-        seu uso do app. Instalar ou usar o Cataloc significa que você os aceita.
-        Se não aceitar, não use o app — e, se já tiver pago, peça reembolso à loja.
+        Estes termos do Cataloc tratam dos recursos, dos planos, do tratamento de dados e do suporte do app. A licença depende da plataforma: o Contrato de Licença Padrão da Apple rege o app para iOS; a Seção 3 abaixo concede a licença do app para Android. Instalar ou usar o Cataloc significa que você aceita estes termos do Cataloc. Se não aceitar, não use o app — e, se já tiver pago, peça reembolso à loja.
       </p>
       <p>
         A Apple e o Google não são partes deste acordo. Eles distribuem o app e
@@ -98,12 +123,7 @@ header.top b a { color: inherit; text-decoration: none; }
 
       <h2>3. Sua licença</h2>
       <p>
-        Você recebe uma licença pessoal, intransferível e não exclusiva para usar
-        o Cataloc em qualquer aparelho da Apple ou Android que seja seu ou esteja
-        sob o seu controle, conforme permitido pelos Termos de Serviço da App Store
-        ou do Google Play que se aplicam a você. Esses termos da loja valem junto
-        com este acordo e, quando um termo da loja for mais restritivo do que algo
-        aqui, o termo da loja rege o seu uso da cópia do app daquela loja.
+        Para a versão iOS baixada na App Store, o Contrato de Licença Padrão da Apple é a licença do app. Para a versão Android baixada no Google Play, você recebe uma licença pessoal, intransferível e não exclusiva para usar o Cataloc em aparelhos Android que sejam seus ou estejam sob seu controle, conforme permitido pelos Termos de Serviço do Google Play. Os termos da loja valem junto com este acordo; se algum termo do Google Play for mais restritivo, ele rege o uso do app Android.
       </p>
       <p>
         Você não pode vender, alugar, sublicenciar nem redistribuir o app, e não
