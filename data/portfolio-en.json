@@ -23,7 +23,7 @@
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
     "featured": {
-      "kicker": "03 — In development",
+      "kicker": "03 — Public beta",
       "icon": "/icons/cataloc.png",
       "name": "Cataloc",
       "tagline": "Find anything at home.",
@@ -51,18 +51,42 @@
       "websites": "Websites",
       "inProgress": "In progress"
     },
-    "featuredTagline": "Find anything at home",
-    "featuredDescription": "A catalogue of your own belongings that runs entirely on your phone. Photograph a shelf, nest containers as deep as reality goes, and search gives you the full path to anything you own.",
-    "detailsLabel": "Details",
-    "details": [
-      { "label": "Category", "value": "Home inventory" },
-      { "label": "Platforms", "value": "iPhone · iPad · Android" },
-      { "label": "Price", "value": "Free · PRO from $3.99" },
-      { "label": "Account", "value": "None needed" },
-      { "label": "Path", "value": "/cataloc" }
-    ],
-    "screenshot": "/uploads/01-home.png",
-    "screenshotAlt": "Cataloc home screen: 14 Alder Road with places Basement, Entryway and Living Room",
+    "featuredProjects": {
+      "03": {
+        "tagline": "Find anything at home",
+        "description": "A catalogue of your own belongings that runs entirely on your phone. Photograph a shelf, nest containers as deep as reality goes, and search gives you the full path to anything you own.",
+        "detailsLabel": "Details",
+        "details": [
+          { "label": "Category", "value": "Home inventory" },
+          { "label": "Platforms", "value": "iPhone · iPad · Android" },
+          { "label": "Price", "value": "Free · PRO from $3.99" },
+          { "label": "Account", "value": "None needed" },
+          { "label": "Path", "value": "/cataloc" }
+        ],
+        "screenshot": "/uploads/01-home.png",
+        "screenshotAlt": "Cataloc home screen: 14 Alder Road with places Basement, Entryway and Living Room",
+        "mediaStyle": "phone",
+        "primaryAction": "Learn more",
+        "secondaryAction": "Support",
+        "secondaryActionLink": "/cataloc/support.html"
+      },
+      "04": {
+        "tagline": "Call the score. Not just the winner.",
+        "description": "Predict the exact score of every pro football game, then compete with friends across the season. Oval tracks every pick, live leaderboard movement, streak and stat — solo or in private groups.",
+        "detailsLabel": "Details",
+        "details": [
+          { "label": "Category", "value": "Pro football predictions" },
+          { "label": "Platforms", "value": "iOS · Android · Web" },
+          { "label": "Price", "value": "Free public beta" },
+          { "label": "Modes", "value": "Solo · Groups" },
+          { "label": "URL", "value": "oval.wiltonpelicari.com" }
+        ],
+        "screenshot": "https://oval.wiltonpelicari.com/landing/web-en-home-dark.webp",
+        "screenshotAlt": "Oval home screen showing weekly games and a group leaderboard",
+        "mediaStyle": "browser",
+        "primaryAction": "Open Oval"
+      }
+    },
     "getNotifiedLabel": "Get notified",
     "getNotifiedText": "Follow along on GitHub to see new apps as they ship.",
     "getNotifiedLink": "https://github.com/willpelicari",
@@ -111,23 +135,22 @@
       "link": "https://www.wiltonpelicari.com/cataloc/",
       "external": false,
       "status": "in-development",
-      "statusLabel": "In development",
+      "statusLabel": "Public beta",
       "featured": true
     },
     {
       "number": "04",
       "kind": "app",
-      "initials": "21–17",
-      "initialsBg": "#1e293b",
-      "initialsFg": "#fff",
-      "name": "Score Predictions",
-      "descriptor": "Pro football picks",
-      "tileDescription": "App · Call the final score of every pro football game before kickoff",
-      "pathText": "nfl.wiltonpelicari.com",
-      "link": "https://nfl.wiltonpelicari.com",
+      "icon": "/icons/oval.svg",
+      "name": "Oval",
+      "descriptor": "Pro football score predictions",
+      "tileDescription": "Free public beta · Exact-score predictions, private groups, live leaderboards and season stats",
+      "pathText": "oval.wiltonpelicari.com",
+      "link": "https://oval.wiltonpelicari.com",
       "external": true,
       "status": "in-development",
-      "statusLabel": "In development"
+      "statusLabel": "Public beta",
+      "featured": true
     }
   ],
   "values": {
