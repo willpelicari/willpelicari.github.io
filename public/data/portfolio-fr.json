@@ -23,7 +23,7 @@
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
     "featured": {
-      "kicker": "03 — En développement",
+      "kicker": "03 — Bêta publique",
       "icon": "/icons/cataloc.png",
       "name": "Cataloc",
       "tagline": "Retrouvez n'importe quoi chez vous.",
@@ -51,18 +51,42 @@
       "websites": "Sites web",
       "inProgress": "En cours"
     },
-    "featuredTagline": "Retrouvez n'importe quoi chez vous",
-    "featuredDescription": "Un catalogue de vos propres biens qui fonctionne entièrement sur votre téléphone. Photographiez une étagère, imbriquez les contenants aussi profondément que la réalité l'exige, et la recherche vous donne le chemin complet vers tout ce que vous possédez.",
-    "detailsLabel": "Détails",
-    "details": [
-      { "label": "Catégorie", "value": "Inventaire domestique" },
-      { "label": "Plateformes", "value": "iPhone · iPad · Android" },
-      { "label": "Prix", "value": "Gratuit · PRO à partir de 3,99 $" },
-      { "label": "Compte", "value": "Aucun requis" },
-      { "label": "Chemin", "value": "/cataloc" }
-    ],
-    "screenshot": "/uploads/01-home.png",
-    "screenshotAlt": "Écran d'accueil de Cataloc : 14 Alder Road avec les lieux Sous-sol, Entrée et Salon",
+    "featuredProjects": {
+      "03": {
+        "tagline": "Retrouvez n'importe quoi chez vous",
+        "description": "Un catalogue de vos propres biens qui fonctionne entièrement sur votre téléphone. Photographiez une étagère, imbriquez les contenants aussi profondément que la réalité l'exige, et la recherche vous donne le chemin complet vers tout ce que vous possédez.",
+        "detailsLabel": "Détails",
+        "details": [
+          { "label": "Catégorie", "value": "Inventaire domestique" },
+          { "label": "Plateformes", "value": "iPhone · iPad · Android" },
+          { "label": "Prix", "value": "Gratuit · PRO à partir de 3,99 $" },
+          { "label": "Compte", "value": "Aucun requis" },
+          { "label": "Chemin", "value": "/cataloc" }
+        ],
+        "screenshot": "/uploads/01-home.png",
+        "screenshotAlt": "Écran d'accueil de Cataloc : 14 Alder Road avec les lieux Sous-sol, Entrée et Salon",
+        "mediaStyle": "phone",
+        "primaryAction": "En savoir plus",
+        "secondaryAction": "Assistance",
+        "secondaryActionLink": "/cataloc/support.html"
+      },
+      "04": {
+        "tagline": "Prédisez le score. Pas seulement le gagnant.",
+        "description": "Prédisez le score exact de chaque match de football professionnel, puis affrontez vos amis pendant toute la saison. Oval suit chaque pronostic, le classement en direct, les séries et les statistiques — en solo ou dans des groupes privés.",
+        "detailsLabel": "Détails",
+        "details": [
+          { "label": "Catégorie", "value": "Pronostics de football" },
+          { "label": "Plateformes", "value": "iOS · Android · Web" },
+          { "label": "Prix", "value": "Bêta publique gratuite" },
+          { "label": "Modes", "value": "Solo · Groupes" },
+          { "label": "URL", "value": "oval.wiltonpelicari.com" }
+        ],
+        "screenshot": "https://oval.wiltonpelicari.com/landing/web-en-home-dark.webp",
+        "screenshotAlt": "Écran d'accueil d'Oval avec les matchs de la semaine et le classement d'un groupe",
+        "mediaStyle": "browser",
+        "primaryAction": "Ouvrir Oval"
+      }
+    },
     "getNotifiedLabel": "Soyez averti",
     "getNotifiedText": "Suivez-moi sur GitHub pour voir les nouvelles applications dès leur sortie.",
     "getNotifiedLink": "https://github.com/willpelicari",
@@ -111,23 +135,22 @@
       "link": "https://www.wiltonpelicari.com/cataloc/",
       "external": false,
       "status": "in-development",
-      "statusLabel": "En développement",
+      "statusLabel": "Bêta publique",
       "featured": true
     },
     {
       "number": "04",
       "kind": "app",
-      "initials": "21–17",
-      "initialsBg": "#1e293b",
-      "initialsFg": "#fff",
-      "name": "Score Predictions",
-      "descriptor": "Pronostics de football",
-      "tileDescription": "Application · Devinez le score final de chaque match de football professionnel avant le coup d'envoi",
-      "pathText": "nfl.wiltonpelicari.com",
-      "link": "https://nfl.wiltonpelicari.com",
+      "icon": "/icons/oval.svg",
+      "name": "Oval",
+      "descriptor": "Pronostics de scores de football",
+      "tileDescription": "Bêta publique gratuite · Scores exacts, groupes privés, classements en direct et statistiques de saison",
+      "pathText": "oval.wiltonpelicari.com",
+      "link": "https://oval.wiltonpelicari.com",
       "external": true,
       "status": "in-development",
-      "statusLabel": "En développement"
+      "statusLabel": "Bêta publique",
+      "featured": true
     }
   ],
   "values": {

@@ -73,17 +73,25 @@ export type AppDetail = {
   value: string
 }
 
+export type FeaturedProject = {
+  tagline: string
+  description: string
+  detailsLabel: string
+  details: AppDetail[]
+  screenshot: string
+  screenshotAlt: string
+  mediaStyle: 'phone' | 'browser'
+  primaryAction: string
+  secondaryAction?: string
+  secondaryActionLink?: string
+}
+
 export type AppsPage = {
   kicker: string
   title: string
   description: string
   filters: { all: string; apps: string; websites: string; inProgress: string }
-  featuredTagline: string
-  featuredDescription: string
-  detailsLabel: string
-  details: AppDetail[]
-  screenshot: string
-  screenshotAlt: string
+  featuredProjects: Record<string, FeaturedProject>
   getNotifiedLabel: string
   getNotifiedText: string
   getNotifiedLink: string
@@ -235,12 +243,7 @@ export const DefaultPortfolio: Portfolio = {
     title: '',
     description: '',
     filters: { all: '', apps: '', websites: '', inProgress: '' },
-    featuredTagline: '',
-    featuredDescription: '',
-    detailsLabel: '',
-    details: [],
-    screenshot: '',
-    screenshotAlt: '',
+    featuredProjects: {},
     getNotifiedLabel: '',
     getNotifiedText: '',
     getNotifiedLink: '',

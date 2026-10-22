@@ -23,7 +23,7 @@
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
     "featured": {
-      "kicker": "03 — Em desenvolvimento",
+      "kicker": "03 — Beta público",
       "icon": "/icons/cataloc.png",
       "name": "Cataloc",
       "tagline": "Encontre qualquer coisa em casa.",
@@ -51,18 +51,42 @@
       "websites": "Sites",
       "inProgress": "Em andamento"
     },
-    "featuredTagline": "Encontre qualquer coisa em casa",
-    "featuredDescription": "Um catálogo dos seus próprios pertences que funciona inteiramente no seu telefone. Fotografe uma prateleira, aninhe recipientes tão fundo quanto a realidade exigir, e a busca lhe dá o caminho completo até qualquer coisa que você tenha.",
-    "detailsLabel": "Detalhes",
-    "details": [
-      { "label": "Categoria", "value": "Inventário doméstico" },
-      { "label": "Plataformas", "value": "iPhone · iPad · Android" },
-      { "label": "Preço", "value": "Grátis · PRO a partir de US$ 3,99" },
-      { "label": "Conta", "value": "Nenhuma necessária" },
-      { "label": "Caminho", "value": "/cataloc" }
-    ],
-    "screenshot": "/uploads/01-home.png",
-    "screenshotAlt": "Tela inicial do Cataloc: 14 Alder Road com os lugares Porão, Entrada e Sala",
+    "featuredProjects": {
+      "03": {
+        "tagline": "Encontre qualquer coisa em casa",
+        "description": "Um catálogo dos seus próprios pertences que funciona inteiramente no seu telefone. Fotografe uma prateleira, aninhe recipientes tão fundo quanto a realidade exigir, e a busca lhe dá o caminho completo até qualquer coisa que você tenha.",
+        "detailsLabel": "Detalhes",
+        "details": [
+          { "label": "Categoria", "value": "Inventário doméstico" },
+          { "label": "Plataformas", "value": "iPhone · iPad · Android" },
+          { "label": "Preço", "value": "Grátis · PRO a partir de US$ 3,99" },
+          { "label": "Conta", "value": "Nenhuma necessária" },
+          { "label": "Caminho", "value": "/cataloc" }
+        ],
+        "screenshot": "/uploads/01-home.png",
+        "screenshotAlt": "Tela inicial do Cataloc: 14 Alder Road com os lugares Porão, Entrada e Sala",
+        "mediaStyle": "phone",
+        "primaryAction": "Saiba mais",
+        "secondaryAction": "Suporte",
+        "secondaryActionLink": "/cataloc/support.html"
+      },
+      "04": {
+        "tagline": "Acerte o placar. Não apenas o vencedor.",
+        "description": "Preveja o placar exato de cada jogo de futebol americano e dispute a temporada inteira com seus amigos. O Oval acompanha cada palpite, a classificação ao vivo, sequências e estatísticas — sozinho ou em grupos privados.",
+        "detailsLabel": "Detalhes",
+        "details": [
+          { "label": "Categoria", "value": "Palpites de futebol americano" },
+          { "label": "Plataformas", "value": "iOS · Android · Web" },
+          { "label": "Preço", "value": "Beta público gratuito" },
+          { "label": "Modos", "value": "Individual · Grupos" },
+          { "label": "URL", "value": "oval.wiltonpelicari.com" }
+        ],
+        "screenshot": "https://oval.wiltonpelicari.com/landing/web-en-home-dark.webp",
+        "screenshotAlt": "Tela inicial do Oval com os jogos da semana e a classificação de um grupo",
+        "mediaStyle": "browser",
+        "primaryAction": "Abrir Oval"
+      }
+    },
     "getNotifiedLabel": "Seja avisado",
     "getNotifiedText": "Siga no GitHub para ver os novos aplicativos assim que forem lançados.",
     "getNotifiedLink": "https://github.com/willpelicari",
@@ -111,23 +135,22 @@
       "link": "https://www.wiltonpelicari.com/cataloc/",
       "external": false,
       "status": "in-development",
-      "statusLabel": "Em desenvolvimento",
+      "statusLabel": "Beta público",
       "featured": true
     },
     {
       "number": "04",
       "kind": "app",
-      "initials": "21–17",
-      "initialsBg": "#1e293b",
-      "initialsFg": "#fff",
-      "name": "Score Predictions",
-      "descriptor": "Palpites de futebol americano",
-      "tileDescription": "Aplicativo · Acerte o placar final de cada jogo da NFL antes do apito inicial",
-      "pathText": "nfl.wiltonpelicari.com",
-      "link": "https://nfl.wiltonpelicari.com",
+      "icon": "/icons/oval.svg",
+      "name": "Oval",
+      "descriptor": "Palpites de placares de futebol americano",
+      "tileDescription": "Beta público gratuito · Placares exatos, grupos privados, classificação ao vivo e estatísticas da temporada",
+      "pathText": "oval.wiltonpelicari.com",
+      "link": "https://oval.wiltonpelicari.com",
       "external": true,
       "status": "in-development",
-      "statusLabel": "Em desenvolvimento"
+      "statusLabel": "Beta público",
+      "featured": true
     }
   ],
   "values": {

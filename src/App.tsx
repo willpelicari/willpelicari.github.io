@@ -14,18 +14,26 @@ import Footer from './pages/Footer'
 import Header from './pages/Header'
 import Home from './pages/Home'
 
+const CONTENT_VERSION = '2026-10-22-public-beta'
+
+function fetchPortfolio(language: string): Promise<Portfolio> {
+  const url = `./data/portfolio-${language}.json?v=${CONTENT_VERSION}`
+
+  return fetch(url, { cache: 'no-store' }).then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+
+    return response.json()
+  })
+}
+
 function App() {
   const [content, setContent] = useState<Portfolio>(DefaultPortfolio)
   const i18n = useTranslation()[1]
 
   useEffect(() => {
-    fetch('./data/portfolio-' + i18n.language + '.json')
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`)
-        }
-        return res.json()
-      })
+    fetchPortfolio(i18n.language)
       .then((result) => {
         setContent(result)
       })
@@ -33,8 +41,7 @@ function App() {
         console.error('Error loading portfolio data:', error)
         // Fallback to English if the requested language fails
         if (i18n.language !== 'en') {
-          fetch('./data/portfolio-en.json')
-            .then((res) => res.json())
+          fetchPortfolio('en')
             .then((result) => {
               setContent(result)
             })
