@@ -23,7 +23,7 @@
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
     "featured": {
-      "kicker": "03 — Bêta publique",
+      "kicker": "03 — Disponible sur l’App Store",
       "icon": "/icons/cataloc.png",
       "name": "Cataloc",
       "tagline": "Retrouvez n'importe quoi chez vous.",
@@ -134,8 +134,8 @@
       "pathText": "/cataloc",
       "link": "https://www.wiltonpelicari.com/cataloc/",
       "external": false,
-      "status": "in-development",
-      "statusLabel": "Bêta publique",
+      "status": "live",
+      "statusLabel": "App Store",
       "featured": true
     },
     {
