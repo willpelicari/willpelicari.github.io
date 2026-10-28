@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { Fragment, useContext } from 'react'
 import { FiArrowRight, FiArrowUpRight, FiExternalLink } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import { NetworkEntry } from '../@types/CustomTypes'
@@ -64,71 +64,75 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured app */}
-      <div className="bg-slate-900 text-white px-5 sm:px-8 md:px-14 py-16 grid gap-14 [grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))]">
-        <div className="flex flex-col gap-8">
-          <div className="flex items-center gap-4">
-            <img
-              src={home.featured.icon}
-              alt=""
-              className="w-14 h-14 block"
-            />
-            <span className="text-sm tracking-[0.08em] uppercase text-blue-200">
-              {home.featured.kicker}
-            </span>
-          </div>
-          <h2 className="font-extrabold text-[clamp(72px,11vw,128px)] leading-[0.9] tracking-[-0.04em]">
-            {home.featured.name}
-          </h2>
-          <span className="font-bold text-4xl leading-tight text-slate-200">
-            {home.featured.tagline}
-          </span>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href={home.featured.learnMoreLink}
-              className="flex items-center gap-2 px-[18px] py-3 bg-white text-slate-900 font-semibold text-[15px] hover:bg-blue-200"
-            >
-              {home.featured.learnMore} <FiArrowUpRight />
-            </a>
-            <a
-              href={home.featured.supportLink}
-              className="px-[18px] py-3 border border-slate-500 text-white font-semibold text-[15px] hover:bg-slate-700 hover:border-slate-700"
-            >
-              {home.featured.support}
-            </a>
-          </div>
-        </div>
-        <div className="flex flex-col justify-end border-l-2 border-slate-700 pl-8 font-bold text-[28px] leading-[1.25]">
-          {home.featured.breadcrumb.map((step, key) => {
-            const isLast = key === home.featured.breadcrumb.length - 1
-            const colors = [
-              'text-slate-400',
-              'text-slate-300',
-              'text-slate-200',
-              'text-blue-200'
-            ]
-            return (
-              <span
-                key={key}
-                className={`py-3.5 ${
-                  isLast ? '' : 'border-b-2 border-slate-700'
-                } ${colors[Math.min(key, colors.length - 1)]}`}
-                style={{ paddingLeft: key === 0 ? 0 : `${Math.min(key, 3) * 28}px` }}
-              >
-                {key > 0 && '→ '}
-                {step}
+      {/* Featured apps, each with its fact strip */}
+      {home.featured.map((app) => (
+        <Fragment key={app.name}>
+          <div className="bg-slate-900 text-white px-5 sm:px-8 md:px-14 py-16 grid gap-14 [grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))]">
+            <div className="flex flex-col gap-8">
+              <div className="flex items-center gap-4">
+                <img
+                  src={app.icon}
+                  alt=""
+                  className="w-14 h-14 block"
+                />
+                <span className="text-sm tracking-[0.08em] uppercase text-blue-200">
+                  {app.kicker}
+                </span>
+              </div>
+              <h2 className="font-extrabold text-[clamp(72px,11vw,128px)] leading-[0.9] tracking-[-0.04em]">
+                {app.name}
+              </h2>
+              <span className="font-bold text-4xl leading-tight text-slate-200">
+                {app.tagline}
               </span>
-            )
-          })}
-        </div>
-      </div>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={app.learnMoreLink}
+                  className="flex items-center gap-2 px-[18px] py-3 bg-white text-slate-900 font-semibold text-[15px] hover:bg-blue-200"
+                >
+                  {app.learnMore} <FiArrowUpRight />
+                </a>
+                <a
+                  href={app.supportLink}
+                  className="px-[18px] py-3 border border-slate-500 text-white font-semibold text-[15px] hover:bg-slate-700 hover:border-slate-700"
+                >
+                  {app.support}
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col justify-end border-l-2 border-slate-700 pl-8 font-bold text-[28px] leading-[1.25]">
+              {app.breadcrumb.map((step, key) => {
+                const isLast = key === app.breadcrumb.length - 1
+                const colors = [
+                  'text-slate-400',
+                  'text-slate-300',
+                  'text-slate-200',
+                  'text-blue-200'
+                ]
+                return (
+                  <span
+                    key={key}
+                    className={`py-3.5 ${
+                      isLast ? '' : 'border-b-2 border-slate-700'
+                    } ${colors[Math.min(key, colors.length - 1)]}`}
+                    style={{ paddingLeft: key === 0 ? 0 : `${Math.min(key, 3) * 28}px` }}
+                  >
+                    {key > 0 && '→ '}
+                    {step}
+                  </span>
+                )
+              })}
+            </div>
+          </div>
 
-      {/* Fact strip */}
-      <div className="bg-slate-200 dark:bg-slate-800 px-5 sm:px-8 md:px-14 py-7 grid gap-x-8 gap-y-3 text-[15px] leading-[1.55] text-gray-700 dark:text-gray-300 [grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))]">
-        {home.facts.map((fact, key) => (
-          <span key={key}>{fact}</span>
-        ))}
-      </div>
+          {/* Fact strip */}
+          <div className="bg-slate-200 dark:bg-slate-800 px-5 sm:px-8 md:px-14 py-7 grid gap-x-8 gap-y-3 text-[15px] leading-[1.55] text-gray-700 dark:text-gray-300 [grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))]">
+            {app.facts.map((fact, key) => (
+              <span key={key}>{fact}</span>
+            ))}
+          </div>
+        </Fragment>
+      ))}
 
       {/* Network list */}
       <div className="px-5 sm:px-8 md:px-14 py-16 md:py-[84px]">

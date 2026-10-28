@@ -36,6 +36,7 @@ export type FeaturedApp = {
   support: string
   supportLink: string
   breadcrumb: string[]
+  facts: string[]
 }
 
 export type NetworkEntry = {
@@ -61,8 +62,7 @@ export type NetworkEntry = {
 export type Home = {
   heroTitle: string
   byline: Byline
-  featured: FeaturedApp
-  facts: string[]
+  featured: FeaturedApp[]
   networkTitle: string
   allApps: string
 }
@@ -223,18 +223,7 @@ export const DefaultPortfolio: Portfolio = {
       linkedin: '',
       linkedinLink: ''
     },
-    featured: {
-      kicker: '',
-      icon: '',
-      name: '',
-      tagline: '',
-      learnMore: '',
-      learnMoreLink: '',
-      support: '',
-      supportLink: '',
-      breadcrumb: []
-    },
-    facts: [],
+    featured: [],
     networkTitle: '',
     allApps: ''
   },
