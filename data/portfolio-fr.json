@@ -22,21 +22,39 @@
       "linkedin": "LinkedIn",
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
-    "featured": {
-      "kicker": "03 — Disponible sur l’App Store",
-      "icon": "/icons/cataloc.png",
-      "name": "Cataloc",
-      "tagline": "Retrouvez n'importe quoi chez vous.",
-      "learnMore": "En savoir plus",
-      "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
-      "support": "Assistance",
-      "supportLink": "/cataloc/support.html",
-      "breadcrumb": ["Garage", "Étagère en acier", "Caisse 1", "La tente"]
-    },
-    "facts": [
-      "Fonctionne entièrement sur votre téléphone. Aucun compte, aucun serveur, rien de téléversé.",
-      "iPhone, iPad et Android.",
-      "Gratuit pour un foyer et 200 objets."
+    "featured": [
+      {
+        "kicker": "03 — Disponible sur l’App Store",
+        "icon": "/icons/cataloc.png",
+        "name": "Cataloc",
+        "tagline": "Retrouvez n'importe quoi chez vous.",
+        "learnMore": "En savoir plus",
+        "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
+        "support": "Assistance",
+        "supportLink": "/cataloc/support.html",
+        "breadcrumb": ["Garage", "Étagère en acier", "Caisse 1", "La tente"],
+        "facts": [
+          "Fonctionne entièrement sur votre téléphone. Aucun compte, aucun serveur, rien de téléversé.",
+          "iPhone, iPad et Android.",
+          "Gratuit pour un foyer et 200 objets."
+        ]
+      },
+      {
+        "kicker": "04 — Disponible sur l’App Store",
+        "icon": "/icons/oval.svg",
+        "name": "Oval",
+        "tagline": "Prédisez le score. Pas seulement le gagnant.",
+        "learnMore": "En savoir plus",
+        "learnMoreLink": "https://oval.wiltonpelicari.com",
+        "support": "App Store",
+        "supportLink": "https://apps.apple.com/us/app/oval-league/id6821507496",
+        "breadcrumb": ["Semaine 9", "Votre prono 24–17", "Final 24–17", "Score exact"],
+        "facts": [
+          "Prédisez le score exact de chaque match de football professionnel.",
+          "Jouez en solo ou en groupes privés, avec classements en direct.",
+          "Gratuit sur iPhone et iPad, en bêta sur Android, et sur le web."
+        ]
+      }
     ],
     "networkTitle": "Le réseau",
     "allApps": "Toutes les applications"

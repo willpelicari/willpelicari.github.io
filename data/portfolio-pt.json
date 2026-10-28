@@ -22,21 +22,39 @@
       "linkedin": "LinkedIn",
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
-    "featured": {
-      "kicker": "03 — Disponível na App Store",
-      "icon": "/icons/cataloc.png",
-      "name": "Cataloc",
-      "tagline": "Encontre qualquer coisa em casa.",
-      "learnMore": "Saiba mais",
-      "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
-      "support": "Suporte",
-      "supportLink": "/cataloc/support.html",
-      "breadcrumb": ["Garagem", "Prateleira de aço", "Caixa 1", "A barraca"]
-    },
-    "facts": [
-      "Funciona inteiramente no seu telefone. Sem conta, sem servidor, nada enviado.",
-      "iPhone, iPad e Android.",
-      "Gratuito para uma casa e 200 itens."
+    "featured": [
+      {
+        "kicker": "03 — Disponível na App Store",
+        "icon": "/icons/cataloc.png",
+        "name": "Cataloc",
+        "tagline": "Encontre qualquer coisa em casa.",
+        "learnMore": "Saiba mais",
+        "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
+        "support": "Suporte",
+        "supportLink": "/cataloc/support.html",
+        "breadcrumb": ["Garagem", "Prateleira de aço", "Caixa 1", "A barraca"],
+        "facts": [
+          "Funciona inteiramente no seu telefone. Sem conta, sem servidor, nada enviado.",
+          "iPhone, iPad e Android.",
+          "Gratuito para uma casa e 200 itens."
+        ]
+      },
+      {
+        "kicker": "04 — Disponível na App Store",
+        "icon": "/icons/oval.svg",
+        "name": "Oval",
+        "tagline": "Acerte o placar. Não apenas o vencedor.",
+        "learnMore": "Saiba mais",
+        "learnMoreLink": "https://oval.wiltonpelicari.com",
+        "support": "App Store",
+        "supportLink": "https://apps.apple.com/us/app/oval-league/id6821507496",
+        "breadcrumb": ["Semana 9", "Seu palpite 24–17", "Final 24–17", "Placar exato"],
+        "facts": [
+          "Preveja o placar exato de cada jogo de futebol americano.",
+          "Jogue sozinho ou em grupos privados, com classificação ao vivo.",
+          "Grátis no iPhone e iPad, em beta no Android e na web."
+        ]
+      }
     ],
     "networkTitle": "A rede",
     "allApps": "Todos os aplicativos"

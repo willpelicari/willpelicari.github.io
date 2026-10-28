@@ -22,21 +22,39 @@
       "linkedin": "LinkedIn",
       "linkedinLink": "https://www.linkedin.com/in/wiltonpelicari/"
     },
-    "featured": {
-      "kicker": "03 — Available on the App Store",
-      "icon": "/icons/cataloc.png",
-      "name": "Cataloc",
-      "tagline": "Find anything at home.",
-      "learnMore": "Learn more",
-      "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
-      "support": "Support",
-      "supportLink": "/cataloc/support.html",
-      "breadcrumb": ["Garage", "Steel shelving", "Crate 1", "The tent"]
-    },
-    "facts": [
-      "Runs entirely on your phone. No account, no server, nothing uploaded.",
-      "iPhone, iPad and Android.",
-      "Free for one household and 200 things."
+    "featured": [
+      {
+        "kicker": "03 — Available on the App Store",
+        "icon": "/icons/cataloc.png",
+        "name": "Cataloc",
+        "tagline": "Find anything at home.",
+        "learnMore": "Learn more",
+        "learnMoreLink": "https://www.wiltonpelicari.com/cataloc/",
+        "support": "Support",
+        "supportLink": "/cataloc/support.html",
+        "breadcrumb": ["Garage", "Steel shelving", "Crate 1", "The tent"],
+        "facts": [
+          "Runs entirely on your phone. No account, no server, nothing uploaded.",
+          "iPhone, iPad and Android.",
+          "Free for one household and 200 things."
+        ]
+      },
+      {
+        "kicker": "04 — Available on the App Store",
+        "icon": "/icons/oval.svg",
+        "name": "Oval",
+        "tagline": "Call the score. Not just the winner.",
+        "learnMore": "Learn more",
+        "learnMoreLink": "https://oval.wiltonpelicari.com",
+        "support": "App Store",
+        "supportLink": "https://apps.apple.com/us/app/oval-league/id6821507496",
+        "breadcrumb": ["Week 9", "Your pick 24–17", "Final 24–17", "Exact score"],
+        "facts": [
+          "Predict the exact score of every pro football game.",
+          "Play solo or in private groups, with live leaderboards.",
+          "Free on iPhone and iPad, in beta on Android, and on the web."
+        ]
+      }
     ],
     "networkTitle": "The network",
     "allApps": "All apps"
