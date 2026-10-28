@@ -77,14 +77,16 @@
         "details": [
           { "label": "Category", "value": "Pro football predictions" },
           { "label": "Platforms", "value": "iOS · Android · Web" },
-          { "label": "Price", "value": "Free public beta" },
+          { "label": "Price", "value": "Free" },
           { "label": "Modes", "value": "Solo · Groups" },
           { "label": "URL", "value": "oval.wiltonpelicari.com" }
         ],
         "screenshot": "https://oval.wiltonpelicari.com/landing/web-en-home-dark.webp",
         "screenshotAlt": "Oval home screen showing weekly games and a group leaderboard",
         "mediaStyle": "browser",
-        "primaryAction": "Open Oval"
+        "primaryAction": "Open Oval",
+        "secondaryAction": "App Store",
+        "secondaryActionLink": "https://apps.apple.com/us/app/oval-league/id6821507496"
       }
     },
     "getNotifiedLabel": "Get notified",
@@ -144,12 +146,12 @@
       "icon": "/icons/oval.svg",
       "name": "Oval",
       "descriptor": "Pro football score predictions",
-      "tileDescription": "Free public beta · Exact-score predictions, private groups, live leaderboards and season stats",
+      "tileDescription": "Free on the App Store · Exact-score predictions, private groups, live leaderboards and season stats",
       "pathText": "oval.wiltonpelicari.com",
       "link": "https://oval.wiltonpelicari.com",
       "external": true,
-      "status": "in-development",
-      "statusLabel": "Public beta",
+      "status": "live",
+      "statusLabel": "Live",
       "featured": true
     }
   ],

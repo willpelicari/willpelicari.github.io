@@ -77,14 +77,16 @@
         "details": [
           { "label": "Categoria", "value": "Palpites de futebol americano" },
           { "label": "Plataformas", "value": "iOS · Android · Web" },
-          { "label": "Preço", "value": "Beta público gratuito" },
+          { "label": "Preço", "value": "Grátis" },
           { "label": "Modos", "value": "Individual · Grupos" },
           { "label": "URL", "value": "oval.wiltonpelicari.com" }
         ],
         "screenshot": "https://oval.wiltonpelicari.com/landing/web-en-home-dark.webp",
         "screenshotAlt": "Tela inicial do Oval com os jogos da semana e a classificação de um grupo",
         "mediaStyle": "browser",
-        "primaryAction": "Abrir Oval"
+        "primaryAction": "Abrir Oval",
+        "secondaryAction": "App Store",
+        "secondaryActionLink": "https://apps.apple.com/us/app/oval-league/id6821507496"
       }
     },
     "getNotifiedLabel": "Seja avisado",
@@ -144,12 +146,12 @@
       "icon": "/icons/oval.svg",
       "name": "Oval",
       "descriptor": "Palpites de placares de futebol americano",
-      "tileDescription": "Beta público gratuito · Placares exatos, grupos privados, classificação ao vivo e estatísticas da temporada",
+      "tileDescription": "Grátis na App Store · Placares exatos, grupos privados, classificação ao vivo e estatísticas da temporada",
       "pathText": "oval.wiltonpelicari.com",
       "link": "https://oval.wiltonpelicari.com",
       "external": true,
-      "status": "in-development",
-      "statusLabel": "Beta público",
+      "status": "live",
+      "statusLabel": "No ar",
       "featured": true
     }
   ],
