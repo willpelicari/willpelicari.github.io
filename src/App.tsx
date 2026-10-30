@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import './@types/CustomTypes'
 import { DefaultPortfolio, Portfolio } from './@types/CustomTypes'
 import './App.css'
@@ -26,6 +26,29 @@ function fetchPortfolio(language: string): Promise<Portfolio> {
 
     return response.json()
   })
+}
+
+const PAGE_TITLES: Record<string, string> = {
+  '/': 'Home',
+  '/apps': 'Apps',
+  '/about': 'About',
+  '/experiences': 'Experiences',
+}
+
+function PageViewTracker() {
+  const location = useLocation()
+  const i18n = useTranslation()[1]
+
+  useEffect(() => {
+    const title = PAGE_TITLES[location.pathname] ?? location.pathname
+    window.trackPageView?.(location.pathname, `${title} | Wilton Pelicari`)
+  }, [location.pathname])
+
+  useEffect(() => {
+    window.gtag?.('set', 'user_properties', { site_language: i18n.language })
+  }, [i18n.language])
+
+  return null
 }
 
 function App() {
@@ -56,6 +79,7 @@ function App() {
     <ThemeProvider>
       <PortfolioContext.Provider value={content}>
         <HashRouter>
+          <PageViewTracker />
           <div className="min-h-screen flex flex-col bg-slate-100 dark:bg-slate-900">
             <Header />
             <main className="flex-1 flex flex-col">
