@@ -39,12 +39,15 @@
         : 'light',
   })
 
+  // `set` makes later events (scrolls, outbound clicks, our own) carry the route too.
   window.trackPageView = function (path, title) {
-    gtag('event', 'page_view', {
+    var page = {
       page_location: window.location.origin + path + window.location.search,
       page_path: path,
       page_title: title || document.title,
-    })
+    }
+    gtag('set', page)
+    gtag('event', 'page_view', page)
   }
 
   // Named events for the clicks worth knowing about. Outbound links and file
