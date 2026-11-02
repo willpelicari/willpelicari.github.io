@@ -14,7 +14,7 @@ import Footer from './pages/Footer'
 import Header from './pages/Header'
 import Home from './pages/Home'
 
-const CONTENT_VERSION = '2026-10-22-public-beta'
+const CONTENT_VERSION = '2026-11-02-cataloc-google-play'
 
 function fetchPortfolio(language: string): Promise<Portfolio> {
   const url = `./data/portfolio-${language}.json?v=${CONTENT_VERSION}`
