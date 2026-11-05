@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pelicari.mapadoboi",
+      "sha256_cert_fingerprints": [
+        "21:6A:22:67:F7:F2:99:10:1C:90:D0:B9:A2:9A:31:55:6C:F6:0E:2A:2A:F5:EA:64:A5:AB:25:F8:C7:D0:FF:51"
+      ]
+    }
+  }
+]
