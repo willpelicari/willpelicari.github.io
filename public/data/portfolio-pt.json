@@ -105,6 +105,39 @@
         "primaryAction": "Abrir Oval",
         "secondaryAction": "App Store",
         "secondaryActionLink": "https://apps.apple.com/us/app/oval-league/id6821507496"
+      },
+      "05": {
+        "tagline": "Enciclopédia da carne bovina",
+        "description": "Os cortes do boi desenhados sobre um Nelore, com as tabelas brasileira, argentina e americana e as equivalências entre elas. Lê a etiqueta do açougue no próprio aparelho e traz receitas passo a passo com timer na Tela Bloqueada.",
+        "detailsLabel": "Detalhes",
+        "details": [
+          {
+            "label": "Categoria",
+            "value": "Culinária · referência"
+          },
+          {
+            "label": "Plataformas",
+            "value": "Android · iPhone em breve"
+          },
+          {
+            "label": "Preço",
+            "value": "Grátis · gorjetas opcionais"
+          },
+          {
+            "label": "Idiomas",
+            "value": "Português · English · Français"
+          },
+          {
+            "label": "Caminho",
+            "value": "/mapadoboi"
+          }
+        ],
+        "screenshot": "/uploads/mapadoboi-home-pt.webp",
+        "screenshotAlt": "Tela do Mapa do Boi com o mapa de cortes desenhado sobre um boi",
+        "mediaStyle": "phone",
+        "primaryAction": "Saiba mais",
+        "secondaryAction": "Suporte",
+        "secondaryActionLink": "/mapadoboi/support/"
       }
     },
     "getNotifiedLabel": "Seja avisado",
@@ -168,6 +201,19 @@
       "pathText": "oval.wiltonpelicari.com",
       "link": "https://oval.wiltonpelicari.com",
       "external": true,
+      "status": "live",
+      "statusLabel": "No ar",
+      "featured": true
+    },
+    {
+      "number": "05",
+      "kind": "app",
+      "icon": "/icons/mapadoboi.png",
+      "name": "Mapa do Boi",
+      "descriptor": "Enciclopédia da carne bovina",
+      "pathText": "/mapadoboi",
+      "link": "https://www.wiltonpelicari.com/mapadoboi/",
+      "external": false,
       "status": "live",
       "statusLabel": "No ar",
       "featured": true
