@@ -105,6 +105,39 @@
         "primaryAction": "Ouvrir Oval",
         "secondaryAction": "App Store",
         "secondaryActionLink": "https://apps.apple.com/us/app/oval-league/id6821507496"
+      },
+      "05": {
+        "tagline": "L’encyclopédie du bœuf",
+        "description": "Les découpes du bœuf dessinées sur un Nelore, avec les chartes brésilienne, argentine et américaine et leurs équivalences. L’app lit l’étiquette du boucher sur l’appareil et propose des recettes pas à pas avec un minuteur sur l’écran verrouillé.",
+        "detailsLabel": "Détails",
+        "details": [
+          {
+            "label": "Catégorie",
+            "value": "Cuisine · référence"
+          },
+          {
+            "label": "Plateformes",
+            "value": "Android · iPhone bientôt"
+          },
+          {
+            "label": "Prix",
+            "value": "Gratuit · pourboires facultatifs"
+          },
+          {
+            "label": "Langues",
+            "value": "Português · English · Français"
+          },
+          {
+            "label": "Chemin",
+            "value": "/mapadoboi"
+          }
+        ],
+        "screenshot": "/uploads/mapadoboi-home-fr.webp",
+        "screenshotAlt": "Écran de Mapa do Boi avec la carte des découpes dessinée sur un bœuf",
+        "mediaStyle": "phone",
+        "primaryAction": "En savoir plus",
+        "secondaryAction": "Assistance",
+        "secondaryActionLink": "/mapadoboi/support/#fr"
       }
     },
     "getNotifiedLabel": "Soyez averti",
@@ -168,6 +201,19 @@
       "pathText": "oval.wiltonpelicari.com",
       "link": "https://oval.wiltonpelicari.com",
       "external": true,
+      "status": "live",
+      "statusLabel": "En ligne",
+      "featured": true
+    },
+    {
+      "number": "05",
+      "kind": "app",
+      "icon": "/icons/mapadoboi.png",
+      "name": "Mapa do Boi",
+      "descriptor": "L’encyclopédie du bœuf",
+      "pathText": "/mapadoboi",
+      "link": "https://www.wiltonpelicari.com/mapadoboi/fr/",
+      "external": false,
       "status": "live",
       "statusLabel": "En ligne",
       "featured": true

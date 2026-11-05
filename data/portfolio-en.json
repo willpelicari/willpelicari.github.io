@@ -105,6 +105,39 @@
         "primaryAction": "Open Oval",
         "secondaryAction": "App Store",
         "secondaryActionLink": "https://apps.apple.com/us/app/oval-league/id6821507496"
+      },
+      "05": {
+        "tagline": "The beef encyclopedia",
+        "description": "Beef cuts drawn on a Nelore steer, with Brazilian, Argentine and US charts and the equivalents between them. It reads butcher labels on the device and has step-by-step recipes with a Lock Screen timer.",
+        "detailsLabel": "Details",
+        "details": [
+          {
+            "label": "Category",
+            "value": "Food · reference"
+          },
+          {
+            "label": "Platforms",
+            "value": "Android · iPhone soon"
+          },
+          {
+            "label": "Price",
+            "value": "Free · optional tips"
+          },
+          {
+            "label": "Languages",
+            "value": "Português · English · Français"
+          },
+          {
+            "label": "Path",
+            "value": "/mapadoboi"
+          }
+        ],
+        "screenshot": "/uploads/mapadoboi-home-en.webp",
+        "screenshotAlt": "Mapa do Boi screen with the cuts map drawn on a steer",
+        "mediaStyle": "phone",
+        "primaryAction": "Learn more",
+        "secondaryAction": "Support",
+        "secondaryActionLink": "/mapadoboi/support/#en"
       }
     },
     "getNotifiedLabel": "Get notified",
@@ -168,6 +201,19 @@
       "pathText": "oval.wiltonpelicari.com",
       "link": "https://oval.wiltonpelicari.com",
       "external": true,
+      "status": "live",
+      "statusLabel": "Live",
+      "featured": true
+    },
+    {
+      "number": "05",
+      "kind": "app",
+      "icon": "/icons/mapadoboi.png",
+      "name": "Mapa do Boi",
+      "descriptor": "The beef encyclopedia",
+      "pathText": "/mapadoboi",
+      "link": "https://www.wiltonpelicari.com/mapadoboi/en/",
+      "external": false,
       "status": "live",
       "statusLabel": "Live",
       "featured": true

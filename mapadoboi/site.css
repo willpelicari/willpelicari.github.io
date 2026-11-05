@@ -35,7 +35,7 @@ body {
   font: 400 17px/1.6 "Barlow", -apple-system, system-ui, sans-serif;
 }
 a { color: var(--accent-text); }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 .narrow { max-width: 760px; }
 
