@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página não encontrada</title>
+    <script>
+      // GitHub Pages has one 404 page for the whole site and no page at each of the app's routes. A link straight to
+      // one goes back to the app as ?/path&query, and index.html puts the path back.
+      (function (l) {
+        var base = '/mapadoboi/app/';
+        if (l.pathname.indexOf(base) !== 0) return;
+        var encode = function (text) {
+          return text.replace(/&/g, '~and~');
+        };
+        var path = encode(l.pathname.slice(base.length));
+        var query = l.search ? '&' + encode(l.search.slice(1)) : '';
+        l.replace(base + '?/' + path + query + l.hash);
+      })(location);
+    </script>
+    <style>
+      body { margin: 0; min-height: 100vh; display: grid; place-content: center; gap: 8px; padding: 16px; text-align: center; font-family: system-ui, sans-serif; }
+      h1 { margin: 0; font-size: 22px; }
+    </style>
+  </head>
+  <body>
+    <h1>Página não encontrada</h1>
+    <a href="/">wiltonpelicari.com</a>
+  </body>
+</html>
