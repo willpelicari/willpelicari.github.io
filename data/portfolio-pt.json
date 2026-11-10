@@ -15,7 +15,7 @@
     "heroTitle": "Aplicativos e sites que eu projeto, desenvolvo e publico. Do início ao fim.",
     "byline": {
       "name": "Wilton Pelicari",
-      "role": "Desenvolvedor de software",
+      "role": "Desenvolvedor full stack sênior",
       "location": "Cidade de Québec",
       "github": "GitHub",
       "githubLink": "https://github.com/willpelicari",
@@ -243,7 +243,7 @@
   "about": {
     "kicker": "Sobre",
     "title": "Aprender é minha paixão. Compartilhar é minha missão.",
-    "bio": "Eu sou Wilton Pelicari, desenvolvedor full stack na cidade de Québec. Comecei a programar quando criança (sério!) e trabalho profissionalmente com isso desde 2014. De dia, trabalho em plataformas SaaS. No meu tempo livre, projeto, desenvolvo e publico pequenos aplicativos e sites.",
+    "bio": "Eu sou Wilton Pelicari, desenvolvedor full stack sênior na cidade de Québec. Comecei a programar quando criança (sério!) e trabalho profissionalmente com isso desde 2014. De dia, trabalho em plataformas SaaS. No meu tempo livre, projeto, desenvolvo e publico pequenos aplicativos e sites.",
     "downloadResume": "Baixar meu currículo",
     "seeExperience": "Ver minha experiência",
     "facts": [
@@ -283,24 +283,67 @@
         },
         "jobs": [
           {
-            "title": "Desenvolvedor Full Stack — SSP",
+            "title": "Desenvolvedor Full Stack Sênior — Integration Hub",
+            "duration": "Fev 2026 – atualmente",
+            "techStack": [
+              { "category": "Technologies", "stack": ["C#", "TypeScript"] },
+              {
+                "category": "Frameworks & Bibliotecas",
+                "stack": [".NET", "React"]
+              },
+              {
+                "category": "Metodologias",
+                "stack": ["Spec-Driven Development", "Scrum"]
+              },
+              {
+                "category": "Ferramentas",
+                "stack": [
+                  "Spec Kit",
+                  "Kubernetes",
+                  "Helm",
+                  "Argo CD",
+                  "Docker",
+                  "Azure DevOps",
+                  "Git"
+                ]
+              }
+            ],
+            "description": "O Integration Hub conecta plataformas de terceiros ao Cumulus, o principal produto da Sherweb. Desenvolvo um novo projeto que permite que revendedores e parceiros conectem suas próprias APIs aos eventos do Cumulus e sejam avisados assim que algo muda em suas contas. Foi aqui que passei para a programação assistida por IA: as funcionalidades começam como especificações no Spec Kit, e o time automatizou boa parte dos deploys, das revisões de código e das cerimônias. Promovido a Desenvolvedor Full Stack Sênior em novembro de 2026."
+          },
+          {
+            "title": "Desenvolvedor Full Stack Sênior — SSP",
             "duration": "Nov 2024 – atualmente",
             "techStack": [
               {
                 "category": "Technologies",
-                "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
+                "stack": ["C#", "TypeScript", "PostgreSQL", "Java"]
               },
               {
                 "category": "Frameworks & Bibliotecas",
-                "stack": [".NET", "React", "Tailwind CSS"]
+                "stack": [
+                  ".NET",
+                  "React",
+                  "Tailwind CSS",
+                  "MassTransit",
+                  "Selenium",
+                  "Cucumber"
+                ]
               },
               { "category": "Metodologias", "stack": ["Scrum"] },
               {
                 "category": "Ferramentas",
-                "stack": ["Azure DevOps", "Git", "Docker"]
+                "stack": [
+                  "RabbitMQ",
+                  "Kubernetes",
+                  "Helm",
+                  "Argo CD",
+                  "Docker",
+                  "Azure DevOps",
+                  "Git"
+                ]
               }
             ],
-            "description": "Um novo capítulo no projeto SSP após três anos no C2."
+            "description": "O SSP, provedor de autoatendimento da Sherweb construído sobre o Cumulus, oferece a revendedores e parceiros um portal onde seus clientes gerenciam licenças e assinaturas, compram novos produtos e pedem suporte sem ligar para o revendedor nem usar o Cumulus. Ele simplifica o pós-venda de muitos parceiros da Sherweb pela América do Norte. Trabalho com um front-end em React 19 e TypeScript e um back-end distribuído em .NET 10 que se comunica via RabbitMQ com MassTransit, implantado no Kubernetes com Helm e Argo CD. Também adicionei testes automatizados de ponta a ponta a um projeto existente, em Java com Selenium e Cucumber, e implantei o monitoramento automatizado de produção. Sigo contribuindo em paralelo ao Integration Hub."
           },
           {
             "title": "Desenvolvedor Full Stack — C2",
