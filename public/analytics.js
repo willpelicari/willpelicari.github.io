@@ -65,7 +65,8 @@
         var app = (href.match(/\/app\/([^/]+)\//) || [])[1] || 'testflight'
         gtag('event', 'app_store_click', { app_name: app, link_url: href, link_text: label, from_page: from })
       } else if (/\.pdf(\?|#|$)/i.test(href)) {
-        gtag('event', 'cv_download', { link_url: href, from_page: from })
+        var cvLang = (href.match(/-cv-([a-z]{2})\.pdf/i) || [])[1] || 'en'
+        gtag('event', 'cv_download', { cv_language: cvLang.toLowerCase(), link_url: href, from_page: from })
       } else if (href.indexOf('mailto:') === 0) {
         gtag('event', 'contact_click', { method: 'email', link_text: label, from_page: from })
       } else if (/linkedin\.com|github\.com/.test(href)) {
