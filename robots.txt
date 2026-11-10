@@ -2,5 +2,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://willpelicari.github.io/sitemap.xml
+# Sitemaps
+Sitemap: https://www.wiltonpelicari.com/sitemap.xml
+Sitemap: https://www.wiltonpelicari.com/mapadoboi/sitemap.xml

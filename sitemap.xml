@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://willpelicari.github.io/</loc>
+    <loc>https://www.wiltonpelicari.com/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/accueil</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/accueil/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,25 +31,25 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/privacy</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/privacy/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/terms</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/terms/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/confidentialite</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/confidentialite/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/conditions</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/conditions/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -79,13 +79,13 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/pt/privacy</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/pt/privacy/</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.wiltonpelicari.com/cataloc/pt/terms</loc>
+    <loc>https://www.wiltonpelicari.com/cataloc/pt/terms/</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
