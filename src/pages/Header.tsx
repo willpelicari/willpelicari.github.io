@@ -5,8 +5,9 @@ import { NavLink } from 'react-router-dom'
 import { Themes } from '../@types/CustomTypes'
 import { PortfolioContext } from '../contexts/PortfolioContext'
 import { ThemeContext } from '../contexts/ThemeContext'
+import { chooseLanguage } from '../i18n/config'
 
-const LANGUAGES: { code: string; label: string }[] = [
+const LANGUAGES: { code: Parameters<typeof chooseLanguage>[0]; label: string }[] = [
   { code: 'en', label: 'EN' },
   { code: 'fr', label: 'FR' },
   { code: 'pt', label: 'PT' }
@@ -72,7 +73,7 @@ export default function Header() {
         {LANGUAGES.map((lang) => (
           <button
             key={lang.code}
-            onClick={() => i18n.changeLanguage(lang.code)}
+            onClick={() => chooseLanguage(lang.code)}
             className={`px-2 py-1 ${
               i18n.language === lang.code
                 ? 'bg-slate-700 text-white'
