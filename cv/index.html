@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wilton Pelicari — Résumé · CV · Currículo</title>
+    <meta name="description" content="Wilton Pelicari's résumé in English, French and Portuguese." />
+    <link rel="canonical" href="https://www.wiltonpelicari.com/cv/" />
+    <link rel="alternate" hreflang="en" href="https://www.wiltonpelicari.com/cv/en/" />
+    <link rel="alternate" hreflang="fr" href="https://www.wiltonpelicari.com/cv/fr/" />
+    <link rel="alternate" hreflang="pt" href="https://www.wiltonpelicari.com/cv/pt/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.wiltonpelicari.com/cv/" />
+    <script>
+      // Send the visitor to the résumé in the first language their browser asks for that we have.
+      // ?lang=fr forces one. Anything else falls back to English.
+      ;(function () {
+        var available = ['en', 'fr', 'pt']
+        var forced = new URLSearchParams(location.search).get('lang')
+        var wanted = forced ? [forced] : navigator.languages || [navigator.language || 'en']
+        var pick = 'en'
+        for (var i = 0; i < wanted.length; i++) {
+          var code = String(wanted[i]).toLowerCase().split('-')[0]
+          if (available.indexOf(code) !== -1) {
+            pick = code
+            break
+          }
+        }
+        location.replace('./' + pick + '/')
+      })()
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 48px 16px;
+        font-family: Archivo, system-ui, sans-serif;
+        background: #e2e8f0;
+        color: #0f172a;
+        text-align: center;
+      }
+      a {
+        display: inline-block;
+        margin: 6px;
+        padding: 10px 16px;
+        border: 1px solid #0f172a;
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Wilton Pelicari</h1>
+    <p>
+      <a href="./en/" hreflang="en">Résumé (English)</a>
+      <a href="./fr/" hreflang="fr" lang="fr">CV (français)</a>
+      <a href="./pt/" hreflang="pt" lang="pt">Currículo (português)</a>
+    </p>
+  </body>
+</html>
