@@ -15,7 +15,7 @@
     "heroTitle": "Apps and sites I design, build and ship. Start to finish.",
     "byline": {
       "name": "Wilton Pelicari",
-      "role": "Software developer",
+      "role": "Senior full stack developer",
       "location": "Québec City",
       "github": "GitHub",
       "githubLink": "https://github.com/willpelicari",
@@ -243,7 +243,7 @@
   "about": {
     "kicker": "About",
     "title": "Learning is my passion. Sharing is my mission.",
-    "bio": "I'm Wilton Pelicari, a full stack developer in Québec City. I started coding as a child (seriously!) and have been doing it professionally since 2014. By day I work on SaaS platforms. On my own time I design, build and ship small apps and websites.",
+    "bio": "I'm Wilton Pelicari, a senior full stack developer in Québec City. I started coding as a child (seriously!) and have been doing it professionally since 2014. By day I work on SaaS platforms. On my own time I design, build and ship small apps and websites.",
     "downloadResume": "Download my résumé",
     "seeExperience": "See my experience",
     "facts": [
@@ -283,24 +283,67 @@
         },
         "jobs": [
           {
-            "title": "Full Stack Developer — SSP",
+            "title": "Senior Full Stack Developer — Integration Hub",
+            "duration": "Feb 2026 – present",
+            "techStack": [
+              { "category": "Technologies", "stack": ["C#", "TypeScript"] },
+              {
+                "category": "Frameworks & Libraries",
+                "stack": [".NET", "React"]
+              },
+              {
+                "category": "Methodologies",
+                "stack": ["Spec-Driven Development", "Scrum"]
+              },
+              {
+                "category": "Tools",
+                "stack": [
+                  "Spec Kit",
+                  "Kubernetes",
+                  "Helm",
+                  "Argo CD",
+                  "Docker",
+                  "Azure DevOps",
+                  "Git"
+                ]
+              }
+            ],
+            "description": "Integration Hub connects third-party platforms to Cumulus, Sherweb's main product. I'm building a new project that lets resellers and partners wire their own APIs to Cumulus events so they hear about changes on their accounts the moment they happen. This is where I moved to AI-assisted development: features start as specs in Spec Kit, and the team has automated much of its deployments, code reviews and ceremonies. Promoted to Senior Full Stack Developer in November 2026."
+          },
+          {
+            "title": "Senior Full Stack Developer — SSP",
             "duration": "Nov 2024 – present",
             "techStack": [
               {
                 "category": "Technologies",
-                "stack": ["C#", "JavaScript", "SQL Server", "Redis"]
+                "stack": ["C#", "TypeScript", "PostgreSQL", "Java"]
               },
               {
                 "category": "Frameworks & Libraries",
-                "stack": [".NET", "React", "Tailwind CSS"]
+                "stack": [
+                  ".NET",
+                  "React",
+                  "Tailwind CSS",
+                  "MassTransit",
+                  "Selenium",
+                  "Cucumber"
+                ]
               },
               { "category": "Methodologies", "stack": ["Scrum"] },
               {
                 "category": "Tools",
-                "stack": ["Azure DevOps", "Git", "Docker"]
+                "stack": [
+                  "RabbitMQ",
+                  "Kubernetes",
+                  "Helm",
+                  "Argo CD",
+                  "Docker",
+                  "Azure DevOps",
+                  "Git"
+                ]
               }
             ],
-            "description": "A new chapter on the SSP project after three years on C2."
+            "description": "SSP, Sherweb's self-service provider built on Cumulus, gives resellers and partners a portal where their customers manage licences and subscriptions, buy new products and ask for support without calling them or going through Cumulus. It makes life after the sale easier for Sherweb partners across North America. I work on a React 19 and TypeScript front end and a distributed .NET 10 back end that talks over RabbitMQ with MassTransit, deployed to Kubernetes with Helm and Argo CD. I also added automated end-to-end tests to an existing project in Java with Selenium and Cucumber, and set up automated production monitoring. I still contribute alongside Integration Hub."
           },
           {
             "title": "Full Stack Developer — C2",

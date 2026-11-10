@@ -56,7 +56,7 @@ const person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: byline.name,
-  jobTitle: 'Full Stack Developer',
+  jobTitle: 'Senior Full Stack Developer',
   url: `${SITE}/`,
   image: `${SITE}/main-photo.jpg`,
   address: { '@type': 'PostalAddress', addressLocality: 'Québec City', addressRegion: 'QC', addressCountry: 'CA' },
