@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-br-rs" viewBox="0 0 640 480">
+  <!-- Rio Grande do Sul, drawn for a flag the size of a word: the diagonal tricolour and the arms in their white oval, simplified. -->
+  <path fill="#e1251b" d="M0 0h640v480H0z"/>
+  <path fill="#00923f" d="M0 0h460L0 345z"/>
+  <path fill="#ffd900" d="M640 480H180l460-345z"/>
+  <ellipse cx="320" cy="240" fill="#fff" rx="158" ry="128"/>
+  <!-- The flags and spears behind the ring. -->
+  <g stroke="#6b4423" stroke-width="7">
+    <path d="M236 316 194 140M404 316l42-176"/>
+  </g>
+  <path fill="#00923f" d="m196 148 64-8 6 26-62 10z"/>
+  <path fill="#e1251b" d="m204 176 62-10 6 26-60 10z"/>
+  <path fill="#ffd900" d="m212 202 60-10 6 26-58 10z"/>
+  <path fill="#00923f" d="m444 148-64-8-6 26 62 10z"/>
+  <path fill="#e1251b" d="m436 176-62-10-6 26 60 10z"/>
+  <path fill="#ffd900" d="m428 202-60-10-6 26 58 10z"/>
+  <!-- The blue ring and the shield with its green rhombus between two columns. -->
+  <circle cx="320" cy="232" r="72" fill="#fff" stroke="#1f4e9e" stroke-width="20"/>
+  <path fill="#00923f" d="m320 186 34 46-34 46-34-46z"/>
+  <path fill="#ffd900" d="M276 200h10v66h-10zm78 0h10v66h-10z"/>
+  <!-- The ribbon under the arms. -->
+  <path fill="#e1251b" d="M224 300q96 44 192 0l14 26q-110 50-220 0z"/>
+</svg>
