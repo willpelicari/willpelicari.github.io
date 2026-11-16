@@ -4,4 +4,3 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://www.wiltonpelicari.com/sitemap.xml
-Sitemap: https://www.wiltonpelicari.com/mapadoboi/sitemap.xml

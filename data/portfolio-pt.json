@@ -129,7 +129,7 @@
           },
           {
             "label": "Caminho",
-            "value": "/mapadoboi"
+            "value": "mapadoboi.wiltonpelicari.com"
           }
         ],
         "screenshot": "/uploads/mapadoboi-home-pt.webp",
@@ -137,7 +137,7 @@
         "mediaStyle": "phone",
         "primaryAction": "Saiba mais",
         "secondaryAction": "Suporte",
-        "secondaryActionLink": "/mapadoboi/support/"
+        "secondaryActionLink": "https://mapadoboi.wiltonpelicari.com/support/"
       }
     },
     "getNotifiedLabel": "Seja avisado",
@@ -211,9 +211,9 @@
       "icon": "/icons/mapadoboi.png",
       "name": "Mapa do Boi",
       "descriptor": "Enciclopédia da carne bovina",
-      "pathText": "/mapadoboi",
-      "link": "https://www.wiltonpelicari.com/mapadoboi/",
-      "external": false,
+      "pathText": "mapadoboi.wiltonpelicari.com",
+      "link": "https://mapadoboi.wiltonpelicari.com/",
+      "external": true,
       "status": "live",
       "statusLabel": "No ar",
       "featured": true
