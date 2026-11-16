@@ -1,7 +1,7 @@
 /**
  * Runs after `react-scripts build` (npm's postbuild hook). Writes the English portfolio into build/index.html as
  * plain HTML, so a crawler that doesn't run JavaScript still finds the name, the apps and the experience, with
- * real links to /cataloc/ and /mapadoboi/. React's createRoot replaces it all on the first render.
+ * real links to /cataloc/ and mapadoboi.wiltonpelicari.com. React's createRoot replaces it all on the first render.
  *
  * Plain Node, no dependencies: it reads the same public/data/portfolio-en.json the app fetches, so the text
  * stays in one place.

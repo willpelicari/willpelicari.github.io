@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Página não encontrada</title>
     <script>
-      // GitHub Pages has one 404 page for the whole site and no page at each of the app's routes. A link straight to
-      // one goes back to the app as ?/path&query, and index.html puts the path back.
+      // Mapa do Boi moved to its own subdomain. Its old pages redirect on their own; any other /mapadoboi/ path (the
+      // web app's routes, under /mapadoboi/app/) goes to the same path there, where the app's own 404 page takes over.
       (function (l) {
-        var base = '/mapadoboi/app/';
-        if (l.pathname.indexOf(base) !== 0) return;
-        var encode = function (text) {
-          return text.replace(/&/g, '~and~');
-        };
-        var path = encode(l.pathname.slice(base.length));
-        var query = l.search ? '&' + encode(l.search.slice(1)) : '';
-        l.replace(base + '?/' + path + query + l.hash);
+        var base = '/mapadoboi/';
+        if (l.pathname.indexOf(base) !== 0 && l.pathname !== '/mapadoboi') return;
+        l.replace('https://mapadoboi.wiltonpelicari.com/' + l.pathname.slice(base.length) + l.search + l.hash);
       })(location);
     </script>
     <style>

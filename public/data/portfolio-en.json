@@ -129,7 +129,7 @@
           },
           {
             "label": "Path",
-            "value": "/mapadoboi"
+            "value": "mapadoboi.wiltonpelicari.com"
           }
         ],
         "screenshot": "/uploads/mapadoboi-home-en.webp",
@@ -137,7 +137,7 @@
         "mediaStyle": "phone",
         "primaryAction": "Learn more",
         "secondaryAction": "Support",
-        "secondaryActionLink": "/mapadoboi/support/#en"
+        "secondaryActionLink": "https://mapadoboi.wiltonpelicari.com/support/#en"
       }
     },
     "getNotifiedLabel": "Get notified",
@@ -211,9 +211,9 @@
       "icon": "/icons/mapadoboi.png",
       "name": "Mapa do Boi",
       "descriptor": "The beef encyclopedia",
-      "pathText": "/mapadoboi",
-      "link": "https://www.wiltonpelicari.com/mapadoboi/en/",
-      "external": false,
+      "pathText": "mapadoboi.wiltonpelicari.com",
+      "link": "https://mapadoboi.wiltonpelicari.com/en/",
+      "external": true,
       "status": "live",
       "statusLabel": "Live",
       "featured": true

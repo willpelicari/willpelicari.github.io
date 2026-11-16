@@ -14,7 +14,7 @@ const SHARED = {
   apps: {
     cataloc: { name: 'Cataloc', href: 'https://www.wiltonpelicari.com/cataloc/', urlText: 'wiltonpelicari.com/cataloc' },
     oval: { name: 'Oval', href: 'https://oval.wiltonpelicari.com', urlText: 'oval.wiltonpelicari.com' },
-    mapadoboi: { name: 'Mapa do Boi', href: 'https://www.wiltonpelicari.com/mapadoboi/', urlText: 'wiltonpelicari.com/mapadoboi' },
+    mapadoboi: { name: 'Mapa do Boi', href: 'https://mapadoboi.wiltonpelicari.com/', urlText: 'mapadoboi.wiltonpelicari.com' },
   },
   stacks: {
     integrationHub: 'C# · .NET · TypeScript · React · Spec Kit · Kubernetes · Helm · Argo CD · Docker · Azure DevOps',
