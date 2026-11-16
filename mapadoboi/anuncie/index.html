@@ -42,17 +42,12 @@
   .box h3 { margin: 0 0 4px; }
   .rate { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
 
-  /* The ad, as the app draws it */
-  .ad { max-width: 440px; margin: 20px 0 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font: 400 14px/1.35 -apple-system, system-ui, sans-serif; overflow: hidden; }
-  .ad .head { display: flex; align-items: center; gap: 6px; padding: 8px 10px 2px; color: var(--muted); font-size: 11px; }
-  .ad .tag { border: 1px solid var(--muted); border-radius: 3px; padding: 0 5px; font-size: 10px; font-weight: 700; letter-spacing: .04em; }
-  .ad .row { display: flex; align-items: center; gap: 10px; padding: 7px 10px; }
-  .ad .row + .row { border-top: 1px solid var(--line); }
-  .ad .thumb { width: 40px; height: 40px; border-radius: 4px; background: var(--line); flex: none; }
-  .ad .fill { flex: 1; min-width: 0; }
-  .ad b { display: block; font-size: 14px; font-weight: 600; }
-  .ad .m { display: block; color: var(--muted); font-size: 12px; }
-  .ad .p { font-weight: 700; font-size: 15px; white-space: nowrap; }
+  /* The real ad, in a phone, beside the text */
+  .showcase { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 36px; align-items: start; }
+  .showcase .phone { margin-top: 40px; }
+  .phone { margin: 0; text-align: center; }
+  .phone img { display: block; width: 100%; height: auto; filter: drop-shadow(0 18px 28px rgba(23, 24, 26, .22)); }
+  .phone figcaption { margin-top: 10px; color: var(--muted); font-size: 14px; }
 
   /* Calculator */
   .calc { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 8px 16px 16px; margin: 20px 0 8px; }
@@ -78,6 +73,8 @@
   details p { max-width: 42em; }
 
   @media (max-width: 760px) {
+    .showcase { grid-template-columns: 1fr; gap: 20px; }
+    .showcase .phone { max-width: 260px; margin: 0 auto; }
     .cards, .cards.two { grid-template-columns: 1fr; }
     .calc .heads { display: none; }
     .calc .grid { grid-template-columns: 1fr 1fr 36px; grid-template-areas: "name name del" "imp clk clk" "cost cost cost"; }
@@ -106,14 +103,14 @@
 <p class="lead">Quem abre um corte no Mapa do Boi está, quase sempre, decidindo o que vai comprar, e é justamente nesse momento, em “Onde comprar”, que os preços da sua loja aparecem para quem está por perto ou dentro da sua área de entrega.</p>
 <div class="actions"><a class="btn btn-primary" href="mailto:support@wiltonpelicari.com?subject=Quero%20anunciar%20no%20Mapa%20do%20Boi">Quero anunciar</a></div>
 
+<div class="showcase">
+<div class="copy">
 <h2>Como o anúncio aparece</h2>
 <p>Na página de cada corte, o app mostra as três ofertas mais próximas do leitor, sempre marcadas como patrocinadas, e reúne as demais em “Ver todas”, onde é possível ordená-las pela distância ou pelo preço por 100 g. Com um toque, o leitor abre o produto, vê a foto, o preço e o endereço, e de lá segue para o seu site ou para o mapa com o caminho até a loja.</p>
-<div class="ad" aria-hidden="true">
-<div class="head"><span class="tag">PATROCINADO</span>Preços informados pelas lojas</div>
-<div class="row"><span class="thumb"></span><span class="fill"><b>Picanha maturada</b><span class="m">Sua loja · 1,2 kg · ~2 km de você</span></span><span class="p">R$ 8,90 / 100 g</span></div>
-<div class="row"><span class="thumb"></span><span class="fill"><b>Picanha</b><span class="m">Outra loja · 1 kg · Entrega na sua região</span></span><span class="p">R$ 7,40 / 100 g</span></div>
+<p class="meta">Cada produto aparece apenas no corte em que foi cadastrado, apenas onde está em estoque e apenas para quem está no raio da loja ou na área de entrega, de modo que você não paga para ser visto por quem não poderia comprar.</p>
 </div>
-<p class="meta">Ilustração. Cada produto aparece apenas no corte em que foi cadastrado, apenas onde está em estoque e apenas para quem está no raio da loja ou na área de entrega, de modo que você não paga para ser visto por quem não poderia comprar.</p>
+<figure class="phone"><img src="picanha-pt.webp" width="660" height="1350" loading="lazy" alt="A página da picanha no app, com três ofertas patrocinadas em “Onde comprar”"><figcaption>Picanha no app, perto de São Paulo</figcaption></figure>
+</div>
 
 <h2>Preços</h2>
 <p>Não há mensalidade, contrato nem valor mínimo: você paga apenas pelas vezes em que a oferta foi vista e pelos cliques que ela recebeu, enquanto todo o resto, do cadastro ao portal e à integração pela API, não custa nada. Os preços são definidos em dólares canadenses, e o valor em reais que acompanha cada um deles é calculado pelo câmbio mais recente.</p>
@@ -179,14 +176,14 @@
 <p class="lead">Someone who opens a cut in Beef Chart (Mapa do Boi in Portuguese) is usually deciding what to buy, and that is exactly when your store’s prices show up, under “Where to buy”, for people nearby or within your delivery area.</p>
 <div class="actions"><a class="btn btn-primary" href="mailto:support@wiltonpelicari.com?subject=Advertising%20on%20Beef%20Chart">Start advertising</a></div>
 
+<div class="showcase">
+<div class="copy">
 <h2>How your ad shows</h2>
 <p>On each cut’s page, the app shows the three offers closest to the reader, always marked as sponsored, and gathers the rest under “See all”, where they can be sorted by distance or by price per 100 g. With one tap, the reader opens the product, sees its photo, price and address, and from there goes on to your website or to directions to your store.</p>
-<div class="ad" aria-hidden="true">
-<div class="head"><span class="tag">SPONSORED</span>Prices from the stores</div>
-<div class="row"><span class="thumb"></span><span class="fill"><b>Dry-aged picanha</b><span class="m">Your store · 1.2 kg · ~2 km away</span></span><span class="p">R$ 8.90 / 100 g</span></div>
-<div class="row"><span class="thumb"></span><span class="fill"><b>Picanha</b><span class="m">Another store · 1 kg · Delivers to your area</span></span><span class="p">R$ 7.40 / 100 g</span></div>
+<p class="meta">Each product shows only on the cut it was filed under, only where it’s in stock, and only to people within the store’s reach or delivery area, so you never pay to be seen by someone who couldn’t buy from you.</p>
 </div>
-<p class="meta">Illustration. Each product shows only on the cut it was filed under, only where it’s in stock, and only to people within the store’s reach or delivery area, so you never pay to be seen by someone who couldn’t buy from you.</p>
+<figure class="phone"><img src="picanha-en.webp" width="660" height="1350" loading="lazy" alt="The picanha page in the app, with three sponsored offers under “Where to buy”"><figcaption>Picanha in the app, near São Paulo</figcaption></figure>
+</div>
 
 <h2>Pricing</h2>
 <p>There’s no monthly fee, no contract and no minimum: you pay only for the times your offer was seen and for the clicks it got, while everything else, from setting up your products to the portal and the API, is free. Prices are set in Canadian dollars, and the amount in Brazilian reais shown with each one uses the latest exchange rate.</p>
@@ -252,14 +249,14 @@
 <p class="lead">La personne qui ouvre une pièce dans Charte de bœuf (Mapa do Boi en portugais) est presque toujours en train de choisir quoi acheter, et c’est justement à ce moment, sous «&nbsp;Où acheter&nbsp;», que les prix de votre boutique s’affichent pour les gens à proximité ou dans votre zone de livraison.</p>
 <div class="actions"><a class="btn btn-primary" href="mailto:support@wiltonpelicari.com?subject=Annoncer%20dans%20Charte%20de%20b%C5%93uf">Je veux annoncer</a></div>
 
+<div class="showcase">
+<div class="copy">
 <h2>Comment l’annonce s’affiche</h2>
 <p>Sur la page de chaque pièce, l’app montre les trois offres les plus proches de la personne, toujours marquées comme sponsorisées, et regroupe les autres dans «&nbsp;Voir les offres&nbsp;», où on peut les trier par distance ou par prix aux 100&nbsp;g. D’un toucher, la personne ouvre le produit, voit sa photo, son prix et son adresse, puis continue vers votre site ou vers l’itinéraire jusqu’à la boutique.</p>
-<div class="ad" aria-hidden="true">
-<div class="head"><span class="tag">SPONSORISÉ</span>Prix fournis par les boutiques</div>
-<div class="row"><span class="thumb"></span><span class="fill"><b>Picanha maturée</b><span class="m">Votre boutique · 1,2 kg · ~2 km de vous</span></span><span class="p">8,90 R$ / 100 g</span></div>
-<div class="row"><span class="thumb"></span><span class="fill"><b>Picanha</b><span class="m">Autre boutique · 1 kg · Livraison dans votre secteur</span></span><span class="p">7,40 R$ / 100 g</span></div>
+<p class="meta">Chaque produit s’affiche seulement sur la pièce où il est classé, seulement là où il est en stock et seulement pour les gens à portée de la boutique ou dans la zone de livraison, de sorte que vous ne payez jamais pour être vu par quelqu’un qui ne pourrait pas acheter chez vous.</p>
 </div>
-<p class="meta">Illustration. Chaque produit s’affiche seulement sur la pièce où il est classé, seulement là où il est en stock et seulement pour les gens à portée de la boutique ou dans la zone de livraison, de sorte que vous ne payez jamais pour être vu par quelqu’un qui ne pourrait pas acheter chez vous.</p>
+<figure class="phone"><img src="picanha-fr.webp" width="660" height="1350" loading="lazy" alt="La page de la picanha dans l’app, avec trois offres sponsorisées sous «&nbsp;Où acheter&nbsp;»"><figcaption>La picanha dans l’app, près de São Paulo</figcaption></figure>
+</div>
 
 <h2>Tarifs</h2>
 <p>Il n’y a ni abonnement, ni contrat, ni minimum&nbsp;: vous payez seulement les fois où votre offre a été vue et les clics qu’elle a reçus, alors que tout le reste, de l’ajout des produits au portail et à l’API, est gratuit. Les prix sont fixés en dollars canadiens, et le montant en réais brésiliens indiqué avec chacun d’eux suit le taux de change le plus récent.</p>
