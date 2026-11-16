@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="/mapadoboi/site.css?v=3">
+<link rel="stylesheet" href="/mapadoboi/site.css?v=4">
 </head>
 <body>
 <div class="wrap">
@@ -41,7 +41,7 @@
 <p class="lead">Tap the steer and learn every cut: where it sits, what it is called in other countries, how tender and fatty it is, and how to cook it. Free, with no ads.</p>
 <div class="actions">
 <a class="btn btn-primary" id="app-store" href="https://apps.apple.com/app/id6830041105"><span><small>Download on the</small>App Store</span></a>
-<a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=en"><span><small>Get it on</small>Google Play</span></a>
+<a class="btn btn-outline" href="#beta" aria-haspopup="dialog"><span><small>Get it on</small>Google Play</span></a>
 <a class="btn btn-outline" href="/mapadoboi/app/"><span><small>Use it in your</small>Browser</span></a>
 </div>
 <p class="note">Free · no ads · no account. On your home screen it is called “Beef Chart”.</p>
@@ -112,18 +112,6 @@
 </article>
 </section>
 
-<section class="beta wrap" id="beta">
-<p class="eyebrow">Closed testing · Android</p>
-<h2 class="section-title">Try the app <span class="hl">before everyone else</span></h2>
-<p class="section-lead">Mapa do Boi for Android is in closed testing on Google Play. It takes just 3 steps to join and help unlock the official launch.</p>
-<ol class="steps">
-<li><strong>Join the testers group</strong><p>Open the <a href="https://groups.google.com/g/mapa-do-boi-testers">mapa-do-boi-testers group</a> and click “Join group”. Use the same Google account as your Android phone.</p></li>
-<li><strong>Accept the test invite</strong><p>Open the <a href="https://play.google.com/apps/testing/com.pelicari.mapadoboi">testing link</a> with that account and click “Become a tester”.</p></li>
-<li><strong>Download the app</strong><p>Install <a href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=en">Mapa do Boi from Google Play</a>. It can take a few minutes to show up after step 2.</p></li>
-</ol>
-<p class="beta-feedback">Found a problem or have a suggestion? Write to <a href="mailto:support@wiltonpelicari.com">support@wiltonpelicari.com</a>.</p>
-</section>
-
 <section class="band">
 <div class="wrap">
 <p class="eyebrow">Free</p>
@@ -143,5 +131,30 @@
 <span>© 2026 Wilton Pelicari</span>
 </footer>
 </div>
+<dialog class="beta" id="beta" aria-labelledby="beta-title">
+<form method="dialog"><button class="beta-close" aria-label="Close">×</button></form>
+<p class="eyebrow">Closed testing · Android</p>
+<h2 class="section-title" id="beta-title">Try the app <span class="hl">before everyone else</span></h2>
+<p class="section-lead">Mapa do Boi for Android is in closed testing on Google Play. It takes just 3 steps to join and help unlock the official launch.</p>
+<ol class="steps">
+<li><strong>Join the testers group</strong><p>Open the <a href="https://groups.google.com/g/mapa-do-boi-testers">mapa-do-boi-testers group</a> and click “Join group”. Use the same Google account as your Android phone.</p></li>
+<li><strong>Accept the test invite</strong><p>Open the <a href="https://play.google.com/apps/testing/com.pelicari.mapadoboi">testing link</a> with that account and click “Become a tester”.</p></li>
+<li><strong>Download the app</strong><p>Install <a href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=en">Mapa do Boi from Google Play</a>. It can take a few minutes to show up after step 2.</p></li>
+</ol>
+<p class="beta-feedback">Found a problem or have a suggestion? Write to <a href="mailto:support@wiltonpelicari.com">support@wiltonpelicari.com</a>.</p>
+</dialog>
+<script>
+(function () {
+  var d = document.getElementById('beta');
+  if (!d || !d.showModal) return;
+  function open() { if (!d.open) d.showModal(); }
+  document.querySelectorAll('a[href="#beta"]').forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); history.replaceState(null, '', '#beta'); open(); });
+  });
+  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+  d.addEventListener('close', function () { if (location.hash === '#beta') history.replaceState(null, '', location.pathname + location.search); });
+  if (location.hash === '#beta') open();
+})();
+</script>
 </body>
 </html>
