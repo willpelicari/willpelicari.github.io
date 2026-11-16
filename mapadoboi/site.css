@@ -138,3 +138,15 @@ details p { margin: 0 0 12px; }
   .band .grid { grid-template-columns: 1fr; }
   .brand span { font-size: 19px; }
 }
+
+/* Closed testing (Android) */
+.beta { padding-top: 40px; padding-bottom: 24px; border-top: 1px solid var(--line); }
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.steps li { counter-increment: step; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+.steps li::before { content: counter(step); display: block; font: 800 40px/1 "Barlow Condensed", sans-serif; color: var(--accent-text); margin-bottom: 8px; }
+.steps strong { display: block; font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; font-size: 22px; letter-spacing: .03em; line-height: 1.1; }
+.steps p { margin: 8px 0 0; }
+.beta-feedback { color: var(--muted); margin: 20px 0 0; }
+@media (max-width: 760px) {
+  .steps { grid-template-columns: 1fr; }
+}
