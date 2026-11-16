@@ -139,8 +139,12 @@ details p { margin: 0 0 12px; }
   .brand span { font-size: 19px; }
 }
 
-/* Closed testing (Android) */
-.beta { padding-top: 40px; padding-bottom: 24px; border-top: 1px solid var(--line); }
+/* Closed testing (Android): popup opened by the Google Play button */
+dialog.beta { width: min(100% - 32px, 980px); max-height: calc(100% - 32px); margin: auto; padding: 32px; border: 1px solid var(--line); border-radius: 22px; background: var(--bg); color: var(--fg); box-shadow: 0 24px 80px rgba(0,0,0,.35); }
+dialog.beta:target:not([open]) { display: block; position: static; }
+dialog.beta::backdrop { background: rgba(0,0,0,.55); }
+.beta .section-lead { margin-bottom: 24px; }
+.beta-close { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; border: 0; border-radius: 999px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); color: var(--fg); font: 400 26px/1 "Barlow", sans-serif; cursor: pointer; }
 .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .steps li { counter-increment: step; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
 .steps li::before { content: counter(step); display: block; font: 800 40px/1 "Barlow Condensed", sans-serif; color: var(--accent-text); margin-bottom: 8px; }
@@ -148,5 +152,7 @@ details p { margin: 0 0 12px; }
 .steps p { margin: 8px 0 0; }
 .beta-feedback { color: var(--muted); margin: 20px 0 0; }
 @media (max-width: 760px) {
+  dialog.beta { padding: 24px 18px; }
+  .beta .section-title { padding-right: 40px; }
   .steps { grid-template-columns: 1fr; }
 }

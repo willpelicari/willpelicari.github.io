@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="/mapadoboi/site.css?v=3">
+<link rel="stylesheet" href="/mapadoboi/site.css?v=4">
 </head>
 <body>
 <div class="wrap">
@@ -41,7 +41,7 @@
 <p class="lead">Touchez le bœuf et découvrez chaque morceau : où il se trouve, son nom dans d&#x27;autres pays, sa tendreté, son gras et comment le cuisiner. Gratuit et sans publicité.</p>
 <div class="actions">
 <a class="btn btn-primary" id="app-store" href="https://apps.apple.com/app/id6830041105"><span><small>Télécharger dans l&#x27;</small>App Store</span></a>
-<a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=fr"><span><small>Disponible sur</small>Google Play</span></a>
+<a class="btn btn-outline" href="#beta" aria-haspopup="dialog"><span><small>Disponible sur</small>Google Play</span></a>
 <a class="btn btn-outline" href="/mapadoboi/app/"><span><small>Utiliser dans le</small>Navigateur</span></a>
 </div>
 <p class="note">Gratuit · sans publicité · sans compte. Sur l’écran d’accueil, l’app s’appelle « Charte de bœuf ».</p>
@@ -112,18 +112,6 @@
 </article>
 </section>
 
-<section class="beta wrap" id="beta">
-<p class="eyebrow">Test fermé · Android</p>
-<h2 class="section-title">Testez l&#x27;app <span class="hl">avant tout le monde</span></h2>
-<p class="section-lead">Mapa do Boi pour Android est en test fermé sur Google Play. Il suffit de 3 étapes pour participer et aider à débloquer le lancement officiel.</p>
-<ol class="steps">
-<li><strong>Rejoignez le groupe de testeurs</strong><p>Ouvrez le <a href="https://groups.google.com/g/mapa-do-boi-testers">groupe mapa-do-boi-testers</a> et cliquez sur « Rejoindre le groupe ». Utilisez le même compte Google que votre téléphone Android.</p></li>
-<li><strong>Acceptez l&#x27;invitation au test</strong><p>Ouvrez le <a href="https://play.google.com/apps/testing/com.pelicari.mapadoboi">lien du test</a> avec ce compte et cliquez sur « Devenir testeur » (ou « Become a tester »).</p></li>
-<li><strong>Téléchargez l&#x27;app</strong><p>Installez <a href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=fr">Mapa do Boi depuis Google Play</a>. L&#x27;app peut mettre quelques minutes à apparaître après l&#x27;étape 2.</p></li>
-</ol>
-<p class="beta-feedback">Un problème ou une suggestion ? Écrivez à <a href="mailto:support@wiltonpelicari.com">support@wiltonpelicari.com</a>.</p>
-</section>
-
 <section class="band">
 <div class="wrap">
 <p class="eyebrow">Gratuit</p>
@@ -143,5 +131,30 @@
 <span>© 2026 Wilton Pelicari</span>
 </footer>
 </div>
+<dialog class="beta" id="beta" aria-labelledby="beta-title">
+<form method="dialog"><button class="beta-close" aria-label="Fermer">×</button></form>
+<p class="eyebrow">Test fermé · Android</p>
+<h2 class="section-title" id="beta-title">Testez l&#x27;app <span class="hl">avant tout le monde</span></h2>
+<p class="section-lead">Mapa do Boi pour Android est en test fermé sur Google Play. Il suffit de 3 étapes pour participer et aider à débloquer le lancement officiel.</p>
+<ol class="steps">
+<li><strong>Rejoignez le groupe de testeurs</strong><p>Ouvrez le <a href="https://groups.google.com/g/mapa-do-boi-testers">groupe mapa-do-boi-testers</a> et cliquez sur « Rejoindre le groupe ». Utilisez le même compte Google que votre téléphone Android.</p></li>
+<li><strong>Acceptez l&#x27;invitation au test</strong><p>Ouvrez le <a href="https://play.google.com/apps/testing/com.pelicari.mapadoboi">lien du test</a> avec ce compte et cliquez sur « Devenir testeur » (ou « Become a tester »).</p></li>
+<li><strong>Téléchargez l&#x27;app</strong><p>Installez <a href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=fr">Mapa do Boi depuis Google Play</a>. L&#x27;app peut mettre quelques minutes à apparaître après l&#x27;étape 2.</p></li>
+</ol>
+<p class="beta-feedback">Un problème ou une suggestion ? Écrivez à <a href="mailto:support@wiltonpelicari.com">support@wiltonpelicari.com</a>.</p>
+</dialog>
+<script>
+(function () {
+  var d = document.getElementById('beta');
+  if (!d || !d.showModal) return;
+  function open() { if (!d.open) d.showModal(); }
+  document.querySelectorAll('a[href="#beta"]').forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); history.replaceState(null, '', '#beta'); open(); });
+  });
+  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+  d.addEventListener('close', function () { if (location.hash === '#beta') history.replaceState(null, '', location.pathname + location.search); });
+  if (location.hash === '#beta') open();
+})();
+</script>
 </body>
 </html>
