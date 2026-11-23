@@ -108,7 +108,7 @@
       },
       "05": {
         "tagline": "Enciclopédia da carne bovina",
-        "description": "Os cortes do boi desenhados sobre um Nelore, com as tabelas brasileira, argentina, americana e portuguesa e as equivalências entre elas. Lê a etiqueta do açougue no próprio aparelho e traz receitas passo a passo com timer na Tela Bloqueada.",
+        "description": "Os cortes de boi e de porco desenhados sobre o animal, com as tabelas brasileira, argentina, portuguesa, americana e canadense e as equivalências entre elas. Lê a etiqueta do açougue no próprio aparelho e traz receitas passo a passo com timer na Tela Bloqueada.",
         "detailsLabel": "Detalhes",
         "details": [
           {
@@ -117,7 +117,7 @@
           },
           {
             "label": "Plataformas",
-            "value": "Android · iPhone em breve"
+            "value": "iPhone · iPad · Android"
           },
           {
             "label": "Preço",

@@ -176,8 +176,8 @@ const en = {
     },
     {
       ...SHARED.apps.mapadoboi,
-      platforms: 'Android · iPhone soon',
-      text: 'Beef-cut encyclopedia with Brazilian, Argentine, US and Portuguese charts, on-device label reading and step-by-step recipes. In Portuguese, English and French.',
+      platforms: 'iPhone · iPad · Android',
+      text: 'Beef and pork cut encyclopedia with Brazilian, Argentine, Portuguese, US and Canadian charts, on-device label reading and step-by-step recipes. In Portuguese, English and French.',
     },
   ],
   education: [
@@ -344,8 +344,8 @@ const fr = {
     },
     {
       ...SHARED.apps.mapadoboi,
-      platforms: 'Android · iPhone bientôt',
-      text: 'Encyclopédie des coupes de bœuf (tableaux brésilien, argentin, américain et portugais), lecture d’étiquettes sur l’appareil et recettes pas à pas. Trilingue.',
+      platforms: 'iPhone · iPad · Android',
+      text: 'Encyclopédie des coupes de bœuf et de porc (tableaux brésilien, argentin, portugais, américain et canadien), lecture d’étiquettes sur l’appareil et recettes pas à pas. Trilingue.',
     },
   ],
   education: [
@@ -512,8 +512,8 @@ const pt = {
     },
     {
       ...SHARED.apps.mapadoboi,
-      platforms: 'Android · iPhone em breve',
-      text: 'Enciclopédia dos cortes de carne bovina com os mapas brasileiro, argentino, americano e português, leitura de etiquetas no aparelho e receitas passo a passo. Em português, inglês e francês.',
+      platforms: 'iPhone · iPad · Android',
+      text: 'Enciclopédia dos cortes de boi e de porco com os mapas brasileiro, argentino, português, americano e canadense, leitura de etiquetas no aparelho e receitas passo a passo. Em português, inglês e francês.',
     },
   ],
   education: [

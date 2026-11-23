@@ -108,7 +108,7 @@
       },
       "05": {
         "tagline": "The beef encyclopedia",
-        "description": "Beef cuts drawn on a Nelore steer, with Brazilian, Argentine, US and Portuguese charts and the equivalents between them. It reads butcher labels on the device and has step-by-step recipes with a Lock Screen timer.",
+        "description": "Beef and pork cuts drawn on the animal, with Brazilian, Argentine, Portuguese, US and Canadian charts and the equivalents between them. It reads butcher labels on the device and has step-by-step recipes with a Lock Screen timer.",
         "detailsLabel": "Details",
         "details": [
           {
@@ -117,7 +117,7 @@
           },
           {
             "label": "Platforms",
-            "value": "Android · iPhone soon"
+            "value": "iPhone · iPad · Android"
           },
           {
             "label": "Price",

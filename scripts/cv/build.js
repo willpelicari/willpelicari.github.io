@@ -93,6 +93,7 @@ function page(c) {
     <link rel="canonical" href="${SITE}/cv/${c.lang}/" />
     ${alternates}
     <link rel="alternate" hreflang="x-default" href="${SITE}/cv/" />
+    <script src="/analytics.js?v=2"></script>
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
